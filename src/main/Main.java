@@ -1,21 +1,27 @@
 package main;
 
+import searchBarCommands.SearchCommand;
 import checker.Checker;
 import checker.CheckerConstants;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import fileio.input.LibraryInput;
+import fileio.input.SongInput;
+import fileio.input.UserInput;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Objects;
 
 /**
- * The entry point to this homework. It runs the checker that tests your implentation.
+ * The entry point to this homework. It runs the checker that tests your implementation.
  */
 public final class Main {
     static final String LIBRARY_PATH = CheckerConstants.TESTS_PATH + "library/library.json";
@@ -54,7 +60,7 @@ public final class Main {
             File out = new File(filepath);
             boolean isCreated = out.createNewFile();
             if (isCreated) {
-                action(file.getName(), filepath);
+                action(CheckerConstants.TESTS_PATH + file.getName(), filepath);
             }
         }
 
@@ -70,10 +76,22 @@ public final class Main {
                               final String filePathOutput) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         LibraryInput library = objectMapper.readValue(new File(LIBRARY_PATH), LibraryInput.class);
-
         ArrayNode outputs = objectMapper.createArrayNode();
 
-        // TODO add your implementation
+        for (File file : Objects.requireNonNull(new File("input/").listFiles())) {
+            if (file.isFile() && file.getName().endsWith(".json")) {
+                ArrayList<SearchBar> searchbars = objectMapper.readValue(file, new TypeReference<>() {
+                });
+                for (SearchBar searchBar : searchbars) {
+                    SearchCommand searchCommand = new SearchCommand();
+                    if (Objects.equals(searchBar.getType(), "song")) {
+                        searchCommand.performSearchSong(searchBar.getFilters(), library);
+                    }
+                    JsonNode searchBarNode = objectMapper.valueToTree(searchBar);
+                    outputs.add(searchBarNode);
+                }
+            }
+        }
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePathOutput), outputs);
