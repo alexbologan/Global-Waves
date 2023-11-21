@@ -8,15 +8,23 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 15,
-  "message" : "Successfully selected TED Radio Hour."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 20
+  "timestamp" : 20,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 59
+  "timestamp" : 59,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -31,7 +39,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 70
+  "timestamp" : 70,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -42,23 +51,39 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 80,
-  "message" : "Successfully selected TED Radio Hour."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 85
+  "timestamp" : 85,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 86
+  "timestamp" : 86,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "alice22",
-  "timestamp" : 3200
+  "timestamp" : 3200,
+  "message" : "Playback resumed successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 3201
+  "timestamp" : 3201,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "createPlaylist",
   "user" : "alice22",
@@ -77,7 +102,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 3225
+  "timestamp" : 3225,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -96,7 +122,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 3245
+  "timestamp" : 3245,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -109,21 +136,43 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 3260,
-  "message" : "Successfully selected Happier."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 3265
+  "timestamp" : 3265,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 3270
+  "timestamp" : 3270,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 3448
+  "timestamp" : 3448,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 4000
+  "timestamp" : 4000,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 } ]

@@ -16,7 +16,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 195
+  "timestamp" : 195,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -35,7 +36,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 300
+  "timestamp" : 300,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -55,20 +57,35 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1140
+  "timestamp" : 1140,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1190,
-  "message" : "Successfully selected Swimming Pools (Drank)."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 1195
+  "timestamp" : 1195,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1220
+  "timestamp" : 1220,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "emily30",
@@ -76,7 +93,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1250
+  "timestamp" : 1250,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "emily30",
@@ -84,7 +108,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1320
+  "timestamp" : 1320,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "forward",
   "user" : "emily30",
@@ -107,11 +138,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2190,
-  "message" : "Successfully selected The Daily."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2200
+  "timestamp" : 2200,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "forward",
   "user" : "emily30",
@@ -119,7 +151,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3220
+  "timestamp" : 3220,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "forward",
   "user" : "emily30",
@@ -127,7 +166,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3920
+  "timestamp" : 3920,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "emily30",
@@ -150,11 +196,19 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 4330
+  "timestamp" : 4330,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 4350
+  "timestamp" : 4350,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "backward",
   "user" : "emily30",

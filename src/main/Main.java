@@ -2,7 +2,7 @@ package main;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.LibraryInput;
-import searchbarcommands.SearchBarCommands;
+import searchbarcommands.CommandsPrompt;
 import checker.Checker;
 import checker.CheckerConstants;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -86,12 +86,12 @@ public final class Main {
         User user = new User();
         for (CommandInput commandInput : searchbars) {
             user.searchUser(users, user, commandInput);
-            ObjectNode searchBarNode = objectMapper.createObjectNode();
+            ObjectNode commandPromptNode = objectMapper.createObjectNode();
 
-            SearchBarCommands searchBarCommands = new SearchBarCommands();
-            searchBarCommands.commands(commandInput, objectMapper, user, searchBarNode);
+            CommandsPrompt commandsPrompt = new CommandsPrompt();
+            commandsPrompt.commands(commandInput, user, commandPromptNode);
 
-            outputs.add(searchBarNode);
+            outputs.add(commandPromptNode);
         }
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePathOutput), outputs);

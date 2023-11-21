@@ -2,16 +2,13 @@ package searchbarcommands;
 
 import checker.CheckerConstants;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import input.files.CommandInput;
 import input.files.Library;
-import input.files.Podcast;
 import user.User;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Objects;
 
 public class SearchCommand {
@@ -27,66 +24,23 @@ public class SearchCommand {
     }
 
     /**
-     * Performs a song search based on the provided filters and updates the search bar node.
+     * Performs a search based on the specified command input and delegates the search operation
+     * to either the song or podcast search module, depending on the type specified in the input.
      *
-     * @param searchBarNode   The ObjectNode representing the search bar.
+     * @param commandInput   The input containing search filters and type information.
+     * @param commandPromptNode  The JSON object node where search results will be stored.
+     * @param user           The user performing the search.
+     * @throws IOException   If an IO error occurs during the search operation.
      */
-    public void performSearch(final CommandInput commandInput, final ObjectNode searchBarNode,
+    public void performSearch(final CommandInput commandInput, final ObjectNode commandPromptNode,
                               final User user) throws IOException {
+        user.setUser(commandInput);
         if (Objects.equals(commandInput.getType(), "song")) {
             SearchSong searchSong = new SearchSong(library);
-            searchSong.performSearchSong(commandInput, searchBarNode, user);
+            searchSong.performSearchSong(commandInput, commandPromptNode, user);
         } else if (Objects.equals(commandInput.getType(), "podcast")) {
-            ArrayList<Podcast> matchingPodcasts = new ArrayList<>();
-            ArrayList<Podcast> newMatchingPodcasts = new ArrayList<>();
-            int filterNum = 0;
-            final int maxSize = 5;
-            if (commandInput.getFilters().getName() != null) {
-                for (int i = 0; i < getLibrary().getPodcasts().size(); i++) {
-                    if (getLibrary().getPodcasts().get(i).getName().startsWith(
-                            commandInput.getFilters().getName())) {
-                        matchingPodcasts.add(getLibrary().getPodcasts().get(i));
-                    }
-                }
-                filterNum++;
-            }
-
-            if (commandInput.getFilters().getOwner() != null) {
-                if (matchingPodcasts.isEmpty() && filterNum == 0) {
-                    for (int i = 0; i < getLibrary().getPodcasts().size(); i++) {
-                        if (Objects.equals(getLibrary().getPodcasts().get(i).getOwner(),
-                                commandInput.getFilters().getOwner())) {
-                            matchingPodcasts.add(getLibrary().getPodcasts().get(i));
-                        }
-                    }
-                } else if (!matchingPodcasts.isEmpty()) {
-                    for (Podcast matchingPodcast :  matchingPodcasts) {
-                        if (Objects.equals(matchingPodcast.getOwner(),
-                                commandInput.getFilters().getOwner())) {
-                            newMatchingPodcasts.add(matchingPodcast);
-                        }
-                    }
-                    matchingPodcasts = newMatchingPodcasts;
-                }
-            }
-            ArrayList<String> stringMatchingPodcasts = new ArrayList<>();
-            if (matchingPodcasts.size() > maxSize) {
-                searchBarNode.put("message",
-                        "Search returned " + maxSize + " results");
-                for (int i = 0; i < maxSize; i++) {
-                    stringMatchingPodcasts.add(matchingPodcasts.get(i).getName());
-                }
-            } else {
-                searchBarNode.put("message",
-                        "Search returned " + matchingPodcasts.size() + " results");
-                for (Podcast matchingPodcast : matchingPodcasts) {
-                    stringMatchingPodcasts.add(matchingPodcast.getName());
-                }
-            }
-            ArrayNode matchingPodcastsNode =
-                    getObjectMapper().valueToTree(stringMatchingPodcasts);
-            searchBarNode.set("results", matchingPodcastsNode);
-            user.getUser().setMatchingSongTitles(stringMatchingPodcasts);
+            SearchPodcast searchPodcast = new SearchPodcast(library);
+            searchPodcast.performSearchPodcast(commandInput, commandPromptNode, user);
         }
     }
 

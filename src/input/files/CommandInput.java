@@ -12,7 +12,12 @@ public final class CommandInput {
     private String playlistName;
     private int playlistId;
     private int seed;
-    private ArrayList<String> matchingSongTitles;
+    private ArrayList<Song> matchingSong;
+    private ArrayList<Podcast> matchingPodcast;
+    private Boolean shuffle = false;
+    private Boolean paused = false;
+    private String repeat = "No Repeat";
+    private int remainedTime = 0;
 
     public CommandInput() {
     }
@@ -81,12 +86,52 @@ public final class CommandInput {
         this.itemNumber = itemNumber;
     }
 
-    public ArrayList<String> getMatchingSongTitles() {
-        return matchingSongTitles;
+    public ArrayList<Song> getMatchingSong() {
+        return matchingSong;
     }
 
-    public void setMatchingSongTitles(final ArrayList<String> matchingSongTitles) {
-        this.matchingSongTitles = matchingSongTitles;
+    public void setMatchingSong(final ArrayList<Song> matchingSong) {
+        this.matchingSong = matchingSong;
+    }
+
+    public ArrayList<Podcast> getMatchingPodcast() {
+        return matchingPodcast;
+    }
+
+    public void setMatchingPodcast(final ArrayList<Podcast> matchingPodcast) {
+        this.matchingPodcast = matchingPodcast;
+    }
+
+    public Boolean getShuffle() {
+        return shuffle;
+    }
+
+    public void setShuffle(final Boolean shuffle) {
+        this.shuffle = shuffle;
+    }
+
+    public Boolean getPaused() {
+        return paused;
+    }
+
+    public void setPaused(final Boolean paused) {
+        this.paused = paused;
+    }
+
+    public String getRepeat() {
+        return repeat;
+    }
+
+    public void setRepeat(final String repeat) {
+        this.repeat = repeat;
+    }
+
+    public int getRemainedTime() {
+        return remainedTime;
+    }
+
+    public void setRemainedTime(final int remainedTime) {
+        this.remainedTime = remainedTime;
     }
 
     public int getSeed() {

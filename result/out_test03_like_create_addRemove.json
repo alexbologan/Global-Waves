@@ -16,7 +16,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 20
+  "timestamp" : 20,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -43,7 +44,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 40
+  "timestamp" : 40,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -80,7 +82,7 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 64,
-  "message" : "Successfully selected The Unforgiven."
+  "message" : "Fu"
 }, {
   "command" : "showPlaylists",
   "user" : "alice22",

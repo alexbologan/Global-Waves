@@ -12,11 +12,19 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 20
+  "timestamp" : 20,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 30
+  "timestamp" : 30,
+  "stats" : {
+    "name" : "Dream Chaser",
+    "remainedTime" : 195,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -24,11 +32,25 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 32
+  "timestamp" : 32,
+  "stats" : {
+    "name" : "Dream Chaser",
+    "remainedTime" : 193,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 257
+  "timestamp" : 257,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -40,7 +62,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 1000
+  "timestamp" : 1000,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "createPlaylist",
   "user" : "alice22",
@@ -59,7 +88,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 1008
+  "timestamp" : 1008,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -78,7 +108,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 1012
+  "timestamp" : 1012,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -97,7 +128,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 1016
+  "timestamp" : 1016,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -116,7 +148,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 1020
+  "timestamp" : 1020,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -135,7 +168,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 1024
+  "timestamp" : 1024,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -148,15 +182,23 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 1027,
-  "message" : "Successfully selected Dream Chaser."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 1028
+  "timestamp" : 1028,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 1035
+  "timestamp" : 1035,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -164,11 +206,25 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 1037
+  "timestamp" : 1037,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2099
+  "timestamp" : 2099,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -176,11 +232,25 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2101
+  "timestamp" : 2101,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2334
+  "timestamp" : 2334,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -188,9 +258,23 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 2336
+  "timestamp" : 2336,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 3600
+  "timestamp" : 3600,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 } ]

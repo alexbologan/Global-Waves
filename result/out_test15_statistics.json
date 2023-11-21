@@ -16,7 +16,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 200
+  "timestamp" : 200,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -43,7 +44,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 300
+  "timestamp" : 300,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -66,7 +68,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 400
+  "timestamp" : 400,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -85,7 +88,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 500
+  "timestamp" : 500,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -104,7 +108,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 800
+  "timestamp" : 800,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -131,7 +136,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1200
+  "timestamp" : 1200,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
   "user" : "david27",
@@ -158,7 +164,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2295
+  "timestamp" : 2295,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "showPreferredSongs",
   "user" : "emily30",
@@ -183,7 +190,7 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2490,
-  "message" : "Successfully selected Bohemian Rhapsody."
+  "message" : "Fu"
 }, {
   "command" : "follow",
   "user" : "emily30",

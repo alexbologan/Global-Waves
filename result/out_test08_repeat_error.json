@@ -16,11 +16,19 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 1120
+  "timestamp" : 1120,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 1190
+  "timestamp" : 1190,
+  "stats" : {
+    "name" : "The Unforgiven",
+    "remainedTime" : 316,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -36,7 +44,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 2100
+  "timestamp" : 2100,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -44,7 +59,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 2200
+  "timestamp" : 2200,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -56,11 +78,19 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 3000
+  "timestamp" : 3000,
+  "message" : "Please select a source before attempting to load."
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3100
+  "timestamp" : 3100,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
@@ -79,7 +109,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 3195
+  "timestamp" : 3195,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -87,7 +118,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3220
+  "timestamp" : 3220,
+  "stats" : {
+    "name" : "99 Problems",
+    "remainedTime" : 209,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -104,7 +142,7 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 3290,
-  "message" : "Successfully selected 99 Problems."
+  "message" : "Fu"
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -112,7 +150,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3310
+  "timestamp" : 3310,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -120,7 +165,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3400
+  "timestamp" : 3400,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
@@ -132,5 +184,12 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 3450
+  "timestamp" : 3450,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 } ]

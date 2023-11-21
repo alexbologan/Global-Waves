@@ -12,11 +12,12 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 110,
-  "message" : "Successfully selected TED Talks Daily."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 115
+  "timestamp" : 115,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "shuffle",
   "user" : "bob35",
@@ -35,7 +36,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 213
+  "timestamp" : 213,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -54,7 +56,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 263
+  "timestamp" : 263,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -73,7 +76,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 415
+  "timestamp" : 415,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "shuffle",
   "user" : "bob35",
@@ -92,7 +96,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 513
+  "timestamp" : 513,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -111,7 +116,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 563
+  "timestamp" : 563,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -119,7 +125,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3100
+  "timestamp" : 3100,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -132,23 +145,45 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 3130,
-  "message" : "Successfully selected Thinking Out Loud."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 3140
+  "timestamp" : 3140,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3150
+  "timestamp" : 3150,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3200
+  "timestamp" : 3200,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3250
+  "timestamp" : 3250,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "bob35",
@@ -156,15 +191,36 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3270
+  "timestamp" : 3270,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3320
+  "timestamp" : 3320,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3370
+  "timestamp" : 3370,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "bob35",
@@ -172,9 +228,23 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3690
+  "timestamp" : 3690,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 3740
+  "timestamp" : 3740,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 } ]

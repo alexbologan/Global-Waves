@@ -16,7 +16,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 200
+  "timestamp" : 200,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -39,7 +40,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 500
+  "timestamp" : 500,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -58,7 +60,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 600
+  "timestamp" : 600,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -81,7 +84,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 900
+  "timestamp" : 900,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -96,7 +100,7 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1190,
-  "message" : "Successfully selected The Michelle Obama Podcast."
+  "message" : "Fu"
 }, {
   "command" : "follow",
   "user" : "emily30",

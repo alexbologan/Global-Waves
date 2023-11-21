@@ -112,7 +112,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 310
+  "timestamp" : 310,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -131,7 +132,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 335
+  "timestamp" : 335,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -150,7 +152,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 360
+  "timestamp" : 360,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -169,7 +172,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 385
+  "timestamp" : 385,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -188,7 +192,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 410
+  "timestamp" : 410,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -207,7 +212,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 435
+  "timestamp" : 435,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -226,7 +232,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 460
+  "timestamp" : 460,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -245,7 +252,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 485
+  "timestamp" : 485,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -264,7 +272,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 510
+  "timestamp" : 510,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -283,7 +292,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 535
+  "timestamp" : 535,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -302,7 +312,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 560
+  "timestamp" : 560,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -321,7 +332,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 585
+  "timestamp" : 585,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -340,7 +352,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 610
+  "timestamp" : 610,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -359,7 +372,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 635
+  "timestamp" : 635,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -378,7 +392,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 660
+  "timestamp" : 660,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -397,7 +412,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 685
+  "timestamp" : 685,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -416,7 +432,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 710
+  "timestamp" : 710,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -435,7 +452,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 735
+  "timestamp" : 735,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -454,7 +472,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 760
+  "timestamp" : 760,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -473,7 +492,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 785
+  "timestamp" : 785,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
@@ -492,7 +512,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 810
+  "timestamp" : 810,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -511,7 +532,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 835
+  "timestamp" : 835,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -530,7 +552,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 860
+  "timestamp" : 860,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -549,7 +572,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 885
+  "timestamp" : 885,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -568,7 +592,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 910
+  "timestamp" : 910,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -587,7 +612,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 935
+  "timestamp" : 935,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -606,7 +632,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 960
+  "timestamp" : 960,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -625,7 +652,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 985
+  "timestamp" : 985,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -644,7 +672,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1010
+  "timestamp" : 1010,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -663,7 +692,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1035
+  "timestamp" : 1035,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -682,7 +712,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1060
+  "timestamp" : 1060,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -701,7 +732,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1085
+  "timestamp" : 1085,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -720,7 +752,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1110
+  "timestamp" : 1110,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -739,7 +772,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1135
+  "timestamp" : 1135,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -758,7 +792,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1160
+  "timestamp" : 1160,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -777,7 +812,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1185
+  "timestamp" : 1185,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -796,7 +832,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1210
+  "timestamp" : 1210,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -815,7 +852,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1235
+  "timestamp" : 1235,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -834,7 +872,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1260
+  "timestamp" : 1260,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -853,7 +892,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 1285
+  "timestamp" : 1285,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
@@ -872,7 +912,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1310
+  "timestamp" : 1310,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -891,7 +932,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1335
+  "timestamp" : 1335,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -910,7 +952,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1360
+  "timestamp" : 1360,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -929,7 +972,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1385
+  "timestamp" : 1385,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -948,7 +992,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1410
+  "timestamp" : 1410,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -967,7 +1012,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1435
+  "timestamp" : 1435,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -986,7 +1032,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1460
+  "timestamp" : 1460,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1005,7 +1052,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1485
+  "timestamp" : 1485,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1024,7 +1072,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1510
+  "timestamp" : 1510,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1043,7 +1092,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1535
+  "timestamp" : 1535,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1062,7 +1112,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1560
+  "timestamp" : 1560,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1081,7 +1132,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1585
+  "timestamp" : 1585,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1100,7 +1152,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1610
+  "timestamp" : 1610,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1119,7 +1172,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1635
+  "timestamp" : 1635,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1138,7 +1192,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1660
+  "timestamp" : 1660,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1157,7 +1212,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1685
+  "timestamp" : 1685,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1176,7 +1232,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1710
+  "timestamp" : 1710,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1195,7 +1252,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1735
+  "timestamp" : 1735,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1214,7 +1272,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1760
+  "timestamp" : 1760,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1233,7 +1292,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 1785
+  "timestamp" : 1785,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
@@ -1252,7 +1312,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1810
+  "timestamp" : 1810,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1271,7 +1332,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1835
+  "timestamp" : 1835,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1290,7 +1352,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1860
+  "timestamp" : 1860,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1309,7 +1372,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1885
+  "timestamp" : 1885,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1328,7 +1392,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1910
+  "timestamp" : 1910,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1347,7 +1412,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1935
+  "timestamp" : 1935,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1366,7 +1432,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1960
+  "timestamp" : 1960,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1385,7 +1452,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 1985
+  "timestamp" : 1985,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1404,7 +1472,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2010
+  "timestamp" : 2010,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1423,7 +1492,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2035
+  "timestamp" : 2035,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1442,7 +1512,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2060
+  "timestamp" : 2060,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1461,7 +1532,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2085
+  "timestamp" : 2085,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1480,7 +1552,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2110
+  "timestamp" : 2110,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1499,7 +1572,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2135
+  "timestamp" : 2135,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1518,7 +1592,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2160
+  "timestamp" : 2160,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1537,7 +1612,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2185
+  "timestamp" : 2185,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1556,7 +1632,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2210
+  "timestamp" : 2210,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1575,7 +1652,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2235
+  "timestamp" : 2235,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1594,7 +1672,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2260
+  "timestamp" : 2260,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1613,7 +1692,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 2285
+  "timestamp" : 2285,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
@@ -1632,7 +1712,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2310
+  "timestamp" : 2310,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1651,7 +1732,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2335
+  "timestamp" : 2335,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1670,7 +1752,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2360
+  "timestamp" : 2360,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1689,7 +1772,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2385
+  "timestamp" : 2385,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1708,7 +1792,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2410
+  "timestamp" : 2410,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1727,7 +1812,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2435
+  "timestamp" : 2435,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1746,7 +1832,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2460
+  "timestamp" : 2460,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1765,7 +1852,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2485
+  "timestamp" : 2485,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1784,7 +1872,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2510
+  "timestamp" : 2510,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1803,7 +1892,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2535
+  "timestamp" : 2535,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1822,7 +1912,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2560
+  "timestamp" : 2560,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1841,7 +1932,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2585
+  "timestamp" : 2585,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1860,7 +1952,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2610
+  "timestamp" : 2610,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1879,7 +1972,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2635
+  "timestamp" : 2635,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1898,7 +1992,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2660
+  "timestamp" : 2660,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1917,7 +2012,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2685
+  "timestamp" : 2685,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1936,7 +2032,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2710
+  "timestamp" : 2710,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1955,7 +2052,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2735
+  "timestamp" : 2735,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1974,7 +2072,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2760
+  "timestamp" : 2760,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -1993,7 +2092,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 2785
+  "timestamp" : 2785,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -2012,7 +2112,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 2810
+  "timestamp" : 2810,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2031,7 +2132,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 2835
+  "timestamp" : 2835,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2050,7 +2152,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 2860
+  "timestamp" : 2860,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2069,7 +2172,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 2885
+  "timestamp" : 2885,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2088,7 +2192,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 2910
+  "timestamp" : 2910,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2107,7 +2212,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 2935
+  "timestamp" : 2935,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2126,7 +2232,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 2960
+  "timestamp" : 2960,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2145,7 +2252,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 2985
+  "timestamp" : 2985,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2164,7 +2272,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3010
+  "timestamp" : 3010,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2183,7 +2292,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3035
+  "timestamp" : 3035,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2202,7 +2312,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3060
+  "timestamp" : 3060,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2221,7 +2332,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3085
+  "timestamp" : 3085,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2240,7 +2352,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3110
+  "timestamp" : 3110,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2259,7 +2372,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3135
+  "timestamp" : 3135,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2278,7 +2392,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3160
+  "timestamp" : 3160,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2297,7 +2412,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3185
+  "timestamp" : 3185,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2316,7 +2432,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3210
+  "timestamp" : 3210,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2335,7 +2452,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3235
+  "timestamp" : 3235,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2354,7 +2472,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3260
+  "timestamp" : 3260,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2373,7 +2492,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 3285
+  "timestamp" : 3285,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
@@ -2392,7 +2512,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3310
+  "timestamp" : 3310,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2411,7 +2532,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3335
+  "timestamp" : 3335,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2430,7 +2552,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3360
+  "timestamp" : 3360,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2449,7 +2572,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3385
+  "timestamp" : 3385,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2468,7 +2592,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3410
+  "timestamp" : 3410,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2487,7 +2612,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3435
+  "timestamp" : 3435,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2506,7 +2632,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3460
+  "timestamp" : 3460,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2525,7 +2652,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3485
+  "timestamp" : 3485,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2544,7 +2672,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3510
+  "timestamp" : 3510,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2563,7 +2692,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3535
+  "timestamp" : 3535,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2582,7 +2712,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3560
+  "timestamp" : 3560,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2601,7 +2732,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3585
+  "timestamp" : 3585,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2620,7 +2752,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3610
+  "timestamp" : 3610,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2639,7 +2772,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3635
+  "timestamp" : 3635,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2658,7 +2792,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3660
+  "timestamp" : 3660,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2677,7 +2812,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3685
+  "timestamp" : 3685,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2696,7 +2832,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3710
+  "timestamp" : 3710,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2715,7 +2852,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3735
+  "timestamp" : 3735,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2734,7 +2872,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3760
+  "timestamp" : 3760,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2753,7 +2892,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 3785
+  "timestamp" : 3785,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
@@ -2772,7 +2912,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 3810
+  "timestamp" : 3810,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2791,7 +2932,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 3835
+  "timestamp" : 3835,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2810,7 +2952,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 3860
+  "timestamp" : 3860,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2829,7 +2972,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 3885
+  "timestamp" : 3885,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2848,7 +2992,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 3910
+  "timestamp" : 3910,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2867,7 +3012,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 3935
+  "timestamp" : 3935,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2886,7 +3032,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 3960
+  "timestamp" : 3960,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2905,7 +3052,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 3985
+  "timestamp" : 3985,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2924,7 +3072,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4010
+  "timestamp" : 4010,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2943,7 +3092,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4035
+  "timestamp" : 4035,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2962,7 +3112,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4060
+  "timestamp" : 4060,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -2981,7 +3132,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4085
+  "timestamp" : 4085,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3000,7 +3152,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4110
+  "timestamp" : 4110,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3019,7 +3172,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4135
+  "timestamp" : 4135,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3038,7 +3192,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4160
+  "timestamp" : 4160,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3057,7 +3212,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4185
+  "timestamp" : 4185,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3076,7 +3232,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4210
+  "timestamp" : 4210,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3095,7 +3252,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4235
+  "timestamp" : 4235,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3114,7 +3272,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4260
+  "timestamp" : 4260,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3133,7 +3292,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 4285
+  "timestamp" : 4285,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
@@ -3152,7 +3312,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4310
+  "timestamp" : 4310,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3171,7 +3332,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4335
+  "timestamp" : 4335,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3190,7 +3352,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4360
+  "timestamp" : 4360,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3209,7 +3372,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4385
+  "timestamp" : 4385,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3228,7 +3392,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4410
+  "timestamp" : 4410,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3247,7 +3412,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4435
+  "timestamp" : 4435,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3266,7 +3432,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4460
+  "timestamp" : 4460,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3285,7 +3452,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4485
+  "timestamp" : 4485,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3304,7 +3472,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4510
+  "timestamp" : 4510,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3323,7 +3492,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4535
+  "timestamp" : 4535,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3342,7 +3512,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4560
+  "timestamp" : 4560,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3361,7 +3532,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4585
+  "timestamp" : 4585,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3380,7 +3552,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4610
+  "timestamp" : 4610,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3399,7 +3572,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4635
+  "timestamp" : 4635,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3418,7 +3592,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4660
+  "timestamp" : 4660,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3437,7 +3612,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4685
+  "timestamp" : 4685,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3456,7 +3632,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4710
+  "timestamp" : 4710,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3475,7 +3652,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4735
+  "timestamp" : 4735,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3494,7 +3672,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4760
+  "timestamp" : 4760,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3513,7 +3692,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 4785
+  "timestamp" : 4785,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
@@ -3532,7 +3712,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 4810
+  "timestamp" : 4810,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3551,7 +3732,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 4835
+  "timestamp" : 4835,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3570,7 +3752,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 4860
+  "timestamp" : 4860,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3589,7 +3772,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 4885
+  "timestamp" : 4885,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3608,7 +3792,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 4910
+  "timestamp" : 4910,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3627,7 +3812,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 4935
+  "timestamp" : 4935,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3646,7 +3832,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 4960
+  "timestamp" : 4960,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3665,7 +3852,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 4985
+  "timestamp" : 4985,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3684,7 +3872,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5010
+  "timestamp" : 5010,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3703,7 +3892,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5035
+  "timestamp" : 5035,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3722,7 +3912,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5060
+  "timestamp" : 5060,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3741,7 +3932,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5085
+  "timestamp" : 5085,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3760,7 +3952,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5110
+  "timestamp" : 5110,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3779,7 +3972,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5135
+  "timestamp" : 5135,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3798,7 +3992,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5160
+  "timestamp" : 5160,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3817,7 +4012,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5185
+  "timestamp" : 5185,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3836,7 +4032,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5210
+  "timestamp" : 5210,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3855,7 +4052,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5235
+  "timestamp" : 5235,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3874,7 +4072,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5260
+  "timestamp" : 5260,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3893,7 +4092,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5285
+  "timestamp" : 5285,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
@@ -3950,7 +4150,8 @@
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 5402
+  "timestamp" : 5402,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -3963,7 +4164,8 @@
 }, {
   "command" : "load",
   "user" : "bob35",
-  "timestamp" : 5412
+  "timestamp" : 5412,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -3976,7 +4178,8 @@
 }, {
   "command" : "load",
   "user" : "carol19",
-  "timestamp" : 5422
+  "timestamp" : 5422,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -3989,7 +4192,8 @@
 }, {
   "command" : "load",
   "user" : "david27",
-  "timestamp" : 5432
+  "timestamp" : 5432,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -4002,7 +4206,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 5442
+  "timestamp" : 5442,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -4015,7 +4220,8 @@
 }, {
   "command" : "load",
   "user" : "frank21",
-  "timestamp" : 5452
+  "timestamp" : 5452,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -4028,7 +4234,8 @@
 }, {
   "command" : "load",
   "user" : "grace25",
-  "timestamp" : 5462
+  "timestamp" : 5462,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -4041,7 +4248,8 @@
 }, {
   "command" : "load",
   "user" : "henry26",
-  "timestamp" : 5472
+  "timestamp" : 5472,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -4054,7 +4262,8 @@
 }, {
   "command" : "load",
   "user" : "irene33",
-  "timestamp" : 5482
+  "timestamp" : 5482,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -4067,7 +4276,8 @@
 }, {
   "command" : "load",
   "user" : "jack29",
-  "timestamp" : 5492
+  "timestamp" : 5492,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -4075,7 +4285,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5500
+  "timestamp" : 5500,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "bob35",
@@ -4083,23 +4300,52 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5510
+  "timestamp" : 5510,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "carol19",
-  "timestamp" : 5520
+  "timestamp" : 5520,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5520
+  "timestamp" : 5520,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5530
+  "timestamp" : 5530,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5530
+  "timestamp" : 5530,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "emily30",
@@ -4111,15 +4357,36 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5540
+  "timestamp" : 5540,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5550
+  "timestamp" : 5550,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5550
+  "timestamp" : 5550,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "grace25",
@@ -4127,7 +4394,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5560
+  "timestamp" : 5560,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "henry26",
@@ -4135,23 +4409,58 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5570
+  "timestamp" : 5570,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5580
+  "timestamp" : 5580,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5580
+  "timestamp" : 5580,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5590
+  "timestamp" : 5590,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5590
+  "timestamp" : 5590,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "alice22",
@@ -4159,7 +4468,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5600
+  "timestamp" : 5600,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "bob35",
@@ -4171,7 +4487,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5610
+  "timestamp" : 5610,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -4179,7 +4502,14 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5620
+  "timestamp" : 5620,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "david27",
@@ -4191,7 +4521,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5630
+  "timestamp" : 5630,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "emily30",
@@ -4199,7 +4536,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5640
+  "timestamp" : 5640,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "frank21",
@@ -4207,7 +4551,14 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5650
+  "timestamp" : 5650,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "grace25",
@@ -4215,7 +4566,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5660
+  "timestamp" : 5660,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "henry26",
@@ -4223,7 +4581,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5670
+  "timestamp" : 5670,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "irene33",
@@ -4231,7 +4596,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5680
+  "timestamp" : 5680,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "jack29",
@@ -4239,27 +4611,57 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5690
+  "timestamp" : 5690,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5690
+  "timestamp" : 5690,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "alice22",
-  "timestamp" : 5700
+  "timestamp" : 5700,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5700
+  "timestamp" : 5700,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "bob35",
-  "timestamp" : 5710
+  "timestamp" : 5710,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5710
+  "timestamp" : 5710,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "carol19",
@@ -4271,7 +4673,14 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5720
+  "timestamp" : 5720,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "david27",
@@ -4283,7 +4692,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5730
+  "timestamp" : 5730,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "emily30",
@@ -4295,7 +4711,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5740
+  "timestamp" : 5740,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "frank21",
@@ -4303,7 +4726,14 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5750
+  "timestamp" : 5750,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "grace25",
@@ -4311,11 +4741,25 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5760
+  "timestamp" : 5760,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5760
+  "timestamp" : 5760,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "henry26",
@@ -4323,15 +4767,30 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5770
+  "timestamp" : 5770,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "irene33",
-  "timestamp" : 5780
+  "timestamp" : 5780,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5780
+  "timestamp" : 5780,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "jack29",
@@ -4339,7 +4798,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5790
+  "timestamp" : 5790,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "alice22",
@@ -4347,7 +4813,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5800
+  "timestamp" : 5800,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -4355,7 +4828,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5810
+  "timestamp" : 5810,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "carol19",
@@ -4363,15 +4843,36 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5820
+  "timestamp" : 5820,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5830
+  "timestamp" : 5830,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5830
+  "timestamp" : 5830,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "emily30",
@@ -4383,7 +4884,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5840
+  "timestamp" : 5840,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -4391,7 +4899,14 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5850
+  "timestamp" : 5850,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "grace25",
@@ -4399,7 +4914,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5860
+  "timestamp" : 5860,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "henry26",
@@ -4407,7 +4929,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5870
+  "timestamp" : 5870,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "irene33",
@@ -4419,7 +4948,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5880
+  "timestamp" : 5880,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "jack29",
@@ -4431,7 +4967,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5890
+  "timestamp" : 5890,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "alice22",
@@ -4439,7 +4982,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 5900
+  "timestamp" : 5900,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "bob35",
@@ -4447,7 +4997,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 5910
+  "timestamp" : 5910,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "carol19",
@@ -4455,11 +5012,25 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5920
+  "timestamp" : 5920,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 5920
+  "timestamp" : 5920,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "david27",
@@ -4471,7 +5042,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 5930
+  "timestamp" : 5930,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "emily30",
@@ -4483,15 +5061,36 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 5940
+  "timestamp" : 5940,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5950
+  "timestamp" : 5950,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 5950
+  "timestamp" : 5950,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "grace25",
@@ -4503,7 +5102,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 5960
+  "timestamp" : 5960,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "henry26",
@@ -4511,7 +5117,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 5970
+  "timestamp" : 5970,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "irene33",
@@ -4519,7 +5132,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 5980
+  "timestamp" : 5980,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "jack29",
@@ -4527,7 +5147,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 5990
+  "timestamp" : 5990,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "alice22",
@@ -4535,7 +5162,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6000
+  "timestamp" : 6000,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "bob35",
@@ -4547,7 +5181,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6010
+  "timestamp" : 6010,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "carol19",
@@ -4555,7 +5196,14 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6020
+  "timestamp" : 6020,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "david27",
@@ -4563,7 +5211,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6030
+  "timestamp" : 6030,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "emily30",
@@ -4571,15 +5226,36 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6040
+  "timestamp" : 6040,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6050
+  "timestamp" : 6050,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6050
+  "timestamp" : 6050,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "grace25",
@@ -4587,7 +5263,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6060
+  "timestamp" : 6060,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "henry26",
@@ -4595,35 +5278,73 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6070
+  "timestamp" : 6070,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6070
+  "timestamp" : 6070,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "irene33",
-  "timestamp" : 6080
+  "timestamp" : 6080,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6080
+  "timestamp" : 6080,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "jack29",
-  "timestamp" : 6090
+  "timestamp" : 6090,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6090
+  "timestamp" : 6090,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "alice22",
-  "timestamp" : 6100
+  "timestamp" : 6100,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6100
+  "timestamp" : 6100,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "bob35",
@@ -4631,7 +5352,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6110
+  "timestamp" : 6110,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "carol19",
@@ -4643,7 +5371,14 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6120
+  "timestamp" : 6120,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "david27",
@@ -4651,7 +5386,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6130
+  "timestamp" : 6130,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "emily30",
@@ -4659,7 +5401,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6140
+  "timestamp" : 6140,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -4667,7 +5416,14 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6150
+  "timestamp" : 6150,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "grace25",
@@ -4675,7 +5431,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6160
+  "timestamp" : 6160,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "henry26",
@@ -4683,7 +5446,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6170
+  "timestamp" : 6170,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "irene33",
@@ -4691,15 +5461,30 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6180
+  "timestamp" : 6180,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "jack29",
-  "timestamp" : 6190
+  "timestamp" : 6190,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6190
+  "timestamp" : 6190,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "alice22",
@@ -4707,7 +5492,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6200
+  "timestamp" : 6200,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -4715,7 +5507,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6210
+  "timestamp" : 6210,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "carol19",
@@ -4723,7 +5522,14 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6220
+  "timestamp" : 6220,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "david27",
@@ -4731,7 +5537,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6230
+  "timestamp" : 6230,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "emily30",
@@ -4747,7 +5560,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6240
+  "timestamp" : 6240,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -4755,7 +5575,14 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6250
+  "timestamp" : 6250,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "grace25",
@@ -4763,7 +5590,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6260
+  "timestamp" : 6260,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "henry26",
@@ -4771,7 +5605,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6270
+  "timestamp" : 6270,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "irene33",
@@ -4787,7 +5628,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6280
+  "timestamp" : 6280,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "jack29",
@@ -4795,7 +5643,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6290
+  "timestamp" : 6290,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "alice22",
@@ -4807,7 +5662,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6300
+  "timestamp" : 6300,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "bob35",
@@ -4815,7 +5677,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6310
+  "timestamp" : 6310,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "carol19",
@@ -4823,15 +5692,36 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6320
+  "timestamp" : 6320,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6330
+  "timestamp" : 6330,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6330
+  "timestamp" : 6330,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "emily30",
@@ -4839,7 +5729,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6340
+  "timestamp" : 6340,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "frank21",
@@ -4847,15 +5744,30 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6350
+  "timestamp" : 6350,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "grace25",
-  "timestamp" : 6360
+  "timestamp" : 6360,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6360
+  "timestamp" : 6360,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "henry26",
@@ -4863,11 +5775,25 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6370
+  "timestamp" : 6370,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6370
+  "timestamp" : 6370,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "irene33",
@@ -4875,7 +5801,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6380
+  "timestamp" : 6380,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "jack29",
@@ -4887,7 +5820,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6390
+  "timestamp" : 6390,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "alice22",
@@ -4895,7 +5835,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6400
+  "timestamp" : 6400,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "bob35",
@@ -4903,23 +5850,46 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6410
+  "timestamp" : 6410,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "carol19",
-  "timestamp" : 6420
+  "timestamp" : 6420,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6420
+  "timestamp" : 6420,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "david27",
-  "timestamp" : 6430
+  "timestamp" : 6430,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6430
+  "timestamp" : 6430,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "emily30",
@@ -4927,7 +5897,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6440
+  "timestamp" : 6440,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "frank21",
@@ -4935,7 +5912,14 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6450
+  "timestamp" : 6450,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "grace25",
@@ -4947,7 +5931,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6460
+  "timestamp" : 6460,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "henry26",
@@ -4955,7 +5946,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6470
+  "timestamp" : 6470,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "irene33",
@@ -4963,7 +5961,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6480
+  "timestamp" : 6480,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "jack29",
@@ -4971,7 +5976,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6490
+  "timestamp" : 6490,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "alice22",
@@ -4979,7 +5991,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6500
+  "timestamp" : 6500,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -4987,7 +6006,14 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6510
+  "timestamp" : 6510,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "carol19",
@@ -4999,7 +6025,14 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6520
+  "timestamp" : 6520,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "david27",
@@ -5007,7 +6040,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6530
+  "timestamp" : 6530,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "emily30",
@@ -5015,7 +6055,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6540
+  "timestamp" : 6540,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "frank21",
@@ -5023,15 +6070,36 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6550
+  "timestamp" : 6550,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6560
+  "timestamp" : 6560,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6560
+  "timestamp" : 6560,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "henry26",
@@ -5039,7 +6107,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6570
+  "timestamp" : 6570,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "irene33",
@@ -5047,7 +6122,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6580
+  "timestamp" : 6580,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "jack29",
@@ -5055,7 +6137,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6590
+  "timestamp" : 6590,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "alice22",
@@ -5063,7 +6152,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6600
+  "timestamp" : 6600,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "bob35",
@@ -5071,15 +6167,36 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6610
+  "timestamp" : 6610,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6620
+  "timestamp" : 6620,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6620
+  "timestamp" : 6620,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "david27",
@@ -5087,7 +6204,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6630
+  "timestamp" : 6630,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "emily30",
@@ -5095,7 +6219,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6640
+  "timestamp" : 6640,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "frank21",
@@ -5103,15 +6234,30 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6650
+  "timestamp" : 6650,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "grace25",
-  "timestamp" : 6660
+  "timestamp" : 6660,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6660
+  "timestamp" : 6660,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "henry26",
@@ -5119,7 +6265,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6670
+  "timestamp" : 6670,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "irene33",
@@ -5127,15 +6280,30 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6680
+  "timestamp" : 6680,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "jack29",
-  "timestamp" : 6690
+  "timestamp" : 6690,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6690
+  "timestamp" : 6690,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "alice22",
@@ -5143,7 +6311,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6700
+  "timestamp" : 6700,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "bob35",
@@ -5151,11 +6326,19 @@
 }, {
   "command" : "playPause",
   "user" : "bob35",
-  "timestamp" : 6710
+  "timestamp" : 6710,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6710
+  "timestamp" : 6710,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "carol19",
@@ -5167,7 +6350,14 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6720
+  "timestamp" : 6720,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "david27",
@@ -5175,7 +6365,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6730
+  "timestamp" : 6730,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "emily30",
@@ -5183,7 +6380,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6740
+  "timestamp" : 6740,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "frank21",
@@ -5191,7 +6395,14 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6750
+  "timestamp" : 6750,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "grace25",
@@ -5199,7 +6410,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6760
+  "timestamp" : 6760,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "henry26",
@@ -5211,7 +6429,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6770
+  "timestamp" : 6770,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "irene33",
@@ -5219,7 +6444,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6780
+  "timestamp" : 6780,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "jack29",
@@ -5231,7 +6463,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6790
+  "timestamp" : 6790,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "alice22",
@@ -5247,15 +6486,36 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6800
+  "timestamp" : 6800,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6810
+  "timestamp" : 6810,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6810
+  "timestamp" : 6810,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "carol19",
@@ -5263,7 +6523,14 @@
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6820
+  "timestamp" : 6820,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "prev",
   "user" : "david27",
@@ -5275,7 +6542,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6830
+  "timestamp" : 6830,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "emily30",
@@ -5283,7 +6557,14 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6840
+  "timestamp" : 6840,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "frank21",
@@ -5291,7 +6572,14 @@
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6850
+  "timestamp" : 6850,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "grace25",
@@ -5299,11 +6587,25 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6860
+  "timestamp" : 6860,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6860
+  "timestamp" : 6860,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "henry26",
@@ -5311,7 +6613,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6870
+  "timestamp" : 6870,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "irene33",
@@ -5323,15 +6632,30 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6880
+  "timestamp" : 6880,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "playPause",
   "user" : "jack29",
-  "timestamp" : 6890
+  "timestamp" : 6890,
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6890
+  "timestamp" : 6890,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "next",
   "user" : "alice22",
@@ -5339,7 +6663,14 @@
 }, {
   "command" : "status",
   "user" : "alice22",
-  "timestamp" : 6900
+  "timestamp" : 6900,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "repeat",
   "user" : "bob35",
@@ -5347,15 +6678,36 @@
 }, {
   "command" : "status",
   "user" : "bob35",
-  "timestamp" : 6910
+  "timestamp" : 6910,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6920
+  "timestamp" : 6920,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "carol19",
-  "timestamp" : 6920
+  "timestamp" : 6920,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "switchVisibility",
   "user" : "david27",
@@ -5367,7 +6719,14 @@
 }, {
   "command" : "status",
   "user" : "david27",
-  "timestamp" : 6930
+  "timestamp" : 6930,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "emily30",
@@ -5375,15 +6734,36 @@
 }, {
   "command" : "status",
   "user" : "emily30",
-  "timestamp" : 6940
+  "timestamp" : 6940,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6950
+  "timestamp" : 6950,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "status",
   "user" : "frank21",
-  "timestamp" : 6950
+  "timestamp" : 6950,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "grace25",
@@ -5391,7 +6771,14 @@
 }, {
   "command" : "status",
   "user" : "grace25",
-  "timestamp" : 6960
+  "timestamp" : 6960,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "like",
   "user" : "henry26",
@@ -5399,7 +6786,14 @@
 }, {
   "command" : "status",
   "user" : "henry26",
-  "timestamp" : 6970
+  "timestamp" : 6970,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "irene33",
@@ -5407,7 +6801,14 @@
 }, {
   "command" : "status",
   "user" : "irene33",
-  "timestamp" : 6980
+  "timestamp" : 6980,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "shuffle",
   "user" : "jack29",
@@ -5415,7 +6816,14 @@
 }, {
   "command" : "status",
   "user" : "jack29",
-  "timestamp" : 6990
+  "timestamp" : 6990,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 }, {
   "command" : "search",
   "user" : "alice22",

@@ -12,7 +12,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 15
+  "timestamp" : 15,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -27,11 +28,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 30,
-  "message" : "Successfully selected The Joe Rogan Experience."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 31
+  "timestamp" : 31,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
@@ -68,7 +70,8 @@
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 71
+  "timestamp" : 71,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
@@ -85,11 +88,12 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 85,
-  "message" : "Successfully selected The Man."
+  "message" : "Fu"
 }, {
   "command" : "load",
   "user" : "emily30",
-  "timestamp" : 86
+  "timestamp" : 86,
+  "message" : "Playback loaded successfully."
 }, {
   "command" : "like",
   "user" : "emily30",

@@ -1,5 +1,6 @@
 Starting audit...
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\etapa1\.\src\searchbarcommands\SearchBarCommands.java:13:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\etapa1\.\src\searchbarcommands\SelectCommand.java:10:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\etapa1\.\src\searchbarcommands\LoadCommand.java:10:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\etapa1\.\src\searchbarcommands\PlayPauseCommand.java:10:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\etapa1\.\src\searchbarcommands\StatusCommand.java:11:5: Missing a Javadoc comment. [MissingJavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 3 errors.

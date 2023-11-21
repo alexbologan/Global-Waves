@@ -21,11 +21,11 @@ public final class SearchSong extends SearchCommand {
      * Performs a song search based on the specified command input and filters.
      *
      * @param commandInput   The input containing search filters.
-     * @param searchBarNode  The JSON object node where search results will be stored.
+     * @param commandPromptNode  The JSON object node where search results will be stored.
      * @param user           The user performing the search.
      */
-    public void performSearchSong(final CommandInput commandInput, final ObjectNode searchBarNode,
-                                  final User user) {
+    public void performSearchSong(final CommandInput commandInput,
+                                  final ObjectNode commandPromptNode, final User user) {
         ArrayList<Song> matchingSongs = new ArrayList<>();
         ArrayList<Song> newMatchingSongs = new ArrayList<>();
         int filterNum = 0;
@@ -158,22 +158,21 @@ public final class SearchSong extends SearchCommand {
         }
         ArrayList<String> stringMatchingSongs = new ArrayList<>();
         if (matchingSongs.size() > maxSize) {
-            searchBarNode.put("message",
-                    "Search returned " + maxSize + " results");
-            for (int i = 0; i < maxSize; i++) {
+            commandPromptNode.put("message", "Search returned 5 results");
+            for (int i = 0; i < maxSize; ++i) {
                 stringMatchingSongs.add(matchingSongs.get(i).getName());
             }
         } else {
-            searchBarNode.put("message",
-                    "Search returned " + matchingSongs.size() + " results");
+            commandPromptNode.put("message", "Search returned "
+                    + matchingSongs.size() + " results");
             for (Song matchingSong : matchingSongs) {
                 stringMatchingSongs.add(matchingSong.getName());
             }
         }
         ArrayNode matchingSongsNode =
                 getObjectMapper().valueToTree(stringMatchingSongs);
-        searchBarNode.set("results", matchingSongsNode);
-        user.getUser().setMatchingSongTitles(stringMatchingSongs);
+        commandPromptNode.set("results", matchingSongsNode);
+        user.getUser().setMatchingSong(matchingSongs);
     }
 
     private static boolean verifyValues(final ArrayList<String> list1,
