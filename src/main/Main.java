@@ -1,16 +1,16 @@
 package main;
 
-import searchBarCommands.SearchCommand;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import fileio.input.LibraryInput;
+import searchbarcommands.SearchBarCommands;
 import checker.Checker;
 import checker.CheckerConstants;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
-import fileio.input.LibraryInput;
-import fileio.input.SongInput;
-import fileio.input.UserInput;
+import input.files.CommandInput;
+import user.User;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,6 +18,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -60,7 +61,7 @@ public final class Main {
             File out = new File(filepath);
             boolean isCreated = out.createNewFile();
             if (isCreated) {
-                action(CheckerConstants.TESTS_PATH + file.getName(), filepath);
+                action(file.getName(), filepath);
             }
         }
 
@@ -78,22 +79,22 @@ public final class Main {
         LibraryInput library = objectMapper.readValue(new File(LIBRARY_PATH), LibraryInput.class);
         ArrayNode outputs = objectMapper.createArrayNode();
 
-        for (File file : Objects.requireNonNull(new File("input/").listFiles())) {
-            if (file.isFile() && file.getName().endsWith(".json")) {
-                ArrayList<SearchBar> searchbars = objectMapper.readValue(file, new TypeReference<>() {
+        List<CommandInput> searchbars = objectMapper.readValue(new File("input/" + filePathInput),
+                new TypeReference<>() {
                 });
-                for (SearchBar searchBar : searchbars) {
-                    SearchCommand searchCommand = new SearchCommand();
-                    if (Objects.equals(searchBar.getType(), "song")) {
-                        searchCommand.performSearchSong(searchBar.getFilters(), library);
-                    }
-                    JsonNode searchBarNode = objectMapper.valueToTree(searchBar);
-                    outputs.add(searchBarNode);
-                }
-            }
-        }
+        ArrayList<User> users = new ArrayList<>();
+        User user = new User();
+        for (CommandInput commandInput : searchbars) {
+            user.searchUser(users, user, commandInput);
+            ObjectNode searchBarNode = objectMapper.createObjectNode();
 
+            SearchBarCommands searchBarCommands = new SearchBarCommands();
+            searchBarCommands.commands(commandInput, objectMapper, user, searchBarNode);
+
+            outputs.add(searchBarNode);
+        }
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePathOutput), outputs);
     }
 }
+

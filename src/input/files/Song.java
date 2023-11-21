@@ -1,33 +1,41 @@
-package main;
+package input.files;
 
 import java.util.ArrayList;
 
-public class Filters {
+public final class Song {
     private String name;
+    private Integer duration;
     private String album;
     private ArrayList<String> tags;
     private String lyrics;
     private String genre;
-    private String releaseYear;
+    private Integer releaseYear;
     private String artist;
-    private String owner;
 
-    public Filters() {
+    public Song() {
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public void setDuration(final Integer duration) {
+        this.duration = duration;
     }
 
     public String getAlbum() {
         return album;
     }
 
-    public void setAlbum(String album) {
+    public void setAlbum(final String album) {
         this.album = album;
     }
 
@@ -35,7 +43,7 @@ public class Filters {
         return tags;
     }
 
-    public void setTags(ArrayList<String> tags) {
+    public void setTags(final ArrayList<String> tags) {
         this.tags = tags;
     }
 
@@ -43,7 +51,7 @@ public class Filters {
         return lyrics;
     }
 
-    public void setLyrics(String lyrics) {
+    public void setLyrics(final String lyrics) {
         this.lyrics = lyrics;
     }
 
@@ -51,15 +59,15 @@ public class Filters {
         return genre;
     }
 
-    public void setGenre(String genre) {
+    public void setGenre(final String genre) {
         this.genre = genre;
     }
 
-    public String getReleaseYear() {
+    public int getReleaseYear() {
         return releaseYear;
     }
 
-    public void setReleaseYear(String releaseYear) {
+    public void setReleaseYear(final int releaseYear) {
         this.releaseYear = releaseYear;
     }
 
@@ -67,15 +75,7 @@ public class Filters {
         return artist;
     }
 
-    public void setArtist(String artist) {
+    public void setArtist(final String artist) {
         this.artist = artist;
-    }
-
-    public String getOwner() {
-        return owner;
-    }
-
-    public void setOwner(String owner) {
-        this.owner = owner;
     }
 }
