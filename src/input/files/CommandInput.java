@@ -1,5 +1,7 @@
 package input.files;
 
+import user.Playlist;
+
 import java.util.ArrayList;
 
 public final class CommandInput {
@@ -12,11 +14,13 @@ public final class CommandInput {
     private String playlistName;
     private int playlistId;
     private int seed;
-    private ArrayList<Song> matchingSong;
-    private ArrayList<Podcast> matchingPodcast;
+    private ArrayList<Song> matchingSongs;
+    private ArrayList<Podcast> matchingPodcasts;
+    private ArrayList<Playlist> matchingPlayLists;
     private Boolean shuffle = false;
     private Boolean paused = false;
     private String repeat = "No Repeat";
+    private int repeatCount;
     private int remainedTime = 0;
 
     public CommandInput() {
@@ -86,20 +90,20 @@ public final class CommandInput {
         this.itemNumber = itemNumber;
     }
 
-    public ArrayList<Song> getMatchingSong() {
-        return matchingSong;
+    public ArrayList<Song> getMatchingSongs() {
+        return matchingSongs;
     }
 
-    public void setMatchingSong(final ArrayList<Song> matchingSong) {
-        this.matchingSong = matchingSong;
+    public void setMatchingSongs(final ArrayList<Song> matchingSongs) {
+        this.matchingSongs = matchingSongs;
     }
 
-    public ArrayList<Podcast> getMatchingPodcast() {
-        return matchingPodcast;
+    public ArrayList<Podcast> getMatchingPodcasts() {
+        return matchingPodcasts;
     }
 
-    public void setMatchingPodcast(final ArrayList<Podcast> matchingPodcast) {
-        this.matchingPodcast = matchingPodcast;
+    public void setMatchingPodcasts(final ArrayList<Podcast> matchingPodcasts) {
+        this.matchingPodcasts = matchingPodcasts;
     }
 
     public Boolean getShuffle() {
@@ -132,6 +136,22 @@ public final class CommandInput {
 
     public void setRemainedTime(final int remainedTime) {
         this.remainedTime = remainedTime;
+    }
+
+    public ArrayList<Playlist> getMatchingPlayLists() {
+        return matchingPlayLists;
+    }
+
+    public void setMatchingPlayLists(final ArrayList<Playlist> matchingPlaylists) {
+        this.matchingPlayLists = matchingPlaylists;
+    }
+
+    public int getRepeatCount() {
+        return repeatCount;
+    }
+
+    public void setRepeatCount(final int repeatCount) {
+        this.repeatCount = repeatCount;
     }
 
     public int getSeed() {

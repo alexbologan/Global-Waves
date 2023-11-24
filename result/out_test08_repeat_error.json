@@ -7,7 +7,8 @@
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 1035
+  "timestamp" : 1035,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -32,49 +33,56 @@
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 1191
+  "timestamp" : 1191,
+  "message" : "Repeat mode changed to repeat once."
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 1192
+  "timestamp" : 1192,
+  "message" : "Repeat mode changed to repeat infinite."
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 2000
+  "timestamp" : 2000,
+  "message" : "Repeat mode changed to no repeat."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 2100,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "The Unforgiven",
+    "remainedTime" : 178,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 2135
+  "timestamp" : 2135,
+  "message" : "Repeat mode changed to repeat once."
 }, {
   "command" : "status",
   "user" : "emily30",
   "timestamp" : 2200,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
+    "name" : "The Unforgiven",
+    "remainedTime" : 78,
+    "repeat" : "Repeat Once",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 2245
+  "timestamp" : 2245,
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 2290
+  "timestamp" : 2290,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -94,7 +102,8 @@
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
-  "timestamp" : 3150
+  "timestamp" : 3150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -114,7 +123,8 @@
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 3200
+  "timestamp" : 3200,
+  "message" : "Repeat mode changed to repeat once."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -122,31 +132,36 @@
   "stats" : {
     "name" : "99 Problems",
     "remainedTime" : 209,
-    "repeat" : "No Repeat",
+    "repeat" : "Repeat Once",
     "shuffle" : false,
     "paused" : false
   }
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 3240
+  "timestamp" : 3240,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 3260
+  "timestamp" : 3260,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 3270
+  "timestamp" : 3270,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 3290,
-  "message" : "Fu"
+  "message" : "Successfully selected My favourite songs."
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 3295
+  "timestamp" : 3295,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -161,7 +176,8 @@
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 3335
+  "timestamp" : 3335,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -176,11 +192,13 @@
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
-  "timestamp" : 3405
+  "timestamp" : 3405,
+  "message" : "A playlist with the same name already exists."
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 3435
+  "timestamp" : 3435,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "emily30",

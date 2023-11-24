@@ -1,7 +1,8 @@
 [ {
   "command" : "createPlaylist",
   "user" : "bob35",
-  "timestamp" : 150
+  "timestamp" : 150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -21,11 +22,13 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 240
+  "timestamp" : 240,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "createPlaylist",
   "user" : "bob35",
-  "timestamp" : 450
+  "timestamp" : 450,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -45,18 +48,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 540
+  "timestamp" : 540,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 570,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 5 results",
+  "results" : [ "Stairway to Heaven", "Under Pressure", "Dream On", "The Unforgiven", "Start Me Up" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 590,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Stairway to Heaven."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -65,22 +69,24 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 640
+  "timestamp" : 640,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "createPlaylist",
   "user" : "carol19",
-  "timestamp" : 750
+  "timestamp" : 750,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 870,
-  "message" : "Search returned 5 results",
-  "results" : [ "Shape of You", "Don't", "Money Trees", "Dream On", "The Unforgiven" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 890,
-  "message" : "Successfully selected Shape of You."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -89,7 +95,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 940
+  "timestamp" : 940,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -100,7 +107,7 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1190,
-  "message" : "Fu"
+  "message" : "Successfully selected The Michelle Obama Podcast."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -123,12 +130,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 1400
+  "timestamp" : 1400,
+  "message" : "Search returned 1 results",
+  "results" : [ "My second playlist" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1410,
-  "message" : "Fu"
+  "message" : "Successfully selected My second playlist."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -156,12 +165,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 1680
+  "timestamp" : 1680,
+  "message" : "Search returned 1 results",
+  "results" : [ "My second playlist" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1710,
-  "message" : "Fu"
+  "message" : "Successfully selected My second playlist."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -173,12 +184,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 1800
+  "timestamp" : 1800,
+  "message" : "Search returned 1 results",
+  "results" : [ "My second playlist" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1810,
-  "message" : "Fu"
+  "message" : "Successfully selected My second playlist."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -186,12 +199,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 1865
+  "timestamp" : 1865,
+  "message" : "Search returned 1 results",
+  "results" : [ "My second playlist" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1870,
-  "message" : "Fu"
+  "message" : "Successfully selected My second playlist."
 }, {
   "command" : "follow",
   "user" : "emily30",

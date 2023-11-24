@@ -1,7 +1,8 @@
 [ {
   "command" : "createPlaylist",
   "user" : "emily30",
-  "timestamp" : 150
+  "timestamp" : 150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -21,7 +22,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 240
+  "timestamp" : 240,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -41,11 +43,14 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 340
+  "timestamp" : 340,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 1000
+  "timestamp" : 1000,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
 }, {
   "command" : "prev",
   "user" : "emily30",
@@ -69,7 +74,7 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 1190,
-  "message" : "Fu"
+  "message" : "Successfully selected My favourite songs."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -80,11 +85,11 @@
   "user" : "emily30",
   "timestamp" : 1220,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Going Bad",
+    "remainedTime" : 155,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "next",
@@ -95,11 +100,11 @@
   "user" : "emily30",
   "timestamp" : 1250,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Going Bad",
+    "remainedTime" : 125,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "prev",
@@ -110,11 +115,11 @@
   "user" : "emily30",
   "timestamp" : 1320,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Going Bad",
+    "remainedTime" : 55,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "forward",
@@ -138,7 +143,7 @@
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2190,
-  "message" : "Fu"
+  "message" : "Successfully selected The Daily."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -153,11 +158,11 @@
   "user" : "emily30",
   "timestamp" : 3220,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "The Capitol Riot, 1 Year Later",
+    "remainedTime" : 350,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "forward",
@@ -168,11 +173,11 @@
   "user" : "emily30",
   "timestamp" : 3920,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Inside the Vaccine Mandate Showdown",
+    "remainedTime" : 1061,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "next",
@@ -182,13 +187,13 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 4200,
-  "message" : "Search returned 3 results",
-  "results" : [ "DNA.", "Championships", "99 Problems" ]
+  "message" : "Search returned 0 results",
+  "results" : [ ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 4220,
-  "message" : "Successfully selected Championships."
+  "message" : "The selected ID is too high."
 }, {
   "command" : "forward",
   "user" : "emily30",

@@ -1,13 +1,14 @@
 [ {
   "command" : "createPlaylist",
   "user" : "emily30",
-  "timestamp" : 3210
+  "timestamp" : 3210,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 3215,
   "message" : "Search returned 5 results",
-  "results" : [ "Shape of You", "Dream On", "Black Dog", "Sad But True", "Maps" ]
+  "results" : [ "Shape of You", "Stairway to Heaven", "Dream On", "Black Dog", "Sad But True" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -21,7 +22,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 3270
+  "timestamp" : 3270,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -33,7 +35,7 @@
   "timestamp" : 3290,
   "stats" : {
     "name" : "Shape of You",
-    "remainedTime" : 228,
+    "remainedTime" : 208,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : false
@@ -52,7 +54,9 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 3375
+  "timestamp" : 3375,
+  "message" : "Search returned 1 results",
+  "results" : [ "LoFi music" ]
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -120,12 +124,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 4015
+  "timestamp" : 4015,
+  "message" : "Search returned 1 results",
+  "results" : [ "LoFi music" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 4060,
-  "message" : "Fu"
+  "message" : "Successfully selected LoFi music."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -136,11 +142,11 @@
   "user" : "emily30",
   "timestamp" : 4170,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Shape of You",
+    "remainedTime" : 168,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "load",
@@ -151,8 +157,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 4295,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 5 results",
+  "results" : [ "Money Trees", "Big Pimpin'", "Whatever You Need", "Sicko Mode", "Empire State of Mind" ]
 }, {
   "command" : "load",
   "user" : "emily30",

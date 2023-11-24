@@ -1,7 +1,8 @@
 [ {
   "command" : "createPlaylist",
   "user" : "bob35",
-  "timestamp" : 50
+  "timestamp" : 50,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -12,7 +13,7 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 110,
-  "message" : "Fu"
+  "message" : "Successfully selected TED Talks Daily."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -41,7 +42,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 215
+  "timestamp" : 215,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -61,7 +63,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 265
+  "timestamp" : 265,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -101,7 +104,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 515
+  "timestamp" : 515,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -121,7 +125,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 565
+  "timestamp" : 565,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -136,7 +141,9 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 3110
+  "timestamp" : 3110,
+  "message" : "Search returned 1 results",
+  "results" : [ "Colaj" ]
 }, {
   "command" : "shuffle",
   "user" : "bob35",
@@ -145,7 +152,7 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 3130,
-  "message" : "Fu"
+  "message" : "Successfully selected Colaj."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -156,33 +163,33 @@
   "user" : "bob35",
   "timestamp" : 3150,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Blank Space",
+    "remainedTime" : 221,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3200,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Blank Space",
+    "remainedTime" : 171,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3250,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Blank Space",
+    "remainedTime" : 121,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "shuffle",
@@ -193,33 +200,33 @@
   "user" : "bob35",
   "timestamp" : 3270,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Blank Space",
+    "remainedTime" : 101,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3320,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Blank Space",
+    "remainedTime" : 51,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3370,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Blank Space",
+    "remainedTime" : 1,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "shuffle",
@@ -230,21 +237,21 @@
   "user" : "bob35",
   "timestamp" : 3690,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Whole Lotta Love",
+    "remainedTime" : 15,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 3740,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Kings Dead",
+    "remainedTime" : 195,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 } ]

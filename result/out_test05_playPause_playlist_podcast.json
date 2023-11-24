@@ -8,7 +8,7 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 15,
-  "message" : "Fu"
+  "message" : "Successfully selected TED Radio Hour."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -19,11 +19,11 @@
   "user" : "alice22",
   "timestamp" : 59,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "The Power of Design",
+    "remainedTime" : 3065,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "search",
@@ -51,7 +51,7 @@
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 80,
-  "message" : "Fu"
+  "message" : "Successfully selected TED Radio Hour."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -62,24 +62,24 @@
   "user" : "alice22",
   "timestamp" : 86,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "The Power of Design",
+    "remainedTime" : 3063,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "playPause",
   "user" : "alice22",
   "timestamp" : 3200,
-  "message" : "Playback resumed successfully."
+  "message" : "Playback paused successfully."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 3201,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "The Science of Us",
+    "remainedTime" : 3081,
     "repeat" : "No Repeat",
     "shuffle" : false,
     "paused" : true
@@ -87,7 +87,8 @@
 }, {
   "command" : "createPlaylist",
   "user" : "alice22",
-  "timestamp" : 3210
+  "timestamp" : 3210,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -107,7 +108,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 3230
+  "timestamp" : 3230,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -127,16 +129,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 3250
+  "timestamp" : 3250,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 3255
+  "timestamp" : 3255,
+  "message" : "Search returned 1 results",
+  "results" : [ "2010 hits" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 3260,
-  "message" : "Fu"
+  "message" : "Successfully selected 2010 hits."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -147,22 +152,22 @@
   "user" : "alice22",
   "timestamp" : 3270,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Freedom",
+    "remainedTime" : 173,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 3448,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Happier",
+    "remainedTime" : 202,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",

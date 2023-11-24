@@ -5,31 +5,38 @@
 }, {
   "command" : "createPlaylist",
   "user" : "alice22",
-  "timestamp" : 100
+  "timestamp" : 100,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "bob35",
-  "timestamp" : 110
+  "timestamp" : 110,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "carol19",
-  "timestamp" : 120
+  "timestamp" : 120,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "david27",
-  "timestamp" : 130
+  "timestamp" : 130,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
-  "timestamp" : 140
+  "timestamp" : 140,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "frank21",
-  "timestamp" : 150
+  "timestamp" : 150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "grace25",
-  "timestamp" : 160
+  "timestamp" : 160,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "switchVisibility",
   "user" : "henry26",
@@ -37,39 +44,48 @@
 }, {
   "command" : "createPlaylist",
   "user" : "henry26",
-  "timestamp" : 170
+  "timestamp" : 170,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "irene33",
-  "timestamp" : 180
+  "timestamp" : 180,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "jack29",
-  "timestamp" : 190
+  "timestamp" : 190,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "alice22",
-  "timestamp" : 200
+  "timestamp" : 200,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "bob35",
-  "timestamp" : 210
+  "timestamp" : 210,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "carol19",
-  "timestamp" : 220
+  "timestamp" : 220,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "david27",
-  "timestamp" : 230
+  "timestamp" : 230,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
-  "timestamp" : 240
+  "timestamp" : 240,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "frank21",
-  "timestamp" : 250
+  "timestamp" : 250,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "switchVisibility",
   "user" : "grace25",
@@ -77,7 +93,8 @@
 }, {
   "command" : "createPlaylist",
   "user" : "grace25",
-  "timestamp" : 260
+  "timestamp" : 260,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "switchVisibility",
   "user" : "henry26",
@@ -85,7 +102,8 @@
 }, {
   "command" : "createPlaylist",
   "user" : "henry26",
-  "timestamp" : 270
+  "timestamp" : 270,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "switchVisibility",
   "user" : "irene33",
@@ -93,11 +111,13 @@
 }, {
   "command" : "createPlaylist",
   "user" : "irene33",
-  "timestamp" : 280
+  "timestamp" : 280,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "createPlaylist",
   "user" : "jack29",
-  "timestamp" : 290
+  "timestamp" : 290,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -117,7 +137,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 315
+  "timestamp" : 315,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -137,7 +158,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 340
+  "timestamp" : 340,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -157,7 +179,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 365
+  "timestamp" : 365,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -177,7 +200,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 390
+  "timestamp" : 390,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -197,7 +221,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 415
+  "timestamp" : 415,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -217,7 +242,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 440
+  "timestamp" : 440,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -237,7 +263,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 465
+  "timestamp" : 465,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -257,7 +284,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 490
+  "timestamp" : 490,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -277,7 +305,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 515
+  "timestamp" : 515,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -297,7 +326,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 540
+  "timestamp" : 540,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -317,18 +347,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 565
+  "timestamp" : 565,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
   "timestamp" : 575,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 580,
-  "message" : "Successfully selected Maps."
+  "message" : "Successfully selected Sad But True."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -337,7 +368,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 590
+  "timestamp" : 590,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -357,7 +389,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 615
+  "timestamp" : 615,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -377,7 +410,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 640
+  "timestamp" : 640,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -397,7 +431,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 665
+  "timestamp" : 665,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -417,7 +452,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 690
+  "timestamp" : 690,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -437,7 +473,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 715
+  "timestamp" : 715,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -457,7 +494,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 740
+  "timestamp" : 740,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -477,7 +515,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 765
+  "timestamp" : 765,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -497,7 +536,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 790
+  "timestamp" : 790,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -517,7 +557,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 815
+  "timestamp" : 815,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -537,7 +578,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 840
+  "timestamp" : 840,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -557,7 +599,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 865
+  "timestamp" : 865,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -577,7 +620,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 890
+  "timestamp" : 890,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -597,7 +641,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 915
+  "timestamp" : 915,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -617,7 +662,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 940
+  "timestamp" : 940,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -637,7 +683,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 965
+  "timestamp" : 965,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -657,7 +704,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 990
+  "timestamp" : 990,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -677,7 +725,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1015
+  "timestamp" : 1015,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -697,7 +746,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1040
+  "timestamp" : 1040,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -717,18 +767,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1065
+  "timestamp" : 1065,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 1075,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 1080,
-  "message" : "Successfully selected Bohemian Rhapsody."
+  "message" : "Successfully selected Gimme Shelter."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -737,7 +788,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1090
+  "timestamp" : 1090,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -757,7 +809,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1115
+  "timestamp" : 1115,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -777,7 +830,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1140
+  "timestamp" : 1140,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -797,7 +851,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1165
+  "timestamp" : 1165,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -817,18 +872,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1190
+  "timestamp" : 1190,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 1200,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 1205,
-  "message" : "Successfully selected Maps."
+  "message" : "Successfully selected Sad But True."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -837,7 +893,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1215
+  "timestamp" : 1215,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -857,18 +914,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1240
+  "timestamp" : 1240,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 1250,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 1255,
-  "message" : "Successfully selected Maps."
+  "message" : "Successfully selected Sad But True."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -877,13 +935,14 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1265
+  "timestamp" : 1265,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 1275,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "bob35",
@@ -897,7 +956,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 1290
+  "timestamp" : 1290,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -917,13 +977,14 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1315
+  "timestamp" : 1315,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1325,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "carol19",
@@ -937,18 +998,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1340
+  "timestamp" : 1340,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1350,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1355,
-  "message" : "Successfully selected Gimme Shelter."
+  "message" : "Successfully selected Maps."
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -957,7 +1019,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1365
+  "timestamp" : 1365,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -977,7 +1040,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1390
+  "timestamp" : 1390,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -997,7 +1061,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1415
+  "timestamp" : 1415,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1017,7 +1082,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1440
+  "timestamp" : 1440,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1037,7 +1103,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1465
+  "timestamp" : 1465,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1057,7 +1124,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1490
+  "timestamp" : 1490,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1077,7 +1145,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1515
+  "timestamp" : 1515,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1097,7 +1166,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1540
+  "timestamp" : 1540,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1117,18 +1187,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1565
+  "timestamp" : 1565,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1575,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1580,
-  "message" : "Successfully selected Gimme Shelter."
+  "message" : "Successfully selected Maps."
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -1137,7 +1208,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1590
+  "timestamp" : 1590,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1157,7 +1229,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1615
+  "timestamp" : 1615,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1177,7 +1250,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1640
+  "timestamp" : 1640,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1197,7 +1271,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1665
+  "timestamp" : 1665,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1217,18 +1292,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1690
+  "timestamp" : 1690,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1700,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1705,
-  "message" : "Successfully selected Sad But True."
+  "message" : "Successfully selected Start Me Up."
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -1237,7 +1313,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1715
+  "timestamp" : 1715,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1257,18 +1334,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1740
+  "timestamp" : 1740,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1750,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 1755,
-  "message" : "Successfully selected Sad But True."
+  "message" : "Successfully selected Start Me Up."
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -1277,7 +1355,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1765
+  "timestamp" : 1765,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -1297,18 +1376,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 1790
+  "timestamp" : 1790,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 1800,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1805,
-  "message" : "Successfully selected Sad But True."
+  "message" : "Successfully selected Start Me Up."
 }, {
   "command" : "load",
   "user" : "david27",
@@ -1317,7 +1397,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1815
+  "timestamp" : 1815,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1337,7 +1418,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1840
+  "timestamp" : 1840,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1357,7 +1439,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1865
+  "timestamp" : 1865,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1377,7 +1460,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1890
+  "timestamp" : 1890,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1397,7 +1481,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1915
+  "timestamp" : 1915,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1417,18 +1502,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1940
+  "timestamp" : 1940,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
   "timestamp" : 1950,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 1955,
-  "message" : "Successfully selected Bohemian Rhapsody."
+  "message" : "Successfully selected Gimme Shelter."
 }, {
   "command" : "load",
   "user" : "david27",
@@ -1437,7 +1523,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1965
+  "timestamp" : 1965,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1457,7 +1544,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1990
+  "timestamp" : 1990,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1477,7 +1565,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2015
+  "timestamp" : 2015,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1497,7 +1586,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2040
+  "timestamp" : 2040,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1517,7 +1607,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2065
+  "timestamp" : 2065,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1537,7 +1628,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2090
+  "timestamp" : 2090,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1557,7 +1649,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2115
+  "timestamp" : 2115,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1577,7 +1670,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2140
+  "timestamp" : 2140,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1597,7 +1691,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2165
+  "timestamp" : 2165,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1617,7 +1712,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2190
+  "timestamp" : 2190,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1637,7 +1733,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2215
+  "timestamp" : 2215,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1657,7 +1754,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2240
+  "timestamp" : 2240,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1677,7 +1775,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2265
+  "timestamp" : 2265,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -1697,7 +1796,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 2290
+  "timestamp" : 2290,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1717,7 +1817,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2315
+  "timestamp" : 2315,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1737,7 +1838,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2340
+  "timestamp" : 2340,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1757,7 +1859,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2365
+  "timestamp" : 2365,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1777,7 +1880,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2390
+  "timestamp" : 2390,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1797,7 +1901,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2415
+  "timestamp" : 2415,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1817,7 +1922,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2440
+  "timestamp" : 2440,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1837,7 +1943,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2465
+  "timestamp" : 2465,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1857,7 +1964,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2490
+  "timestamp" : 2490,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1877,7 +1985,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2515
+  "timestamp" : 2515,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1897,7 +2006,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2540
+  "timestamp" : 2540,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1917,7 +2027,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2565
+  "timestamp" : 2565,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1937,7 +2048,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2590
+  "timestamp" : 2590,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1957,7 +2069,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2615
+  "timestamp" : 2615,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -1977,13 +2090,14 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2640
+  "timestamp" : 2640,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 2650,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "emily30",
@@ -1997,7 +2111,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2665
+  "timestamp" : 2665,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2017,7 +2132,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2690
+  "timestamp" : 2690,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2037,7 +2153,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2715
+  "timestamp" : 2715,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2057,7 +2174,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2740
+  "timestamp" : 2740,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2077,7 +2195,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2765
+  "timestamp" : 2765,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -2097,18 +2216,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2790
+  "timestamp" : 2790,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
   "timestamp" : 2800,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 2805,
-  "message" : "Successfully selected Bohemian Rhapsody."
+  "message" : "Successfully selected Gimme Shelter."
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -2117,7 +2237,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 2815
+  "timestamp" : 2815,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2137,7 +2258,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 2840
+  "timestamp" : 2840,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2157,7 +2279,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 2865
+  "timestamp" : 2865,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2177,7 +2300,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 2890
+  "timestamp" : 2890,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2197,7 +2321,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 2915
+  "timestamp" : 2915,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2217,7 +2342,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 2940
+  "timestamp" : 2940,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2237,7 +2363,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 2965
+  "timestamp" : 2965,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2257,7 +2384,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 2990
+  "timestamp" : 2990,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2277,7 +2405,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3015
+  "timestamp" : 3015,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2297,7 +2426,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3040
+  "timestamp" : 3040,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2317,7 +2447,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3065
+  "timestamp" : 3065,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2337,7 +2468,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3090
+  "timestamp" : 3090,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2357,7 +2489,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3115
+  "timestamp" : 3115,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2377,7 +2510,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3140
+  "timestamp" : 3140,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2397,7 +2531,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3165
+  "timestamp" : 3165,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2417,7 +2552,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3190
+  "timestamp" : 3190,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2437,7 +2573,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3215
+  "timestamp" : 3215,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2457,7 +2594,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3240
+  "timestamp" : 3240,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2477,7 +2615,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3265
+  "timestamp" : 3265,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "frank21",
@@ -2497,7 +2636,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "frank21",
-  "timestamp" : 3290
+  "timestamp" : 3290,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2517,7 +2657,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3315
+  "timestamp" : 3315,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2537,18 +2678,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3340
+  "timestamp" : 3340,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 3350,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 3355,
-  "message" : "Successfully selected Maps."
+  "message" : "Successfully selected Sad But True."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -2557,18 +2699,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3365
+  "timestamp" : 3365,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
   "timestamp" : 3375,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 3380,
-  "message" : "Successfully selected Maps."
+  "message" : "Successfully selected Sad But True."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -2577,7 +2720,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3390
+  "timestamp" : 3390,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2597,7 +2741,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3415
+  "timestamp" : 3415,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2617,7 +2762,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3440
+  "timestamp" : 3440,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2637,7 +2783,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3465
+  "timestamp" : 3465,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2657,7 +2804,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3490
+  "timestamp" : 3490,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2677,7 +2825,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3515
+  "timestamp" : 3515,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2697,7 +2846,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3540
+  "timestamp" : 3540,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2717,7 +2867,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3565
+  "timestamp" : 3565,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2737,7 +2888,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3590
+  "timestamp" : 3590,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2757,7 +2909,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3615
+  "timestamp" : 3615,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2777,7 +2930,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3640
+  "timestamp" : 3640,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2797,7 +2951,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3665
+  "timestamp" : 3665,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2817,7 +2972,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3690
+  "timestamp" : 3690,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2837,7 +2993,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3715
+  "timestamp" : 3715,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2857,7 +3014,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3740
+  "timestamp" : 3740,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2877,7 +3035,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3765
+  "timestamp" : 3765,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "grace25",
@@ -2897,7 +3056,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "grace25",
-  "timestamp" : 3790
+  "timestamp" : 3790,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -2917,18 +3077,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 3815
+  "timestamp" : 3815,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 3825,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 3830,
-  "message" : "Successfully selected Sad But True."
+  "message" : "Successfully selected Start Me Up."
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -2937,7 +3098,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 3840
+  "timestamp" : 3840,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -2957,7 +3119,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 3865
+  "timestamp" : 3865,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -2977,7 +3140,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 3890
+  "timestamp" : 3890,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -2997,7 +3161,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 3915
+  "timestamp" : 3915,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3017,13 +3182,14 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 3940
+  "timestamp" : 3940,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 3950,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "henry26",
@@ -3037,7 +3203,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 3965
+  "timestamp" : 3965,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3057,7 +3224,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 3990
+  "timestamp" : 3990,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3077,7 +3245,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4015
+  "timestamp" : 4015,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3097,7 +3266,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4040
+  "timestamp" : 4040,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3117,7 +3287,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4065
+  "timestamp" : 4065,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3137,7 +3308,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4090
+  "timestamp" : 4090,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3157,7 +3329,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4115
+  "timestamp" : 4115,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3177,7 +3350,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4140
+  "timestamp" : 4140,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3197,7 +3371,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4165
+  "timestamp" : 4165,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3217,7 +3392,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4190
+  "timestamp" : 4190,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3237,7 +3413,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4215
+  "timestamp" : 4215,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3257,7 +3434,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4240
+  "timestamp" : 4240,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "henry26",
@@ -3277,18 +3455,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4265
+  "timestamp" : 4265,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "henry26",
   "timestamp" : 4275,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 4280,
-  "message" : "Successfully selected Gimme Shelter."
+  "message" : "Successfully selected Maps."
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -3297,7 +3476,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "henry26",
-  "timestamp" : 4290
+  "timestamp" : 4290,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3317,7 +3497,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4315
+  "timestamp" : 4315,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3337,7 +3518,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4340
+  "timestamp" : 4340,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3357,7 +3539,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4365
+  "timestamp" : 4365,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3377,7 +3560,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4390
+  "timestamp" : 4390,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3397,7 +3581,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4415
+  "timestamp" : 4415,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3417,7 +3602,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4440
+  "timestamp" : 4440,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3437,7 +3623,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4465
+  "timestamp" : 4465,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3457,7 +3644,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4490
+  "timestamp" : 4490,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3477,7 +3665,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4515
+  "timestamp" : 4515,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3497,18 +3686,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4540
+  "timestamp" : 4540,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 4550,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 4555,
-  "message" : "Successfully selected Maps."
+  "message" : "Successfully selected Sad But True."
 }, {
   "command" : "load",
   "user" : "irene33",
@@ -3517,13 +3707,14 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4565
+  "timestamp" : 4565,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
   "timestamp" : 4575,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "irene33",
@@ -3537,7 +3728,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4590
+  "timestamp" : 4590,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3557,7 +3749,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4615
+  "timestamp" : 4615,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3577,7 +3770,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4640
+  "timestamp" : 4640,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3597,7 +3791,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4665
+  "timestamp" : 4665,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3617,7 +3812,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4690
+  "timestamp" : 4690,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3637,7 +3833,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4715
+  "timestamp" : 4715,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3657,7 +3854,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4740
+  "timestamp" : 4740,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3677,7 +3875,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4765
+  "timestamp" : 4765,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "irene33",
@@ -3697,7 +3896,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "irene33",
-  "timestamp" : 4790
+  "timestamp" : 4790,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3717,7 +3917,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 4815
+  "timestamp" : 4815,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3737,7 +3938,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 4840
+  "timestamp" : 4840,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3757,7 +3959,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 4865
+  "timestamp" : 4865,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3777,7 +3980,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 4890
+  "timestamp" : 4890,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3797,7 +4001,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 4915
+  "timestamp" : 4915,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3817,7 +4022,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 4940
+  "timestamp" : 4940,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3837,18 +4043,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 4965
+  "timestamp" : 4965,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 4975,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 4980,
-  "message" : "Successfully selected Gimme Shelter."
+  "message" : "Successfully selected Maps."
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -3857,18 +4064,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 4990
+  "timestamp" : 4990,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 5000,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 5005,
-  "message" : "Successfully selected Sad But True."
+  "message" : "Successfully selected Start Me Up."
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -3877,7 +4085,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5015
+  "timestamp" : 5015,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3897,7 +4106,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5040
+  "timestamp" : 5040,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3917,7 +4127,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5065
+  "timestamp" : 5065,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3937,7 +4148,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5090
+  "timestamp" : 5090,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3957,7 +4169,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5115
+  "timestamp" : 5115,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3977,7 +4190,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5140
+  "timestamp" : 5140,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -3997,7 +4211,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5165
+  "timestamp" : 5165,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -4017,7 +4232,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5190
+  "timestamp" : 5190,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -4037,18 +4253,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5215
+  "timestamp" : 5215,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 5225,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 5230,
-  "message" : "Successfully selected Gimme Shelter."
+  "message" : "Successfully selected Maps."
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -4057,18 +4274,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5240
+  "timestamp" : 5240,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
   "timestamp" : 5250,
   "message" : "Search returned 5 results",
-  "results" : [ "Don't", "Sad But True", "Maps", "Gimme Shelter", "Bohemian Rhapsody" ]
+  "results" : [ "Don't", "Start Me Up", "Sad But True", "Maps", "Gimme Shelter" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 5255,
-  "message" : "Successfully selected Maps."
+  "message" : "Successfully selected Sad But True."
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -4077,7 +4295,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5265
+  "timestamp" : 5265,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "jack29",
@@ -4097,7 +4316,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "jack29",
-  "timestamp" : 5290
+  "timestamp" : 5290,
+  "message" : "The loaded source is not a song."
 }, {
   "command" : "showPlaylists",
   "user" : "alice22",
@@ -4141,12 +4361,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 5400
+  "timestamp" : 5400,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 5401,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -4155,12 +4377,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 5410
+  "timestamp" : 5410,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 5411,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -4169,12 +4393,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 5420
+  "timestamp" : 5420,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 5421,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -4183,12 +4409,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 5430
+  "timestamp" : 5430,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 5431,
-  "message" : "Fu"
+  "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
   "command" : "load",
   "user" : "david27",
@@ -4197,12 +4425,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 5440
+  "timestamp" : 5440,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 5441,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
   "command" : "load",
   "user" : "emily30",
@@ -4211,12 +4441,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 5450
+  "timestamp" : 5450,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 5451,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "load",
   "user" : "frank21",
@@ -4225,12 +4457,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 5460
+  "timestamp" : 5460,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 5461,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "load",
   "user" : "grace25",
@@ -4239,12 +4473,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 5470
+  "timestamp" : 5470,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 5471,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Tunes Odyssey #2."
 }, {
   "command" : "load",
   "user" : "henry26",
@@ -4253,12 +4489,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 5480
+  "timestamp" : 5480,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 5481,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
   "command" : "load",
   "user" : "irene33",
@@ -4267,12 +4505,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 5490
+  "timestamp" : 5490,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 5491,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
   "command" : "load",
   "user" : "jack29",
@@ -4281,7 +4521,8 @@
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 5500
+  "timestamp" : 5500,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -4353,7 +4594,8 @@
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 5540
+  "timestamp" : 5540,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -4390,7 +4632,8 @@
 }, {
   "command" : "like",
   "user" : "grace25",
-  "timestamp" : 5560
+  "timestamp" : 5560,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -4498,7 +4741,8 @@
 }, {
   "command" : "like",
   "user" : "carol19",
-  "timestamp" : 5620
+  "timestamp" : 5620,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -4547,7 +4791,8 @@
 }, {
   "command" : "repeat",
   "user" : "frank21",
-  "timestamp" : 5650
+  "timestamp" : 5650,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -4577,7 +4822,8 @@
 }, {
   "command" : "repeat",
   "user" : "henry26",
-  "timestamp" : 5670
+  "timestamp" : 5670,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -4592,7 +4838,8 @@
 }, {
   "command" : "repeat",
   "user" : "irene33",
-  "timestamp" : 5680
+  "timestamp" : 5680,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -4688,7 +4935,8 @@
 }, {
   "command" : "like",
   "user" : "david27",
-  "timestamp" : 5730
+  "timestamp" : 5730,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -4722,7 +4970,8 @@
 }, {
   "command" : "repeat",
   "user" : "frank21",
-  "timestamp" : 5750
+  "timestamp" : 5750,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -4794,7 +5043,8 @@
 }, {
   "command" : "repeat",
   "user" : "jack29",
-  "timestamp" : 5790
+  "timestamp" : 5790,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -4824,7 +5074,8 @@
 }, {
   "command" : "like",
   "user" : "bob35",
-  "timestamp" : 5810
+  "timestamp" : 5810,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -4880,7 +5131,8 @@
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 5840
+  "timestamp" : 5840,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -4895,7 +5147,8 @@
 }, {
   "command" : "like",
   "user" : "frank21",
-  "timestamp" : 5850
+  "timestamp" : 5850,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -4944,7 +5197,8 @@
 }, {
   "command" : "like",
   "user" : "irene33",
-  "timestamp" : 5880
+  "timestamp" : 5880,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -5098,7 +5352,8 @@
 }, {
   "command" : "like",
   "user" : "grace25",
-  "timestamp" : 5960
+  "timestamp" : 5960,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5177,7 +5432,8 @@
 }, {
   "command" : "repeat",
   "user" : "bob35",
-  "timestamp" : 6010
+  "timestamp" : 6010,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -5192,7 +5448,8 @@
 }, {
   "command" : "like",
   "user" : "carol19",
-  "timestamp" : 6020
+  "timestamp" : 6020,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -5222,7 +5479,8 @@
 }, {
   "command" : "like",
   "user" : "emily30",
-  "timestamp" : 6040
+  "timestamp" : 6040,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -5382,7 +5640,8 @@
 }, {
   "command" : "repeat",
   "user" : "david27",
-  "timestamp" : 6130
+  "timestamp" : 6130,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -5412,7 +5671,8 @@
 }, {
   "command" : "like",
   "user" : "frank21",
-  "timestamp" : 6150
+  "timestamp" : 6150,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -5427,7 +5687,8 @@
 }, {
   "command" : "like",
   "user" : "grace25",
-  "timestamp" : 6160
+  "timestamp" : 6160,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5503,7 +5764,8 @@
 }, {
   "command" : "like",
   "user" : "bob35",
-  "timestamp" : 6210
+  "timestamp" : 6210,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -5518,7 +5780,8 @@
 }, {
   "command" : "repeat",
   "user" : "carol19",
-  "timestamp" : 6220
+  "timestamp" : 6220,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -5533,7 +5796,8 @@
 }, {
   "command" : "like",
   "user" : "david27",
-  "timestamp" : 6230
+  "timestamp" : 6230,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -5571,7 +5835,8 @@
 }, {
   "command" : "like",
   "user" : "frank21",
-  "timestamp" : 6250
+  "timestamp" : 6250,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -5586,7 +5851,8 @@
 }, {
   "command" : "repeat",
   "user" : "grace25",
-  "timestamp" : 6260
+  "timestamp" : 6260,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5658,7 +5924,8 @@
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 6300
+  "timestamp" : 6300,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -5740,7 +6007,8 @@
 }, {
   "command" : "repeat",
   "user" : "frank21",
-  "timestamp" : 6350
+  "timestamp" : 6350,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -5797,7 +6065,8 @@
 }, {
   "command" : "like",
   "user" : "irene33",
-  "timestamp" : 6380
+  "timestamp" : 6380,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -5908,7 +6177,8 @@
 }, {
   "command" : "like",
   "user" : "frank21",
-  "timestamp" : 6450
+  "timestamp" : 6450,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -5987,7 +6257,8 @@
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 6500
+  "timestamp" : 6500,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -6002,7 +6273,8 @@
 }, {
   "command" : "like",
   "user" : "bob35",
-  "timestamp" : 6510
+  "timestamp" : 6510,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -6036,7 +6308,8 @@
 }, {
   "command" : "repeat",
   "user" : "david27",
-  "timestamp" : 6530
+  "timestamp" : 6530,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -6051,7 +6324,8 @@
 }, {
   "command" : "repeat",
   "user" : "emily30",
-  "timestamp" : 6540
+  "timestamp" : 6540,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -6103,7 +6377,8 @@
 }, {
   "command" : "repeat",
   "user" : "henry26",
-  "timestamp" : 6570
+  "timestamp" : 6570,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -6118,7 +6393,8 @@
 }, {
   "command" : "repeat",
   "user" : "irene33",
-  "timestamp" : 6580
+  "timestamp" : 6580,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -6148,7 +6424,8 @@
 }, {
   "command" : "like",
   "user" : "alice22",
-  "timestamp" : 6600
+  "timestamp" : 6600,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -6163,7 +6440,8 @@
 }, {
   "command" : "like",
   "user" : "bob35",
-  "timestamp" : 6610
+  "timestamp" : 6610,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -6200,7 +6478,8 @@
 }, {
   "command" : "repeat",
   "user" : "david27",
-  "timestamp" : 6630
+  "timestamp" : 6630,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -6361,7 +6640,8 @@
 }, {
   "command" : "like",
   "user" : "david27",
-  "timestamp" : 6730
+  "timestamp" : 6730,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -6568,7 +6848,8 @@
 }, {
   "command" : "repeat",
   "user" : "frank21",
-  "timestamp" : 6850
+  "timestamp" : 6850,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -6609,7 +6890,8 @@
 }, {
   "command" : "like",
   "user" : "henry26",
-  "timestamp" : 6870
+  "timestamp" : 6870,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -6628,7 +6910,8 @@
 }, {
   "command" : "repeat",
   "user" : "irene33",
-  "timestamp" : 6880
+  "timestamp" : 6880,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -6674,7 +6957,8 @@
 }, {
   "command" : "repeat",
   "user" : "bob35",
-  "timestamp" : 6910
+  "timestamp" : 6910,
+  "message" : "Please load a source before setting the repeat status."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -6730,7 +7014,8 @@
 }, {
   "command" : "like",
   "user" : "emily30",
-  "timestamp" : 6940
+  "timestamp" : 6940,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -6782,7 +7067,8 @@
 }, {
   "command" : "like",
   "user" : "henry26",
-  "timestamp" : 6970
+  "timestamp" : 6970,
+  "message" : "Please load a source before liking or unliking."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -6827,12 +7113,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 6990
+  "timestamp" : 6990,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 6990,
-  "message" : "Fu"
+  "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -6840,12 +7128,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7000
+  "timestamp" : 7000,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7000,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -6853,12 +7143,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7010
+  "timestamp" : 7010,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7010,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -6866,12 +7158,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7020
+  "timestamp" : 7020,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7020,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -6879,12 +7173,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7030
+  "timestamp" : 7030,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7030,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -6892,12 +7188,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7040
+  "timestamp" : 7040,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7040,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -6905,12 +7203,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7050
+  "timestamp" : 7050,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7050,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -6918,12 +7218,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7060
+  "timestamp" : 7060,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7060,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -6931,12 +7233,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7070
+  "timestamp" : 7070,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7070,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -6944,12 +7248,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7080
+  "timestamp" : 7080,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7080,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -6957,12 +7263,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7090
+  "timestamp" : 7090,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7090,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -6970,12 +7278,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7100
+  "timestamp" : 7100,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7100,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -6983,12 +7293,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7110
+  "timestamp" : 7110,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7110,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -6996,12 +7308,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7120
+  "timestamp" : 7120,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7120,
-  "message" : "Fu"
+  "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -7009,12 +7323,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7130
+  "timestamp" : 7130,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7130,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -7022,12 +7338,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7140
+  "timestamp" : 7140,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7140,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -7035,12 +7353,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7150
+  "timestamp" : 7150,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7150,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -7048,12 +7368,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7160
+  "timestamp" : 7160,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7160,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -7061,12 +7383,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7170
+  "timestamp" : 7170,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7170,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -7074,12 +7398,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7180
+  "timestamp" : 7180,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7180,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -7087,12 +7413,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7190
+  "timestamp" : 7190,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7190,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -7100,12 +7428,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7200
+  "timestamp" : 7200,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7200,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -7113,12 +7443,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7210
+  "timestamp" : 7210,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7210,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -7126,12 +7458,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7220
+  "timestamp" : 7220,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7220,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -7139,12 +7473,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7230
+  "timestamp" : 7230,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7230,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -7152,12 +7488,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7240
+  "timestamp" : 7240,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7240,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -7165,12 +7503,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7250
+  "timestamp" : 7250,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7250,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -7178,12 +7518,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7260
+  "timestamp" : 7260,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7260,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Sounds Expedition #2."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -7191,12 +7533,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7270
+  "timestamp" : 7270,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7270,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -7204,12 +7548,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7280
+  "timestamp" : 7280,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7280,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -7217,12 +7563,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7290
+  "timestamp" : 7290,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7290,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Tunes Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -7230,12 +7578,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7300
+  "timestamp" : 7300,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7300,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -7243,12 +7593,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7310
+  "timestamp" : 7310,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7310,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -7256,12 +7608,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7320
+  "timestamp" : 7320,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7320,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -7269,12 +7623,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7330
+  "timestamp" : 7330,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7330,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -7282,12 +7638,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7340
+  "timestamp" : 7340,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7340,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -7295,12 +7653,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7350
+  "timestamp" : 7350,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7350,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -7308,12 +7668,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7360
+  "timestamp" : 7360,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7360,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -7321,12 +7683,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7370
+  "timestamp" : 7370,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7370,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -7334,12 +7698,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7380
+  "timestamp" : 7380,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7380,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -7347,12 +7713,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7390
+  "timestamp" : 7390,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7390,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -7360,12 +7728,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7400
+  "timestamp" : 7400,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7400,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -7373,12 +7743,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7410
+  "timestamp" : 7410,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7410,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -7386,12 +7758,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7420
+  "timestamp" : 7420,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7420,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -7399,12 +7773,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7430
+  "timestamp" : 7430,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7430,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -7412,12 +7788,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7440
+  "timestamp" : 7440,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7440,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -7425,12 +7803,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7450
+  "timestamp" : 7450,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7450,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -7438,12 +7818,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7460
+  "timestamp" : 7460,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7460,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -7451,12 +7833,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7470
+  "timestamp" : 7470,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7470,
-  "message" : "Fu"
+  "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -7464,12 +7848,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7480
+  "timestamp" : 7480,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7480,
-  "message" : "Fu"
+  "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -7477,12 +7863,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7490
+  "timestamp" : 7490,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7490,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -7490,12 +7878,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7500
+  "timestamp" : 7500,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7500,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -7503,12 +7893,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7510
+  "timestamp" : 7510,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7510,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -7516,12 +7908,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7520
+  "timestamp" : 7520,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7520,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -7529,12 +7923,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7530
+  "timestamp" : 7530,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7530,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -7542,12 +7938,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7540
+  "timestamp" : 7540,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7540,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Harmonies Dream #1."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -7555,12 +7953,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7550
+  "timestamp" : 7550,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7550,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -7568,12 +7968,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7560
+  "timestamp" : 7560,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7560,
-  "message" : "Fu"
+  "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -7581,12 +7983,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7570
+  "timestamp" : 7570,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7570,
-  "message" : "Fu"
+  "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -7594,12 +7998,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7580
+  "timestamp" : 7580,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7580,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -7607,12 +8013,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7590
+  "timestamp" : 7590,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7590,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -7620,12 +8028,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7600
+  "timestamp" : 7600,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7600,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -7633,12 +8043,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7610
+  "timestamp" : 7610,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7610,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -7646,12 +8058,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7620
+  "timestamp" : 7620,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7620,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -7659,12 +8073,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7630
+  "timestamp" : 7630,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7630,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -7672,12 +8088,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7640
+  "timestamp" : 7640,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7640,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Grooves Expedition #1."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -7685,12 +8103,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7650
+  "timestamp" : 7650,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7650,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -7698,12 +8118,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7660
+  "timestamp" : 7660,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7660,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -7711,12 +8133,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7670
+  "timestamp" : 7670,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7670,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -7724,12 +8148,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7680
+  "timestamp" : 7680,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7680,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -7737,12 +8163,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7690
+  "timestamp" : 7690,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7690,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -7750,12 +8178,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7700
+  "timestamp" : 7700,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7700,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -7763,12 +8193,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7710
+  "timestamp" : 7710,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7710,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -7776,12 +8208,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7720
+  "timestamp" : 7720,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7720,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Grooves Expedition #1."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -7789,12 +8223,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7730
+  "timestamp" : 7730,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7730,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -7802,12 +8238,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7740
+  "timestamp" : 7740,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7740,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -7815,12 +8253,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7750
+  "timestamp" : 7750,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7750,
-  "message" : "Fu"
+  "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -7828,12 +8268,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7760
+  "timestamp" : 7760,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7760,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -7841,12 +8283,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7770
+  "timestamp" : 7770,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7770,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -7854,12 +8298,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7780
+  "timestamp" : 7780,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7780,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -7867,12 +8313,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7790
+  "timestamp" : 7790,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7790,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -7880,12 +8328,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7800
+  "timestamp" : 7800,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7800,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -7893,12 +8343,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7810
+  "timestamp" : 7810,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7810,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -7906,12 +8358,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7820
+  "timestamp" : 7820,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7820,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -7919,12 +8373,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7830
+  "timestamp" : 7830,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7830,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -7932,12 +8388,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7840
+  "timestamp" : 7840,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7840,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Grooves Expedition #2."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -7945,12 +8403,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7850
+  "timestamp" : 7850,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7850,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -7958,12 +8418,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7860
+  "timestamp" : 7860,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7860,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -7971,12 +8433,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7870
+  "timestamp" : 7870,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7870,
-  "message" : "Fu"
+  "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -7984,12 +8448,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7880
+  "timestamp" : 7880,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7880,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -7997,12 +8463,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7890
+  "timestamp" : 7890,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7890,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -8010,12 +8478,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 7900
+  "timestamp" : 7900,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 7900,
-  "message" : "Fu"
+  "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -8023,12 +8493,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 7910
+  "timestamp" : 7910,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 7910,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Grooves Dream #1."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -8036,12 +8508,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 7920
+  "timestamp" : 7920,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 7920,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -8049,12 +8523,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 7930
+  "timestamp" : 7930,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 7930,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -8062,12 +8538,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 7940
+  "timestamp" : 7940,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Grooves Dream #1", "Groovy Grooves Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 7940,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -8075,12 +8553,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 7950
+  "timestamp" : 7950,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 7950,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -8088,12 +8568,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 7960
+  "timestamp" : 7960,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 7960,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -8101,12 +8583,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 7970
+  "timestamp" : 7970,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 7970,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -8114,12 +8598,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 7980
+  "timestamp" : 7980,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 7980,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -8127,12 +8613,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 7990
+  "timestamp" : 7990,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 7990,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -8140,12 +8628,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 8000
+  "timestamp" : 8000,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 8000,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -8153,12 +8643,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 8010
+  "timestamp" : 8010,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 8010,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -8166,12 +8658,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 8020
+  "timestamp" : 8020,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 8020,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -8179,12 +8673,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 8030
+  "timestamp" : 8030,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 8030,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -8192,12 +8688,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 8040
+  "timestamp" : 8040,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 8040,
-  "message" : "Fu"
+  "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -8205,12 +8703,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 8050
+  "timestamp" : 8050,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 8050,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -8218,12 +8718,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 8060
+  "timestamp" : 8060,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 8060,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -8231,12 +8733,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 8070
+  "timestamp" : 8070,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 8070,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -8244,12 +8748,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 8080
+  "timestamp" : 8080,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 8080,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -8257,12 +8763,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 8090
+  "timestamp" : 8090,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 8090,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -8270,12 +8778,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 8100
+  "timestamp" : 8100,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 8100,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Grooves Expedition #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -8283,12 +8793,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 8110
+  "timestamp" : 8110,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 8110,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Bangers Quest #1."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -8296,12 +8808,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 8120
+  "timestamp" : 8120,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 8120,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Vibes Odyssey #1."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -8309,12 +8823,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 8130
+  "timestamp" : 8130,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 8130,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -8322,12 +8838,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 8140
+  "timestamp" : 8140,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 8140,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Harmonies Dream #1."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -8335,12 +8853,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 8150
+  "timestamp" : 8150,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 8150,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -8348,12 +8868,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 8160
+  "timestamp" : 8160,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 8160,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Adventure #2."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -8361,12 +8883,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 8170
+  "timestamp" : 8170,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 8170,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -8374,12 +8898,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 8180
+  "timestamp" : 8180,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 8180,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -8387,12 +8913,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 8190
+  "timestamp" : 8190,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 8190,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Melodies Voyage #1."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -8400,12 +8928,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 8200
+  "timestamp" : 8200,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 8200,
-  "message" : "Fu"
+  "message" : "Successfully selected Stellar Tunes Quest #2."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -8413,12 +8943,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 8210
+  "timestamp" : 8210,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 8210,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -8426,12 +8958,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 8220
+  "timestamp" : 8220,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 8220,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -8439,12 +8973,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 8230
+  "timestamp" : 8230,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 8230,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -8452,12 +8988,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 8240
+  "timestamp" : 8240,
+  "message" : "Search returned 2 results",
+  "results" : [ "Classic Harmonies Dream #1", "Classic Sounds Expedition #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 8240,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -8465,12 +9003,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 8250
+  "timestamp" : 8250,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 8250,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -8478,12 +9018,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 8260
+  "timestamp" : 8260,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 8260,
-  "message" : "Fu"
+  "message" : "Successfully selected Vibey Bangers Safari #1."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -8491,12 +9033,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 8270
+  "timestamp" : 8270,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 8270,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -8504,12 +9048,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 8280
+  "timestamp" : 8280,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 8280,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Voyage #1."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -8517,12 +9063,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 8290
+  "timestamp" : 8290,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 8290,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -8530,12 +9078,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 8300
+  "timestamp" : 8300,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 8300,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -8543,12 +9093,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 8310
+  "timestamp" : 8310,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 8310,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -8556,12 +9108,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 8320
+  "timestamp" : 8320,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 8320,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -8569,12 +9123,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 8330
+  "timestamp" : 8330,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 8330,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -8582,12 +9138,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 8340
+  "timestamp" : 8340,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 8340,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -8595,12 +9153,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 8350
+  "timestamp" : 8350,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 8350,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Harmonies Odyssey #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -8608,12 +9168,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 8360
+  "timestamp" : 8360,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 8360,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -8621,12 +9183,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 8370
+  "timestamp" : 8370,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 8370,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -8634,12 +9198,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 8380
+  "timestamp" : 8380,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 8380,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "jack29",
@@ -8647,12 +9213,14 @@
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 8390
+  "timestamp" : 8390,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 8390,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
   "command" : "follow",
   "user" : "alice22",
@@ -8660,12 +9228,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 8400
+  "timestamp" : 8400,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Rhythms Trek #1", "Electric Harmonies Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 8400,
-  "message" : "Fu"
+  "message" : "Successfully selected Breezy Rhythms Trek #1."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -8673,12 +9243,14 @@
 }, {
   "command" : "search",
   "user" : "carol19",
-  "timestamp" : 8410
+  "timestamp" : 8410,
+  "message" : "Search returned 2 results",
+  "results" : [ "Dynamic Grooves Expedition #1", "Breezy Tunes Odyssey #2" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 8410,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Grooves Expedition #1."
 }, {
   "command" : "follow",
   "user" : "carol19",
@@ -8686,12 +9258,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 8420
+  "timestamp" : 8420,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Journey #1", "Chill Sounds Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 8420,
-  "message" : "Fu"
+  "message" : "Successfully selected Chill Sounds Journey #1."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -8699,12 +9273,14 @@
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 8430
+  "timestamp" : 8430,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 8430,
-  "message" : "Fu"
+  "message" : "Successfully selected Classic Grooves Trek #2."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -8712,12 +9288,14 @@
 }, {
   "command" : "search",
   "user" : "frank21",
-  "timestamp" : 8440
+  "timestamp" : 8440,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Melodies Voyage #1", "Classic Grooves Trek #2" ]
 }, {
   "command" : "select",
   "user" : "frank21",
   "timestamp" : 8440,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "frank21",
@@ -8725,12 +9303,14 @@
 }, {
   "command" : "search",
   "user" : "grace25",
-  "timestamp" : 8450
+  "timestamp" : 8450,
+  "message" : "Search returned 2 results",
+  "results" : [ "Vibey Bangers Safari #1", "Groovy Rhythms Dream #2" ]
 }, {
   "command" : "select",
   "user" : "grace25",
   "timestamp" : 8450,
-  "message" : "Fu"
+  "message" : "Successfully selected Groovy Rhythms Dream #2."
 }, {
   "command" : "follow",
   "user" : "grace25",
@@ -8738,12 +9318,14 @@
 }, {
   "command" : "search",
   "user" : "henry26",
-  "timestamp" : 8460
+  "timestamp" : 8460,
+  "message" : "Search returned 2 results",
+  "results" : [ "Breezy Bangers Quest #1", "Stellar Tunes Quest #2" ]
 }, {
   "command" : "select",
   "user" : "henry26",
   "timestamp" : 8460,
-  "message" : "Fu"
+  "message" : "The selected ID is too high."
 }, {
   "command" : "follow",
   "user" : "henry26",
@@ -8751,12 +9333,14 @@
 }, {
   "command" : "search",
   "user" : "irene33",
-  "timestamp" : 8470
+  "timestamp" : 8470,
+  "message" : "Search returned 2 results",
+  "results" : [ "Groovy Vibes Odyssey #1", "Dynamic Tracks Adventure #2" ]
 }, {
   "command" : "select",
   "user" : "irene33",
   "timestamp" : 8470,
-  "message" : "Fu"
+  "message" : "Successfully selected Dynamic Tracks Adventure #2."
 }, {
   "command" : "follow",
   "user" : "irene33",
@@ -8764,12 +9348,14 @@
 }, {
   "command" : "search",
   "user" : "jack29",
-  "timestamp" : 8480
+  "timestamp" : 8480,
+  "message" : "Search returned 2 results",
+  "results" : [ "Chill Sounds Voyage #1", "Electric Melodies Escape #2" ]
 }, {
   "command" : "select",
   "user" : "jack29",
   "timestamp" : 8480,
-  "message" : "Fu"
+  "message" : "Successfully selected Electric Melodies Escape #2."
 }, {
   "command" : "follow",
   "user" : "jack29",

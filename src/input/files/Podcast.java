@@ -6,6 +6,8 @@ public final class Podcast {
     private String name;
     private String owner;
     private ArrayList<Episode> episodes;
+    private int duration;
+    private int remainedTime;
 
     public Podcast() {
     }
@@ -24,6 +26,22 @@ public final class Podcast {
 
     public void setOwner(final String owner) {
         this.owner = owner;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(final int duration) {
+        this.duration = duration;
+    }
+
+    public int getRemainedTime() {
+        return remainedTime;
+    }
+
+    public void setRemainedTime(final int remainedTime) {
+        this.remainedTime = remainedTime;
     }
 
     public ArrayList<Episode> getEpisodes() {

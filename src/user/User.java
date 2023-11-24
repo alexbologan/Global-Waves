@@ -1,14 +1,25 @@
 package user;
 
 import input.files.CommandInput;
+import input.files.Song;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
 public final class User {
     private CommandInput user;
+    private ArrayList<Playlist> playLists;
+    private ArrayList<Song> likedSongs;
 
     public User() {
+    }
+
+    public ArrayList<Song> getLikedSongs() {
+        return likedSongs;
+    }
+
+    public void setLikedSongs(final ArrayList<Song> likedSongs) {
+        this.likedSongs = likedSongs;
     }
 
     public CommandInput getUser() {
@@ -17,6 +28,14 @@ public final class User {
 
     public void setUser(final CommandInput user) {
         this.user = user;
+    }
+
+    public ArrayList<Playlist> getPlayLists() {
+        return playLists;
+    }
+
+    public void setPlayLists(final ArrayList<Playlist> playlists) {
+        this.playLists = playlists;
     }
 
     /**

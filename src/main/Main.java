@@ -1,8 +1,7 @@
 package main;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import fileio.input.LibraryInput;
-import searchbarcommands.CommandsPrompt;
+import commands.CommandsPrompt;
 import checker.Checker;
 import checker.CheckerConstants;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -10,6 +9,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import input.files.CommandInput;
+import input.files.Library;
 import user.User;
 
 import java.io.File;
@@ -76,7 +76,7 @@ public final class Main {
     public static void action(final String filePathInput,
                               final String filePathOutput) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        LibraryInput library = objectMapper.readValue(new File(LIBRARY_PATH), LibraryInput.class);
+        Library library = objectMapper.readValue(new File(LIBRARY_PATH), Library.class);
         ArrayNode outputs = objectMapper.createArrayNode();
 
         List<CommandInput> searchbars = objectMapper.readValue(new File("input/" + filePathInput),
@@ -89,7 +89,7 @@ public final class Main {
             ObjectNode commandPromptNode = objectMapper.createObjectNode();
 
             CommandsPrompt commandsPrompt = new CommandsPrompt();
-            commandsPrompt.commands(commandInput, user, commandPromptNode);
+            commandsPrompt.commands(commandInput, user, commandPromptNode, library);
 
             outputs.add(commandPromptNode);
         }

@@ -1,7 +1,8 @@
 [ {
   "command" : "createPlaylist",
   "user" : "bob35",
-  "timestamp" : 150
+  "timestamp" : 150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -21,18 +22,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 240
+  "timestamp" : 240,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 270,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 5 results",
+  "results" : [ "Shape of You", "Don't", "Maps", "The Man", "Freedom" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 290,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Shape of You."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -41,7 +43,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 320
+  "timestamp" : 320,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -61,7 +64,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 430
+  "timestamp" : 430,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -81,7 +85,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 450
+  "timestamp" : 450,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -96,12 +101,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 500
+  "timestamp" : 500,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 510,
-  "message" : "Fu"
+  "message" : "Successfully selected My favourite songs."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -112,11 +119,11 @@
   "user" : "bob35",
   "timestamp" : 655,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Start Me Up",
+    "remainedTime" : 207,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "next",
@@ -127,11 +134,11 @@
   "user" : "bob35",
   "timestamp" : 690,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Start Me Up",
+    "remainedTime" : 172,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "prev",
@@ -142,11 +149,11 @@
   "user" : "bob35",
   "timestamp" : 711,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Start Me Up",
+    "remainedTime" : 151,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "prev",
@@ -161,11 +168,11 @@
   "user" : "bob35",
   "timestamp" : 713,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Start Me Up",
+    "remainedTime" : 149,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "search",
@@ -177,7 +184,7 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 890,
-  "message" : "Fu"
+  "message" : "Successfully selected How I Built This."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -188,11 +195,11 @@
   "user" : "bob35",
   "timestamp" : 1049,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Airbnb: Joe Gebbia",
+    "remainedTime" : 2817,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "forward",
@@ -203,11 +210,11 @@
   "user" : "bob35",
   "timestamp" : 1051,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Airbnb: Joe Gebbia",
+    "remainedTime" : 2815,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "search",
@@ -219,7 +226,7 @@
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 1199,
-  "message" : "Fu"
+  "message" : "Successfully selected How I Built This."
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -230,11 +237,11 @@
   "user" : "bob35",
   "timestamp" : 1389,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Airbnb: Joe Gebbia",
+    "remainedTime" : 2479,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "backward",
@@ -245,10 +252,10 @@
   "user" : "bob35",
   "timestamp" : 1391,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Airbnb: Joe Gebbia",
+    "remainedTime" : 2477,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 } ]

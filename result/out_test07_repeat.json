@@ -28,7 +28,8 @@
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 31
+  "timestamp" : 31,
+  "message" : "Repeat mode changed to repeat once."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -36,7 +37,7 @@
   "stats" : {
     "name" : "Dream Chaser",
     "remainedTime" : 193,
-    "repeat" : "No Repeat",
+    "repeat" : "Repeat Once",
     "shuffle" : false,
     "paused" : false
   }
@@ -45,35 +46,38 @@
   "user" : "alice22",
   "timestamp" : 257,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "Dream Chaser",
+    "remainedTime" : 173,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 258
+  "timestamp" : 258,
+  "message" : "Repeat mode changed to repeat once."
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 258
+  "timestamp" : 258,
+  "message" : "Repeat mode changed to repeat infinite."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 1000,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
+    "name" : "Dream Chaser",
+    "remainedTime" : 45,
+    "repeat" : "Repeat Infinite",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "createPlaylist",
   "user" : "alice22",
-  "timestamp" : 1005
+  "timestamp" : 1005,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -93,7 +97,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 1009
+  "timestamp" : 1009,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -113,7 +118,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 1013
+  "timestamp" : 1013,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -133,7 +139,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 1017
+  "timestamp" : 1017,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -153,7 +160,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 1021
+  "timestamp" : 1021,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -173,16 +181,19 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "alice22",
-  "timestamp" : 1025
+  "timestamp" : 1025,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 1026
+  "timestamp" : 1026,
+  "message" : "Search returned 1 results",
+  "results" : [ "My favourite songs" ]
 }, {
   "command" : "select",
   "user" : "alice22",
   "timestamp" : 1027,
-  "message" : "Fu"
+  "message" : "Successfully selected My favourite songs."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -193,78 +204,81 @@
   "user" : "alice22",
   "timestamp" : 1035,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "99 Problems",
+    "remainedTime" : 227,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 1036
+  "timestamp" : 1036,
+  "message" : "Repeat mode changed to repeat all."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 1037,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
+    "name" : "99 Problems",
+    "remainedTime" : 225,
+    "repeat" : "Repeat All",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 2099,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
+    "name" : "99 Problems",
+    "remainedTime" : 225,
+    "repeat" : "Repeat All",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 2100
+  "timestamp" : 2100,
+  "message" : "Repeat mode changed to repeat current song."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 2101,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
+    "name" : "99 Problems",
+    "remainedTime" : 223,
+    "repeat" : "Repeat Current Song",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 2334,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
-    "repeat" : "No Repeat",
+    "name" : "99 Problems",
+    "remainedTime" : 224,
+    "repeat" : "Repeat Current Song",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "repeat",
   "user" : "alice22",
-  "timestamp" : 2335
+  "timestamp" : 2335,
+  "message" : "Repeat mode changed to no repeat."
 }, {
   "command" : "status",
   "user" : "alice22",
   "timestamp" : 2336,
   "stats" : {
-    "name" : "",
-    "remainedTime" : 0,
+    "name" : "99 Problems",
+    "remainedTime" : 222,
     "repeat" : "No Repeat",
     "shuffle" : false,
-    "paused" : true
+    "paused" : false
   }
 }, {
   "command" : "status",

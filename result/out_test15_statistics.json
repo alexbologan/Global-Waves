@@ -1,7 +1,8 @@
 [ {
   "command" : "createPlaylist",
   "user" : "bob35",
-  "timestamp" : 150
+  "timestamp" : 150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -21,15 +22,18 @@
 }, {
   "command" : "like",
   "user" : "bob35",
-  "timestamp" : 205
+  "timestamp" : 205,
+  "message" : "Like registered successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "bob35",
-  "timestamp" : 240
+  "timestamp" : 240,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "createPlaylist",
   "user" : "carol19",
-  "timestamp" : 250
+  "timestamp" : 250,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -49,11 +53,13 @@
 }, {
   "command" : "like",
   "user" : "carol19",
-  "timestamp" : 305
+  "timestamp" : 305,
+  "message" : "Like registered successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 340
+  "timestamp" : 340,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -73,7 +79,8 @@
 }, {
   "command" : "like",
   "user" : "carol19",
-  "timestamp" : 405
+  "timestamp" : 405,
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -93,7 +100,8 @@
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
-  "timestamp" : 540
+  "timestamp" : 540,
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "carol19",
@@ -113,15 +121,18 @@
 }, {
   "command" : "like",
   "user" : "carol19",
-  "timestamp" : 805
+  "timestamp" : 805,
+  "message" : "Unlike registered successfully."
 }, {
   "command" : "showPreferredSongs",
   "user" : "carol19",
-  "timestamp" : 1000
+  "timestamp" : 1000,
+  "result" : [ ]
 }, {
   "command" : "createPlaylist",
   "user" : "david27",
-  "timestamp" : 1150
+  "timestamp" : 1150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "david27",
@@ -141,15 +152,18 @@
 }, {
   "command" : "like",
   "user" : "david27",
-  "timestamp" : 1205
+  "timestamp" : 1205,
+  "message" : "Like registered successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "david27",
-  "timestamp" : 1240
+  "timestamp" : 1240,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "createPlaylist",
   "user" : "emily30",
-  "timestamp" : 2150
+  "timestamp" : 2150,
+  "message" : "Playlist created successfully."
 }, {
   "command" : "search",
   "user" : "emily30",
@@ -169,28 +183,34 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "emily30",
-  "timestamp" : 2300
+  "timestamp" : 2300,
+  "result" : [ "Angie" ]
 }, {
   "command" : "like",
   "user" : "emily30",
-  "timestamp" : 2350
+  "timestamp" : 2350,
+  "message" : "Like registered successfully."
 }, {
   "command" : "addRemoveInPlaylist",
   "user" : "emily30",
-  "timestamp" : 2370
+  "timestamp" : 2370,
+  "message" : "Successfully removed from playlist."
 }, {
   "command" : "showPreferredSongs",
   "user" : "emily30",
-  "timestamp" : 2400
+  "timestamp" : 2400,
+  "result" : [ "Angie", "Bohemian Rhapsody" ]
 }, {
   "command" : "search",
   "user" : "emily30",
-  "timestamp" : 2460
+  "timestamp" : 2460,
+  "message" : "Search returned 1 results",
+  "results" : [ "My first playlist" ]
 }, {
   "command" : "select",
   "user" : "emily30",
   "timestamp" : 2490,
-  "message" : "Fu"
+  "message" : "Successfully selected My first playlist."
 }, {
   "command" : "follow",
   "user" : "emily30",
@@ -202,12 +222,14 @@
 }, {
   "command" : "search",
   "user" : "bob35",
-  "timestamp" : 2565
+  "timestamp" : 2565,
+  "message" : "Search returned 1 results",
+  "results" : [ "Just for fun" ]
 }, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 2580,
-  "message" : "Fu"
+  "message" : "Successfully selected Just for fun."
 }, {
   "command" : "follow",
   "user" : "bob35",
@@ -215,12 +237,14 @@
 }, {
   "command" : "search",
   "user" : "david27",
-  "timestamp" : 2765
+  "timestamp" : 2765,
+  "message" : "Search returned 1 results",
+  "results" : [ "Just for fun" ]
 }, {
   "command" : "select",
   "user" : "david27",
   "timestamp" : 2810,
-  "message" : "Fu"
+  "message" : "Successfully selected Just for fun."
 }, {
   "command" : "follow",
   "user" : "david27",
@@ -232,11 +256,13 @@
 }, {
   "command" : "showPreferredSongs",
   "user" : "bob35",
-  "timestamp" : 3100
+  "timestamp" : 3100,
+  "result" : [ "Angie", "Bohemian Rhapsody" ]
 }, {
   "command" : "showPreferredSongs",
   "user" : "carol19",
-  "timestamp" : 3200
+  "timestamp" : 3200,
+  "result" : [ "Angie", "Bohemian Rhapsody" ]
 }, {
   "command" : "getTop5Songs",
   "user" : null,
