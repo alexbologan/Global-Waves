@@ -4657,7 +4657,8 @@
 }, {
   "command" : "next",
   "user" : "irene33",
-  "timestamp" : 5580
+  "timestamp" : 5580,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -4710,7 +4711,8 @@
 }, {
   "command" : "next",
   "user" : "bob35",
-  "timestamp" : 5610
+  "timestamp" : 5610,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -4767,11 +4769,13 @@
 }, {
   "command" : "prev",
   "user" : "emily30",
-  "timestamp" : 5640
+  "timestamp" : 5640,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "prev",
   "user" : "emily30",
-  "timestamp" : 5640
+  "timestamp" : 5640,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -4786,7 +4790,8 @@
 }, {
   "command" : "next",
   "user" : "frank21",
-  "timestamp" : 5650
+  "timestamp" : 5650,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -4887,7 +4892,8 @@
 }, {
   "command" : "next",
   "user" : "bob35",
-  "timestamp" : 5710
+  "timestamp" : 5710,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -4918,7 +4924,8 @@
 }, {
   "command" : "next",
   "user" : "david27",
-  "timestamp" : 5730
+  "timestamp" : 5730,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -4971,11 +4978,13 @@
 }, {
   "command" : "prev",
   "user" : "grace25",
-  "timestamp" : 5760
+  "timestamp" : 5760,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "prev",
   "user" : "grace25",
-  "timestamp" : 5760
+  "timestamp" : 5760,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -4990,7 +4999,8 @@
 }, {
   "command" : "prev",
   "user" : "henry26",
-  "timestamp" : 5770
+  "timestamp" : 5770,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -5009,7 +5019,8 @@
 }, {
   "command" : "prev",
   "user" : "irene33",
-  "timestamp" : 5780
+  "timestamp" : 5780,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -5060,7 +5071,8 @@
 }, {
   "command" : "prev",
   "user" : "bob35",
-  "timestamp" : 5810
+  "timestamp" : 5810,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -5091,7 +5103,8 @@
 }, {
   "command" : "next",
   "user" : "david27",
-  "timestamp" : 5830
+  "timestamp" : 5830,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -5192,7 +5205,8 @@
 }, {
   "command" : "next",
   "user" : "irene33",
-  "timestamp" : 5880
+  "timestamp" : 5880,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -5315,7 +5329,8 @@
 }, {
   "command" : "prev",
   "user" : "frank21",
-  "timestamp" : 5950
+  "timestamp" : 5950,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -5400,7 +5415,8 @@
 }, {
   "command" : "next",
   "user" : "alice22",
-  "timestamp" : 6000
+  "timestamp" : 6000,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -5447,7 +5463,8 @@
 }, {
   "command" : "next",
   "user" : "david27",
-  "timestamp" : 6030
+  "timestamp" : 6030,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -5462,7 +5479,8 @@
 }, {
   "command" : "prev",
   "user" : "emily30",
-  "timestamp" : 6040
+  "timestamp" : 6040,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -5497,7 +5515,8 @@
 }, {
   "command" : "next",
   "user" : "grace25",
-  "timestamp" : 6060
+  "timestamp" : 6060,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5544,7 +5563,8 @@
 }, {
   "command" : "next",
   "user" : "jack29",
-  "timestamp" : 6090
+  "timestamp" : 6090,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -5675,7 +5695,8 @@
 }, {
   "command" : "prev",
   "user" : "henry26",
-  "timestamp" : 6170
+  "timestamp" : 6170,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -5808,7 +5829,8 @@
 }, {
   "command" : "next",
   "user" : "emily30",
-  "timestamp" : 6240
+  "timestamp" : 6240,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -5839,11 +5861,13 @@
 }, {
   "command" : "prev",
   "user" : "grace25",
-  "timestamp" : 6260
+  "timestamp" : 6260,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "prev",
   "user" : "grace25",
-  "timestamp" : 6260
+  "timestamp" : 6260,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5986,7 +6010,8 @@
 }, {
   "command" : "prev",
   "user" : "emily30",
-  "timestamp" : 6340
+  "timestamp" : 6340,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -6001,7 +6026,8 @@
 }, {
   "command" : "next",
   "user" : "frank21",
-  "timestamp" : 6350
+  "timestamp" : 6350,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -6016,11 +6042,13 @@
 }, {
   "command" : "prev",
   "user" : "grace25",
-  "timestamp" : 6360
+  "timestamp" : 6360,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "prev",
   "user" : "grace25",
-  "timestamp" : 6360
+  "timestamp" : 6360,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -6073,7 +6101,8 @@
 }, {
   "command" : "prev",
   "user" : "jack29",
-  "timestamp" : 6390
+  "timestamp" : 6390,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -6130,7 +6159,8 @@
 }, {
   "command" : "next",
   "user" : "carol19",
-  "timestamp" : 6420
+  "timestamp" : 6420,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -6145,7 +6175,8 @@
 }, {
   "command" : "prev",
   "user" : "david27",
-  "timestamp" : 6430
+  "timestamp" : 6430,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "david27",
@@ -6160,7 +6191,8 @@
 }, {
   "command" : "next",
   "user" : "emily30",
-  "timestamp" : 6440
+  "timestamp" : 6440,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -6211,7 +6243,8 @@
 }, {
   "command" : "next",
   "user" : "henry26",
-  "timestamp" : 6470
+  "timestamp" : 6470,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -6274,7 +6307,8 @@
 }, {
   "command" : "next",
   "user" : "bob35",
-  "timestamp" : 6510
+  "timestamp" : 6510,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -6325,7 +6359,8 @@
 }, {
   "command" : "prev",
   "user" : "emily30",
-  "timestamp" : 6540
+  "timestamp" : 6540,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -6356,11 +6391,13 @@
 }, {
   "command" : "prev",
   "user" : "grace25",
-  "timestamp" : 6560
+  "timestamp" : 6560,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "prev",
   "user" : "grace25",
-  "timestamp" : 6560
+  "timestamp" : 6560,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -6391,7 +6428,8 @@
 }, {
   "command" : "prev",
   "user" : "irene33",
-  "timestamp" : 6580
+  "timestamp" : 6580,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -6444,7 +6482,8 @@
 }, {
   "command" : "next",
   "user" : "bob35",
-  "timestamp" : 6610
+  "timestamp" : 6610,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -6463,7 +6502,8 @@
 }, {
   "command" : "next",
   "user" : "carol19",
-  "timestamp" : 6620
+  "timestamp" : 6620,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -6562,7 +6602,8 @@
 }, {
   "command" : "prev",
   "user" : "irene33",
-  "timestamp" : 6680
+  "timestamp" : 6680,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -6625,11 +6666,13 @@
 }, {
   "command" : "prev",
   "user" : "carol19",
-  "timestamp" : 6720
+  "timestamp" : 6720,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "prev",
   "user" : "carol19",
-  "timestamp" : 6720
+  "timestamp" : 6720,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -6706,7 +6749,8 @@
 }, {
   "command" : "next",
   "user" : "grace25",
-  "timestamp" : 6760
+  "timestamp" : 6760,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -6721,7 +6765,8 @@
 }, {
   "command" : "prev",
   "user" : "henry26",
-  "timestamp" : 6770
+  "timestamp" : 6770,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -6794,11 +6839,13 @@
 }, {
   "command" : "prev",
   "user" : "bob35",
-  "timestamp" : 6810
+  "timestamp" : 6810,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "prev",
   "user" : "bob35",
-  "timestamp" : 6810
+  "timestamp" : 6810,
+  "message" : "Please load a source before returning to the previous track."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -6891,7 +6938,8 @@
 }, {
   "command" : "next",
   "user" : "grace25",
-  "timestamp" : 6860
+  "timestamp" : 6860,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -6954,7 +7002,8 @@
 }, {
   "command" : "next",
   "user" : "alice22",
-  "timestamp" : 6900
+  "timestamp" : 6900,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -7063,7 +7112,8 @@
 }, {
   "command" : "next",
   "user" : "grace25",
-  "timestamp" : 6960
+  "timestamp" : 6960,
+  "message" : "Please load a source before skipping to the next track."
 }, {
   "command" : "status",
   "user" : "grace25",

@@ -80,13 +80,13 @@
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 870,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "message" : "Search returned 5 results",
+  "results" : [ "Shape of You", "Don't", "Stairway to Heaven", "Money Trees", "Under Pressure" ]
 }, {
   "command" : "select",
   "user" : "carol19",
   "timestamp" : 890,
-  "message" : "The selected ID is too high."
+  "message" : "Successfully selected Shape of You."
 }, {
   "command" : "load",
   "user" : "carol19",
@@ -96,7 +96,7 @@
   "command" : "addRemoveInPlaylist",
   "user" : "carol19",
   "timestamp" : 940,
-  "message" : "The loaded source is not a song."
+  "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "emily30",

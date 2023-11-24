@@ -112,27 +112,25 @@ public final class Status {
                     }
                     timeDiff -= song.getDuration();
                 }
-                if (findSong.getName() != null) {
-                    statsNode.put("name", findSong.getName());
-                    statsNode.put("remainedTime", findSong.getDuration() - timeDiff);
-                    statsNode.put("repeat", user.getUser().getRepeat());
-                    statsNode.put("shuffle", user.getUser().getShuffle());
-                    statsNode.put("paused", user.getUser().getPaused());
-                }
+                statsNode.put("name", findSong.getName());
+                statsNode.put("remainedTime", findSong.getDuration() - timeDiff);
+                statsNode.put("repeat", user.getUser().getRepeat());
+                statsNode.put("shuffle", user.getUser().getShuffle());
+                statsNode.put("paused", user.getUser().getPaused());
             } else if (user.getUser().getMatchingPodcasts() != null) {
-                Episode findEpisod = new Episode();
+                Episode findEpisode = new Episode();
                 int timeDiff = user.getUser().getMatchingPodcasts().get(0).getDuration()
                         - user.getUser().getRemainedTime();
                 for (Episode episode: user.getUser().getMatchingPodcasts()
                         .get(0).getEpisodes()) {
                     if (timeDiff < episode.getDuration()) {
-                        findEpisod = episode;
+                        findEpisode = episode;
                         break;
                     }
                     timeDiff -= episode.getDuration();
                 }
-                statsNode.put("name", findEpisod.getName());
-                statsNode.put("remainedTime", findEpisod.getDuration()
+                statsNode.put("name", findEpisode.getName());
+                statsNode.put("remainedTime", findEpisode.getDuration()
                         - timeDiff);
                 statsNode.put("repeat", user.getUser().getRepeat());
                 statsNode.put("shuffle", user.getUser().getShuffle());

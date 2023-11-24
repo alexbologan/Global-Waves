@@ -8,6 +8,7 @@ import user.Playlist;
 import user.User;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 
 public final class Select {
@@ -21,47 +22,51 @@ public final class Select {
      */
     public void performSelect(final CommandInput commandInput, final User user,
                               final ObjectNode commandPromptNode) {
-        if (user.getUser().getMatchingSongs() == null) {
-            if (user.getUser().getMatchingPlayLists() == null) {
-                if (user.getUser().getMatchingPodcasts() == null) {
-                    commandPromptNode.put("message", "Fu");
-                } else if (commandInput.getItemNumber() > user.getUser().getMatchingPodcasts()
+        if (Objects.equals(user.getUser().getCommand(), "search")) {
+            if (user.getUser().getMatchingSongs() == null) {
+                if (user.getUser().getMatchingPlayLists() == null) {
+                    if (user.getUser().getMatchingPodcasts() == null) {
+                        commandPromptNode.put("message", "Fu");
+                    } else if (commandInput.getItemNumber() > user.getUser().getMatchingPodcasts()
+                            .size()) {
+                        commandPromptNode.put("message", "The selected ID is too high.");
+                    } else {
+                        commandPromptNode.put("message", "Successfully selected "
+                                + user.getUser().getMatchingPodcasts()
+                                .get(commandInput.getItemNumber() - 1).getName() + ".");
+                        ArrayList<Podcast> podcasts = new ArrayList<>();
+                        podcasts.add(user.getUser().getMatchingPodcasts().get(
+                                commandInput.getItemNumber() - 1));
+                        commandInput.setMatchingPodcasts(podcasts);
+
+                    }
+                } else if (commandInput.getItemNumber() > user.getUser().getMatchingPlayLists()
                         .size()) {
                     commandPromptNode.put("message", "The selected ID is too high.");
                 } else {
                     commandPromptNode.put("message", "Successfully selected "
-                            + user.getUser().getMatchingPodcasts()
+                            + user.getUser().getMatchingPlayLists()
                             .get(commandInput.getItemNumber() - 1).getName() + ".");
-                    ArrayList<Podcast> podcasts = new ArrayList<>();
-                    podcasts.add(user.getUser().getMatchingPodcasts().get(
+                    ArrayList<Playlist> playlists = new ArrayList<>();
+                    playlists.add(user.getUser().getMatchingPlayLists().get(
                             commandInput.getItemNumber() - 1));
-                    commandInput.setMatchingPodcasts(podcasts);
 
+                    commandInput.setMatchingPlayLists(playlists);
                 }
-            } else if (commandInput.getItemNumber() > user.getUser().getMatchingPlayLists()
-                                                                                    .size()) {
+            } else if (commandInput.getItemNumber() > user.getUser().getMatchingSongs().size()) {
                 commandPromptNode.put("message", "The selected ID is too high.");
             } else {
                 commandPromptNode.put("message", "Successfully selected "
-                        + user.getUser().getMatchingPlayLists()
-                        .get(commandInput.getItemNumber() - 1).getName() + ".");
-                ArrayList<Playlist> playlists = new ArrayList<>();
-                playlists.add(user.getUser().getMatchingPlayLists().get(
+                        + user.getUser().getMatchingSongs().get(commandInput.getItemNumber() - 1)
+                        .getName() + ".");
+                ArrayList<Song> selectedSong = new ArrayList<>();
+                selectedSong.add(user.getUser().getMatchingSongs().get(
                         commandInput.getItemNumber() - 1));
-
-                commandInput.setMatchingPlayLists(playlists);
+                commandInput.setMatchingSongs(selectedSong);
             }
-        } else if (commandInput.getItemNumber() > user.getUser().getMatchingSongs().size()) {
-            commandPromptNode.put("message", "The selected ID is too high.");
+            user.setUser(commandInput);
         } else {
-            commandPromptNode.put("message", "Successfully selected "
-                    + user.getUser().getMatchingSongs().get(commandInput.getItemNumber() - 1)
-                    .getName() + ".");
-            ArrayList<Song> selectedSong = new ArrayList<>();
-            selectedSong.add(user.getUser().getMatchingSongs().get(
-                    commandInput.getItemNumber() - 1));
-            commandInput.setMatchingSongs(selectedSong);
+            commandPromptNode.put("message", "Please conduct a search before making a selection.");
         }
-        user.setUser(commandInput);
     }
 }

@@ -61,6 +61,18 @@ public final class CommandsPrompt {
         } else if (Objects.equals(commandInput.getCommand(), "shuffle")) {
             Shuffle shuffle = new Shuffle();
             shuffle.performShuffle(user, commandPromptNode, commandInput);
+        }  else if (Objects.equals(commandInput.getCommand(), "next")) {
+            Next next = new Next();
+            next.performNext(user, commandPromptNode, commandInput);
+        } else if (Objects.equals(commandInput.getCommand(), "prev")) {
+            Prev prev = new Prev();
+            prev.performPrev(user, commandPromptNode, commandInput);
+        } else if (Objects.equals(commandInput.getCommand(), "forward")) {
+            Forward forward = new Forward();
+            forward.performForward(user, commandPromptNode, commandInput);
+        } else if (Objects.equals(commandInput.getCommand(), "backward")) {
+            Backward backward = new Backward();
+            backward.performBackward(user, commandPromptNode, commandInput);
         }
     }
 }

@@ -77,7 +77,7 @@ public final class Song {
             if (matchingSongs.isEmpty() && filterNum == 0) {
                 for (int i = 0; i < library.getSongs().size(); i++) {
                     if (library.getSongs().get(i).getLyrics().toLowerCase().contains(
-                            commandInput.getFilters().getLyrics())) {
+                            commandInput.getFilters().getLyrics().toLowerCase())) {
                         matchingSongs.add(library.getSongs().get(i));
                     }
                 }

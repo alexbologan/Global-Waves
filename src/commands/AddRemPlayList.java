@@ -43,7 +43,6 @@ public final class AddRemPlayList {
                         thePlaylist.setDuration(thePlaylist.getDuration()
                                 - user.getUser().getMatchingSongs().get(0).getDuration());
                         commandPromptNode.put("message", "Successfully removed from playlist.");
-
                     } else {
                         thePlaylist.getSongs().add(user.getUser().getMatchingSongs().get(0));
                         thePlaylist.setDuration(thePlaylist.getDuration()
