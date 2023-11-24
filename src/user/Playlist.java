@@ -12,6 +12,7 @@ public final class Playlist {
     private String visibility = "public";
     private int followers;
     private int duration;
+    private  ArrayList<Song> unShuffledSongs;
 
     public Playlist() {
     }
@@ -70,5 +71,13 @@ public final class Playlist {
 
     public void setDuration(final int duration) {
         this.duration = duration;
+    }
+
+    public ArrayList<Song> getUnShuffledSongs() {
+        return unShuffledSongs;
+    }
+
+    public void setUnShuffledSongs(final ArrayList<Song> unShuffledSongs) {
+        this.unShuffledSongs = unShuffledSongs;
     }
 }

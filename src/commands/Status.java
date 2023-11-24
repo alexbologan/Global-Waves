@@ -112,11 +112,13 @@ public final class Status {
                     }
                     timeDiff -= song.getDuration();
                 }
-                statsNode.put("name", findSong.getName());
-                statsNode.put("remainedTime", findSong.getDuration() - timeDiff);
-                statsNode.put("repeat", user.getUser().getRepeat());
-                statsNode.put("shuffle", user.getUser().getShuffle());
-                statsNode.put("paused", user.getUser().getPaused());
+                if (findSong.getName() != null) {
+                    statsNode.put("name", findSong.getName());
+                    statsNode.put("remainedTime", findSong.getDuration() - timeDiff);
+                    statsNode.put("repeat", user.getUser().getRepeat());
+                    statsNode.put("shuffle", user.getUser().getShuffle());
+                    statsNode.put("paused", user.getUser().getPaused());
+                }
             } else if (user.getUser().getMatchingPodcasts() != null) {
                 Episode findEpisod = new Episode();
                 int timeDiff = user.getUser().getMatchingPodcasts().get(0).getDuration()

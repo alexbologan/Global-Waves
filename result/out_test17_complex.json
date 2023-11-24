@@ -4537,7 +4537,8 @@
 }, {
   "command" : "shuffle",
   "user" : "bob35",
-  "timestamp" : 5510
+  "timestamp" : 5510,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -5178,7 +5179,8 @@
 }, {
   "command" : "shuffle",
   "user" : "henry26",
-  "timestamp" : 5870
+  "timestamp" : 5870,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -5232,7 +5234,8 @@
 }, {
   "command" : "shuffle",
   "user" : "alice22",
-  "timestamp" : 5900
+  "timestamp" : 5900,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -5368,7 +5371,8 @@
 }, {
   "command" : "shuffle",
   "user" : "henry26",
-  "timestamp" : 5970
+  "timestamp" : 5970,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -5383,7 +5387,8 @@
 }, {
   "command" : "shuffle",
   "user" : "irene33",
-  "timestamp" : 5980
+  "timestamp" : 5980,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -5398,7 +5403,8 @@
 }, {
   "command" : "shuffle",
   "user" : "jack29",
-  "timestamp" : 5990
+  "timestamp" : 5990,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -5413,7 +5419,8 @@
 }, {
   "command" : "shuffle",
   "user" : "alice22",
-  "timestamp" : 6000
+  "timestamp" : 6000,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -5517,7 +5524,8 @@
 }, {
   "command" : "shuffle",
   "user" : "grace25",
-  "timestamp" : 6060
+  "timestamp" : 6060,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -5606,7 +5614,8 @@
 }, {
   "command" : "shuffle",
   "user" : "bob35",
-  "timestamp" : 6110
+  "timestamp" : 6110,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "bob35",
@@ -5625,7 +5634,8 @@
 }, {
   "command" : "shuffle",
   "user" : "carol19",
-  "timestamp" : 6120
+  "timestamp" : 6120,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -5955,7 +5965,8 @@
 }, {
   "command" : "shuffle",
   "user" : "carol19",
-  "timestamp" : 6320
+  "timestamp" : 6320,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -6100,7 +6111,8 @@
 }, {
   "command" : "shuffle",
   "user" : "alice22",
-  "timestamp" : 6400
+  "timestamp" : 6400,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -6212,7 +6224,8 @@
 }, {
   "command" : "shuffle",
   "user" : "henry26",
-  "timestamp" : 6470
+  "timestamp" : 6470,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -6242,7 +6255,8 @@
 }, {
   "command" : "shuffle",
   "user" : "jack29",
-  "timestamp" : 6490
+  "timestamp" : 6490,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "jack29",
@@ -6494,7 +6508,8 @@
 }, {
   "command" : "shuffle",
   "user" : "emily30",
-  "timestamp" : 6640
+  "timestamp" : 6640,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "emily30",
@@ -6509,7 +6524,8 @@
 }, {
   "command" : "shuffle",
   "user" : "frank21",
-  "timestamp" : 6650
+  "timestamp" : 6650,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "frank21",
@@ -6540,7 +6556,8 @@
 }, {
   "command" : "shuffle",
   "user" : "henry26",
-  "timestamp" : 6670
+  "timestamp" : 6670,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "henry26",
@@ -6555,7 +6572,8 @@
 }, {
   "command" : "shuffle",
   "user" : "irene33",
-  "timestamp" : 6680
+  "timestamp" : 6680,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -6586,7 +6604,8 @@
 }, {
   "command" : "shuffle",
   "user" : "alice22",
-  "timestamp" : 6700
+  "timestamp" : 6700,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -6799,7 +6818,8 @@
 }, {
   "command" : "shuffle",
   "user" : "carol19",
-  "timestamp" : 6820
+  "timestamp" : 6820,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -7052,7 +7072,8 @@
 }, {
   "command" : "shuffle",
   "user" : "grace25",
-  "timestamp" : 6960
+  "timestamp" : 6960,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "grace25",
@@ -7083,7 +7104,8 @@
 }, {
   "command" : "shuffle",
   "user" : "irene33",
-  "timestamp" : 6980
+  "timestamp" : 6980,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "irene33",
@@ -7098,7 +7120,8 @@
 }, {
   "command" : "shuffle",
   "user" : "jack29",
-  "timestamp" : 6990
+  "timestamp" : 6990,
+  "message" : "Please load a source before using the shuffle function."
 }, {
   "command" : "status",
   "user" : "jack29",

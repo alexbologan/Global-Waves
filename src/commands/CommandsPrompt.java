@@ -58,6 +58,9 @@ public final class CommandsPrompt {
         } else if (Objects.equals(commandInput.getCommand(), "repeat")) {
             Repeat showPreferredSongs = new Repeat();
             showPreferredSongs.performRepeat(user, commandPromptNode, commandInput);
+        } else if (Objects.equals(commandInput.getCommand(), "shuffle")) {
+            Shuffle shuffle = new Shuffle();
+            shuffle.performShuffle(user, commandPromptNode, commandInput);
         }
     }
 }

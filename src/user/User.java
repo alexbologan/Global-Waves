@@ -10,6 +10,7 @@ public final class User {
     private CommandInput user;
     private ArrayList<Playlist> playLists;
     private ArrayList<Song> likedSongs;
+    private int duration;
 
     public User() {
     }
