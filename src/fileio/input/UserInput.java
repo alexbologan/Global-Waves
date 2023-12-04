@@ -12,7 +12,7 @@ public final class UserInput {
         return username;
     }
 
-    public void setUsername(final String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
@@ -20,7 +20,7 @@ public final class UserInput {
         return age;
     }
 
-    public void setAge(final int age) {
+    public void setAge(int age) {
         this.age = age;
     }
 
@@ -28,7 +28,16 @@ public final class UserInput {
         return city;
     }
 
-    public void setCity(final String city) {
+    public void setCity(String city) {
         this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "UserInput{" +
+                "username='" + username + '\'' +
+                ", age=" + age +
+                ", city='" + city + '\'' +
+                '}';
     }
 }

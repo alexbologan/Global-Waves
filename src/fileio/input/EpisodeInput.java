@@ -12,7 +12,7 @@ public final class EpisodeInput {
         return name;
     }
 
-    public void setName(final String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -20,7 +20,7 @@ public final class EpisodeInput {
         return duration;
     }
 
-    public void setDuration(final Integer duration) {
+    public void setDuration(Integer duration) {
         this.duration = duration;
     }
 
@@ -28,7 +28,16 @@ public final class EpisodeInput {
         return description;
     }
 
-    public void setDescription(final String description) {
+    public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "EpisodeInput{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", duration=" + duration +
+                '}';
     }
 }

@@ -1,19 +1,19 @@
 package fileio.input;
 
-import app.utils.Enums;
 import java.util.ArrayList;
 
-public final class SongInput {
+public class FiltersInput {
     private String name;
-    private Integer duration;
     private String album;
     private ArrayList<String> tags;
     private String lyrics;
     private String genre;
-    private Integer releaseYear;
+    private String releaseYear; // pentru search song/episode -> releaseYear
     private String artist;
+    private String owner; // pentru search playlist si podcast
+    private String followers; // pentru search playlist -> followers
 
-    public SongInput() {
+    public FiltersInput() {
     }
 
     public String getName() {
@@ -22,14 +22,6 @@ public final class SongInput {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Integer getDuration() {
-        return duration;
-    }
-
-    public void setDuration(Integer duration) {
-        this.duration = duration;
     }
 
     public String getAlbum() {
@@ -64,11 +56,11 @@ public final class SongInput {
         this.genre = genre;
     }
 
-    public int getReleaseYear() {
+    public String getReleaseYear() {
         return releaseYear;
     }
 
-    public void setReleaseYear(int releaseYear) {
+    public void setReleaseYear(String releaseYear) {
         this.releaseYear = releaseYear;
     }
 
@@ -80,17 +72,34 @@ public final class SongInput {
         this.artist = artist;
     }
 
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public String getFollowers() {
+        return followers;
+    }
+
+    public void setFollowers(String followers) {
+        this.followers = followers;
+    }
+
     @Override
     public String toString() {
-        return "SongInput{" +
-                "name='" + name + '\'' +
-                ", duration=" + duration +
+        return "FilterInput{" +
+                ", name='" + name + '\'' +
                 ", album='" + album + '\'' +
                 ", tags=" + tags +
                 ", lyrics='" + lyrics + '\'' +
                 ", genre='" + genre + '\'' +
                 ", releaseYear='" + releaseYear + '\'' +
                 ", artist='" + artist + '\'' +
+                ", owner='" + owner + '\'' +
+                ", followers='" + followers + '\'' +
                 '}';
     }
 }
