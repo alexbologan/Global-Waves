@@ -269,7 +269,6 @@ public final class Player {
         } else {
             stop();
         }
-
         return new PlayerStats(filename, duration, repeatMode, shuffle, paused);
     }
 }

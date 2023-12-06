@@ -19,22 +19,18 @@ import java.util.List;
 /**
  * The type User.
  */
-public class User {
-    @Getter
+@Getter
+public final class User {
     private String username;
-    @Getter
     private int age;
-    @Getter
     private String city;
-    @Getter
     private ArrayList<Playlist> playlists;
-    @Getter
     private ArrayList<Song> likedSongs;
-    @Getter
     private ArrayList<Playlist> followedPlaylists;
     private final Player player;
     private final SearchBar searchBar;
     private boolean lastSearched;
+    private Enums.ConnectionStatus connectionStatus;
 
     /**
      * Instantiates a new User.
@@ -47,6 +43,7 @@ public class User {
         this.username = username;
         this.age = age;
         this.city = city;
+        connectionStatus = Enums.ConnectionStatus.ONLINE;
         playlists = new ArrayList<>();
         likedSongs = new ArrayList<>();
         followedPlaylists = new ArrayList<>();
@@ -427,6 +424,9 @@ public class User {
      * @return the player stats
      */
     public PlayerStats getPlayerStats() {
+        if (connectionStatus == Enums.ConnectionStatus.OFFLINE) {
+            player.pause();
+        }
         return player.getStats();
     }
 
@@ -470,6 +470,19 @@ public class User {
 
         String preferredGenre = mostLikedIndex != -1 ? genres[mostLikedIndex] : "unknown";
         return "This user's preferred genre is %s.".formatted(preferredGenre);
+    }
+
+    public String switchConnectionStatus() {
+        if (connectionStatus == Enums.ConnectionStatus.ONLINE) {
+            connectionStatus = Enums.ConnectionStatus.OFFLINE;
+        } else {
+            connectionStatus = Enums.ConnectionStatus.ONLINE;
+        }
+
+        if (player.getCurrentAudioFile() != null) {
+            player.pause();
+        }
+        return username + " has changed status successfully.";
     }
 
     /**

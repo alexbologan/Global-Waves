@@ -4,6 +4,7 @@ import app.audio.Collections.PlaylistOutput;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.user.User;
+import app.utils.Enums;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
@@ -11,8 +12,8 @@ import fileio.input.CommandInput;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommandRunner {
-    static ObjectMapper objectMapper = new ObjectMapper();
+public final class CommandRunner {
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
 
     public static ObjectNode search(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -22,15 +23,21 @@ public class CommandRunner {
         if (user == null) {
             return null;
         }
-        ArrayList<String> results = user.search(filters, type);
-        String message = "Search returned " + results.size() + " results";
+        ArrayList<String> results = new ArrayList<>();
+        String message;
+        if (user.getConnectionStatus() == Enums.ConnectionStatus.OFFLINE) {
+            message = user.getUsername() + " is offline.";
+        } else {
+            results = user.search(filters, type);
+            message = "Search returned " + results.size() + " results";
+        }
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
         objectNode.put("message", message);
-        objectNode.put("results", objectMapper.valueToTree(results));
+        objectNode.put("results", OBJECT_MAPPER.valueToTree(results));
         return objectNode;
 
     }
@@ -43,7 +50,7 @@ public class CommandRunner {
         }
         String message = user.select(commandInput.getItemNumber());
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -58,7 +65,7 @@ public class CommandRunner {
         }
         String message = user.load();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -70,7 +77,7 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         String message = user.playPause();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -86,7 +93,7 @@ public class CommandRunner {
         }
         String message = user.repeat();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -100,7 +107,7 @@ public class CommandRunner {
         Integer seed = commandInput.getSeed();
         String message = user.shuffle(seed);
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -116,7 +123,7 @@ public class CommandRunner {
         }
         String message = user.forward();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -129,7 +136,7 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         String message = user.backward();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -145,7 +152,7 @@ public class CommandRunner {
         }
         String message = user.like();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -158,7 +165,7 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         String message = user.next();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -171,7 +178,7 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         String message = user.prev();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -188,7 +195,7 @@ public class CommandRunner {
         String message = user.createPlaylist(commandInput.getPlaylistName(),
                 commandInput.getTimestamp());
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -204,7 +211,7 @@ public class CommandRunner {
         }
         String message = user.addRemoveInPlaylist(commandInput.getPlaylistId());
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -217,7 +224,7 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         String message = user.switchPlaylistVisibility(commandInput.getPlaylistId());
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -230,11 +237,11 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         ArrayList<PlaylistOutput> playlists = user.showPlaylists();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(playlists));
+        objectNode.put("result", OBJECT_MAPPER.valueToTree(playlists));
 
         return objectNode;
     }
@@ -246,7 +253,7 @@ public class CommandRunner {
         }
         String message = user.follow();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
@@ -260,14 +267,14 @@ public class CommandRunner {
         if (user == null) {
             return null;
         }
-        PlayerStats stats = user.getPlayerStats();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        PlayerStats stats = user.getPlayerStats();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("stats", objectMapper.valueToTree(stats));
-
+        objectNode.put("stats", OBJECT_MAPPER.valueToTree(stats));
+        stats = user.getPlayerStats();
         return objectNode;
     }
 
@@ -275,11 +282,11 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         ArrayList<String> songs = user.showPreferredSongs();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(songs));
+        objectNode.put("result", OBJECT_MAPPER.valueToTree(songs));
 
         return objectNode;
     }
@@ -288,11 +295,11 @@ public class CommandRunner {
         User user = Admin.getUser(commandInput.getUsername());
         String preferredGenre = user.getPreferredGenre();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(preferredGenre));
+        objectNode.put("result", OBJECT_MAPPER.valueToTree(preferredGenre));
 
         return objectNode;
     }
@@ -300,10 +307,10 @@ public class CommandRunner {
     public static ObjectNode getTop5Songs(final CommandInput commandInput) {
         List<String> songs = Admin.getTop5Songs();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(songs));
+        objectNode.put("result", OBJECT_MAPPER.valueToTree(songs));
 
         return objectNode;
     }
@@ -311,11 +318,42 @@ public class CommandRunner {
     public static ObjectNode getTop5Playlists(final CommandInput commandInput) {
         List<String> playlists = Admin.getTop5Playlists();
 
-        ObjectNode objectNode = objectMapper.createObjectNode();
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(playlists));
+        objectNode.put("result", OBJECT_MAPPER.valueToTree(playlists));
 
         return objectNode;
     }
+
+    public static ObjectNode switchConnectionStatus(final CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+        String message;
+        if (user == null) {
+            message = "The username " + commandInput.getUsername() + " doesn't exist.";
+        } else {
+            message = user.switchConnectionStatus();
+        }
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode getOnlineUsers(final CommandInput commandInput) {
+        List<String> onlineUsers = Admin.getOnlineUsers();
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", OBJECT_MAPPER.valueToTree(onlineUsers));
+
+        return objectNode;
+    }
+
+
 }

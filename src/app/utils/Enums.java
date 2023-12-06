@@ -22,6 +22,10 @@ public class Enums { // diferite enumuri, le-am gurpat pe toate intr-un loc
         REPEAT_ALL, REPEAT_ONCE, REPEAT_INFINITE, REPEAT_CURRENT_SONG, NO_REPEAT,
     }
 
+    public enum ConnectionStatus {
+        ONLINE, OFFLINE
+    }
+
     public enum PlayerSourceType {
         LIBRARY, PLAYLIST, PODCAST
     }
