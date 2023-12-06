@@ -19,6 +19,9 @@ public class CommandRunner {
         Filters filters = new Filters(commandInput.getFilters());
         String type = commandInput.getType();
 
+        if (user== null) {
+            return null;
+        }
         ArrayList<String> results = user.search(filters, type);
         String message = "Search returned " + results.size() + " results";
 
@@ -28,13 +31,16 @@ public class CommandRunner {
         objectNode.put("timestamp", commandInput.getTimestamp());
         objectNode.put("message", message);
         objectNode.put("results", objectMapper.valueToTree(results));
-
         return objectNode;
+
     }
 
     public static ObjectNode select(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
 
+        if (user== null) {
+            return null;
+        }
         String message = user.select(commandInput.getItemNumber());
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -42,12 +48,14 @@ public class CommandRunner {
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
         objectNode.put("message", message);
-
         return objectNode;
     }
 
     public static ObjectNode load(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user== null) {
+            return null;
+        }
         String message = user.load();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -55,7 +63,6 @@ public class CommandRunner {
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
         objectNode.put("message", message);
-
         return objectNode;
     }
 
@@ -74,6 +81,9 @@ public class CommandRunner {
 
     public static ObjectNode repeat(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user== null) {
+            return null;
+        }
         String message = user.repeat();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -101,6 +111,9 @@ public class CommandRunner {
 
     public static ObjectNode forward(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user== null) {
+            return null;
+        }
         String message = user.forward();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -127,6 +140,9 @@ public class CommandRunner {
 
     public static ObjectNode like(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user== null) {
+            return null;
+        }
         String message = user.like();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -166,6 +182,9 @@ public class CommandRunner {
 
     public static ObjectNode createPlaylist(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user== null) {
+            return null;
+        }
         String message = user.createPlaylist(commandInput.getPlaylistName(), commandInput.getTimestamp());
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -179,6 +198,9 @@ public class CommandRunner {
 
     public static ObjectNode addRemoveInPlaylist(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user== null) {
+            return null;
+        }
         String message = user.addRemoveInPlaylist(commandInput.getPlaylistId());
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -218,6 +240,9 @@ public class CommandRunner {
 
     public static ObjectNode follow(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user== null) {
+            return null;
+        }
         String message = user.follow();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
@@ -231,6 +256,9 @@ public class CommandRunner {
 
     public static ObjectNode status(CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
+        if (user == null) {
+            return null;
+        }
         PlayerStats stats = user.getPlayerStats();
 
         ObjectNode objectNode = objectMapper.createObjectNode();
