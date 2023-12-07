@@ -26,8 +26,16 @@ public final class Admin {
     private static List<Podcast> podcasts = new ArrayList<>();
     private static int timestamp = 0;
     private static final int LIMIT = 5;
+    private static Admin instance = null;
 
     private Admin() {
+    }
+
+    public static Admin getInstance() {
+        if (instance == null) {
+            instance = new Admin();
+        }
+        return instance;
     }
 
     /**

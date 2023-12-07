@@ -1,5 +1,6 @@
 Starting audit...
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:183:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:34:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:191:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:15:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:18:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:45:5: Missing a Javadoc comment. [MissingJavadocMethod]
@@ -18,13 +19,13 @@ Starting audit...
 [ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:236:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:249:5: Missing a Javadoc comment. [MissingJavadocMethod]
 [ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:265:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:281:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:294:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:307:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:318:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:329:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:347:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\user\User.java:475:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\main\Main.java:90:13: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:280:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:293:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:306:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:317:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:328:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\CommandRunner.java:346:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\user\User.java:472:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\main\Main.java:96:13: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 28 errors.

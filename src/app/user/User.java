@@ -424,9 +424,6 @@ public final class User {
      * @return the player stats
      */
     public PlayerStats getPlayerStats() {
-        if (connectionStatus == Enums.ConnectionStatus.OFFLINE) {
-            player.pause();
-        }
         return player.getStats();
     }
 
@@ -477,10 +474,6 @@ public final class User {
             connectionStatus = Enums.ConnectionStatus.OFFLINE;
         } else {
             connectionStatus = Enums.ConnectionStatus.ONLINE;
-        }
-
-        if (player.getCurrentAudioFile() != null) {
-            player.pause();
         }
         return username + " has changed status successfully.";
     }

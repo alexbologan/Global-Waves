@@ -2,6 +2,7 @@ package main;
 
 import app.Admin;
 import app.CommandRunner;
+import app.utils.Enums;
 import checker.Checker;
 import checker.CheckerConstants;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -83,7 +84,12 @@ public final class Main {
         Admin.setPodcasts(library.getPodcasts());
 
         for (CommandInput command : commands) {
-            Admin.updateTimestamp(command.getTimestamp());
+            if (Admin.getUser(command.getUsername()) != null) {
+                if (Admin.getUser(command.getUsername()).getConnectionStatus() == Enums
+                        .ConnectionStatus.ONLINE) {
+                    Admin.updateTimestamp(command.getTimestamp());
+                }
+            }
 
             String commandName = command.getCommand();
 

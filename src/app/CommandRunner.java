@@ -274,7 +274,6 @@ public final class CommandRunner {
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
         objectNode.put("stats", OBJECT_MAPPER.valueToTree(stats));
-        stats = user.getPlayerStats();
         return objectNode;
     }
 
