@@ -1,4 +1,14 @@
 [ {
+  "command" : "addUser",
+  "user" : "melodymaster",
+  "timestamp" : 1,
+  "message" : "The username melodymaster has been added successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "melodymaster",
+  "timestamp" : 2,
+  "message" : "melodymaster has another album with the same name."
+}, {
   "command" : "search",
   "user" : "bob35",
   "timestamp" : 6,
@@ -269,11 +279,21 @@
     "paused" : false
   }
 }, {
+  "user" : "alice22",
+  "command" : "printCurrentPage",
+  "timestamp" : 1038,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
+}, {
   "command" : "search",
   "user" : "carol19",
   "timestamp" : 1039,
   "message" : "Search returned 0 results",
   "results" : [ ]
+}, {
+  "user" : "carol19",
+  "command" : "printCurrentPage",
+  "timestamp" : 1040,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[My favourite songs]"
 }, {
   "command" : "status",
   "user" : "alice22",
@@ -338,6 +358,11 @@
     "shuffle" : false,
     "paused" : false
   }
+}, {
+  "user" : "carol19",
+  "command" : "printCurrentPage",
+  "timestamp" : 2338,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[My favourite songs]"
 }, {
   "command" : "status",
   "user" : "alice22",

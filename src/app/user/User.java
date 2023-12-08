@@ -15,22 +15,25 @@ import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * The type User.
  */
 @Getter
-public final class User {
-    private String username;
-    private int age;
-    private String city;
-    private ArrayList<Playlist> playlists;
-    private ArrayList<Song> likedSongs;
-    private ArrayList<Playlist> followedPlaylists;
+public class User {
+    private final String username;
+    private final int age;
+    private final String city;
+    private final String userType;
+    private final ArrayList<Playlist> playlists;
+    private final ArrayList<Song> likedSongs;
+    private final ArrayList<Playlist> followedPlaylists;
     private final Player player;
     private final SearchBar searchBar;
     private boolean lastSearched;
     private Enums.ConnectionStatus connectionStatus;
+    private final String currentPage;
 
     /**
      * Instantiates a new User.
@@ -39,10 +42,12 @@ public final class User {
      * @param age      the age
      * @param city     the city
      */
-    public User(final String username, final int age, final String city) {
+    public User(final String username, final int age, final String city,
+                final String userType) {
         this.username = username;
         this.age = age;
         this.city = city;
+        this.userType = Objects.requireNonNullElse(userType, "user");
         connectionStatus = Enums.ConnectionStatus.ONLINE;
         playlists = new ArrayList<>();
         likedSongs = new ArrayList<>();
@@ -50,6 +55,7 @@ public final class User {
         player = new Player();
         searchBar = new SearchBar(username);
         lastSearched = false;
+        currentPage = "Home";
     }
 
     /**
@@ -148,7 +154,7 @@ public final class User {
         }
 
         Enums.RepeatMode repeatMode = player.repeat();
-        String repeatStatus = "";
+        String repeatStatus;
 
         switch (repeatMode) {
             case NO_REPEAT -> {
@@ -469,6 +475,11 @@ public final class User {
         return "This user's preferred genre is %s.".formatted(preferredGenre);
     }
 
+    /**
+     * Switches the connection status of the user between online and offline.
+     *
+     * @return A message indicating the success of the status change.
+     */
     public String switchConnectionStatus() {
         if (connectionStatus == Enums.ConnectionStatus.ONLINE) {
             connectionStatus = Enums.ConnectionStatus.OFFLINE;
@@ -476,6 +487,45 @@ public final class User {
             connectionStatus = Enums.ConnectionStatus.ONLINE;
         }
         return username + " has changed status successfully.";
+    }
+
+    /**
+     * Returns a formatted string representing the content of the current user's page.
+     * The format includes liked songs and followed playlists.
+     *
+     * @return A formatted string containing liked songs and followed playlists.
+     */
+    public String printCurrentPage() {
+        if (currentPage.equals("Home")) {
+            String message = "Liked songs:\n\t[";
+
+            for (Song song : likedSongs) {
+                message += song.getName() + ", ";
+            }
+
+            if (message.charAt(message.length() - 1) == ' ') {
+                message = message.substring(0, message.length() - 2);
+            }
+
+            message += "]\n\nFollowed playlists:\n\t[";
+
+            for (Playlist playlist : followedPlaylists) {
+                message += playlist.getName() + ", ";
+            }
+
+            if (message.charAt(message.length() - 1) == ' ') {
+                message = message.substring(0, message.length() - 2);
+            }
+            return message + "]";
+        } else if (currentPage.equals("Search")) {
+            return "Search";
+        } else if (currentPage.equals("Playlist")) {
+            return "Playlist";
+        } else if (currentPage.equals("Player")) {
+            return "Player";
+        } else {
+            return "Unknown";
+        }
     }
 
     /**

@@ -10,6 +10,16 @@
   "message" : "Search returned 1 results",
   "results" : [ "Nothing Else Matters" ]
 }, {
+  "command" : "addUser",
+  "user" : "melodymaster",
+  "timestamp" : 171,
+  "message" : "The username melodymaster has been added successfully."
+}, {
+  "command" : "addAlbum",
+  "user" : "melodymaster",
+  "timestamp" : 172,
+  "message" : "melodymaster has another album with the same name."
+}, {
   "command" : "select",
   "user" : "bob35",
   "timestamp" : 190,
@@ -103,6 +113,11 @@
   "user" : "bob35",
   "timestamp" : 430,
   "message" : "Successfully added to playlist."
+}, {
+  "user" : "david27",
+  "command" : "printCurrentPage",
+  "timestamp" : 430,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "search",
   "user" : "bob35",
@@ -210,6 +225,11 @@
   "user" : "bob35",
   "timestamp" : 2450,
   "message" : "Successfully selected I Don't Wanna Live Forever."
+}, {
+  "user" : "carol19",
+  "command" : "printCurrentPage",
+  "timestamp" : 2455,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 }, {
   "command" : "load",
   "user" : "bob35",
@@ -349,6 +369,11 @@
     "paused" : true
   }
 }, {
+  "user" : "david27",
+  "command" : "printCurrentPage",
+  "timestamp" : 3900,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 4000,
@@ -392,6 +417,11 @@
   "timestamp" : 4360,
   "message" : "Shuffle function activated successfully."
 }, {
+  "user" : "david27",
+  "command" : "printCurrentPage",
+  "timestamp" : 4400,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 4410,
@@ -413,6 +443,11 @@
     "shuffle" : false,
     "paused" : true
   }
+}, {
+  "user" : "carol19",
+  "command" : "printCurrentPage",
+  "timestamp" : 5000,
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[My playlist]"
 }, {
   "command" : "status",
   "user" : "bob35",

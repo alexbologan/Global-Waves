@@ -5,11 +5,14 @@ import app.audio.Collections.Podcast;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.user.User;
+import app.user.type.Artist;
 import app.utils.Enums;
+
 import fileio.input.EpisodeInput;
 import fileio.input.PodcastInput;
 import fileio.input.SongInput;
 import fileio.input.UserInput;
+import fileio.input.CommandInput;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -22,6 +25,8 @@ import java.util.List;
 public final class Admin {
     @Getter
     private static List<User> users = new ArrayList<>();
+    @Getter
+    private static final List<Artist> ARTISTS = new ArrayList<>();
     private static List<Song> songs = new ArrayList<>();
     private static List<Podcast> podcasts = new ArrayList<>();
     private static int timestamp = 0;
@@ -31,6 +36,11 @@ public final class Admin {
     private Admin() {
     }
 
+    /**
+     * Retrieves the singleton instance of the Admin class.
+     *
+     * @return The singleton instance of the Admin class.
+     */
     public static Admin getInstance() {
         if (instance == null) {
             instance = new Admin();
@@ -46,7 +56,8 @@ public final class Admin {
     public static void setUsers(final List<UserInput> userInputList) {
         users = new ArrayList<>();
         for (UserInput userInput : userInputList) {
-            users.add(new User(userInput.getUsername(), userInput.getAge(), userInput.getCity()));
+            users.add(new User(userInput.getUsername(), userInput.getAge(),
+                    userInput.getCity(), userInput.getType()));
         }
     }
 
@@ -64,6 +75,19 @@ public final class Admin {
         }
     }
 
+    /**
+     * Adds a list of songs to the existing collection.
+     *
+     * @param songInputList The list of SongInput objects containing song details.
+     *                      Each SongInput object corresponds to a song to be added.
+     */
+    public static void addSongs(final List<SongInput> songInputList) {
+        for (SongInput songInput : songInputList) {
+            songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
+                    songInput.getTags(), songInput.getLyrics(), songInput.getGenre(),
+                    songInput.getReleaseYear(), songInput.getArtist()));
+        }
+    }
 
     /**
      * Sets podcasts.
@@ -108,7 +132,7 @@ public final class Admin {
      */
     public static List<Playlist> getPlaylists() {
         List<Playlist> playlists = new ArrayList<>();
-        for (User user : users) {
+        for (User user : Admin.users) {
             playlists.addAll(user.getPlaylists());
         }
         return playlists;
@@ -121,13 +145,62 @@ public final class Admin {
      * @return the user
      */
     public static User getUser(final String username) {
-        for (User user : users) {
+        for (User user : Admin.users) {
             if (user.getUsername().equals(username)) {
                 return user;
             }
         }
         return null;
     }
+
+    /**
+     * Retrieves an artist based on the provided username.
+     *
+     * @param username The username of the artist to be retrieved.
+     */
+    public static Artist getArtist(final String username) {
+        for (Artist artist : Admin.ARTISTS) {
+            if (artist.getUsername().equals(username)) {
+                return artist;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Adds a new user or artist based on the provided command input.
+     *
+     * @param command The CommandInput containing user details and type information.
+     */
+    public static String addUser(final CommandInput command) {
+        String message;
+        if (getUser(command.getUsername()) != null) {
+            message = "The username " + command.getUsername() + " is already taken.";
+        } else {
+            switch (command.getType()) {
+                case "artist" -> {
+                    users.add(new Artist(command.getUsername(), command.getAge(), command.getCity(),
+                            command.getType()));
+                    ARTISTS.add((Artist) getUser(command.getUsername()));
+                }
+                case "user" -> {
+                    users.add(new User(command.getUsername(), command.getAge(),
+                            command.getCity(), command.getType()));
+                }
+                case "host" -> {
+                    message = "Invalid user type.";
+                    users.add(new User(command.getUsername(), command.getAge(),
+                            command.getCity(), command.getType()));
+                }
+                default -> {
+                    message = "Invalid user type.";
+                }
+            }
+            message = "The username " + command.getUsername() + " has been added successfully.";
+        }
+        return message;
+    }
+
 
     /**
      * Update timestamp.
@@ -141,7 +214,7 @@ public final class Admin {
             return;
         }
 
-        for (User user : users) {
+        for (User user : Admin.users) {
             user.simulateTime(elapsed);
         }
     }
@@ -188,9 +261,14 @@ public final class Admin {
         return topPlaylists;
     }
 
+    /**
+     * Retrieves a list of usernames for users who are currently online.
+     *
+     * @return A list of usernames representing online users.
+     */
     public static List<String> getOnlineUsers() {
         List<String> onlineUsers = new ArrayList<>();
-        for (User user : users) {
+        for (User user : Admin.users) {
             if (user.getConnectionStatus() == Enums.ConnectionStatus.ONLINE) {
                 onlineUsers.add(user.getUsername());
             }

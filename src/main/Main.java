@@ -92,7 +92,6 @@ public final class Main {
             }
 
             String commandName = command.getCommand();
-
             switch (commandName) {
                 case "search" -> outputs.add(CommandRunner.search(command));
                 case "select" -> outputs.add(CommandRunner.select(command));
@@ -119,7 +118,11 @@ public final class Main {
                 case "switchConnectionStatus" ->
                         outputs.add(CommandRunner.switchConnectionStatus(command));
                 case "getOnlineUsers" -> outputs.add(CommandRunner.getOnlineUsers(command));
-                //default -> System.out.println("Invalid command " + commandName);
+                case "addUser" -> outputs.add(CommandRunner.addUser(command));
+                case "addAlbum" -> outputs.add(CommandRunner.addAlbum(command));
+                case "showAlbums" -> outputs.add(CommandRunner.showAlbums(command));
+                case "printCurrentPage" -> outputs.add(CommandRunner.printCurrentPage(command));
+                default -> System.out.println("Invalid command " + commandName);
             }
         }
 
