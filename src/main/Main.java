@@ -82,6 +82,7 @@ public final class Main {
         Admin.setUsers(library.getUsers());
         Admin.setSongs(library.getSongs());
         Admin.setPodcasts(library.getPodcasts());
+        Admin.resetArtists();
 
         for (CommandInput command : commands) {
             if (Admin.getUser(command.getUsername()) != null) {
@@ -122,6 +123,8 @@ public final class Main {
                 case "addAlbum" -> outputs.add(CommandRunner.addAlbum(command));
                 case "showAlbums" -> outputs.add(CommandRunner.showAlbums(command));
                 case "printCurrentPage" -> outputs.add(CommandRunner.printCurrentPage(command));
+                case "addEvent" -> outputs.add(CommandRunner.addEvent(command));
+                case "addMerch" -> outputs.add(CommandRunner.addMerch(command));
                 default -> System.out.println("Invalid command " + commandName);
             }
         }

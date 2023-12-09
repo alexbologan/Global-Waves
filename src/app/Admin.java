@@ -25,7 +25,6 @@ import java.util.List;
 public final class Admin {
     @Getter
     private static List<User> users = new ArrayList<>();
-    @Getter
     private static final List<Artist> ARTISTS = new ArrayList<>();
     private static List<Song> songs = new ArrayList<>();
     private static List<Podcast> podcasts = new ArrayList<>();
@@ -46,6 +45,13 @@ public final class Admin {
             instance = new Admin();
         }
         return instance;
+    }
+
+    /**
+     * Resets the list of artists, clearing all existing entries.
+     */
+    public static void resetArtists() {
+        ARTISTS.clear();
     }
 
     /**
@@ -116,6 +122,9 @@ public final class Admin {
         return new ArrayList<>(songs);
     }
 
+    public static List<Artist> getArtists() {
+        return new ArrayList<>(ARTISTS);
+    }
     /**
      * Gets podcasts.
      *

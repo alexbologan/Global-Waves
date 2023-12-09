@@ -3,11 +3,13 @@ package app.searchBar;
 
 import app.Admin;
 import app.audio.LibraryEntry;
+import app.user.type.Artist;
 import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static app.searchBar.FilterUtils.filterArtistsByName;
 import static app.searchBar.FilterUtils.filterByAlbum;
 import static app.searchBar.FilterUtils.filterByArtist;
 import static app.searchBar.FilterUtils.filterByFollowers;
@@ -24,13 +26,15 @@ import static app.searchBar.FilterUtils.filterByTags;
  */
 public final class SearchBar {
     private List<LibraryEntry> results;
+    private List<Artist> artistsResults;
     private final String user;
     private static final Integer MAX_RESULTS = 5;
     @Getter
     private String lastSearchType;
-
     @Getter
     private LibraryEntry lastSelected;
+    @Getter
+    private Artist lastSelectedArtist;
 
     /**
      * Instantiates a new Search bar.
@@ -58,7 +62,7 @@ public final class SearchBar {
      * @return the list
      */
     public List<LibraryEntry> search(final Filters filters, final String type) {
-        List<LibraryEntry> entries;
+        List<LibraryEntry> entries = null;
 
         switch (type) {
             case "song":
@@ -137,6 +141,35 @@ public final class SearchBar {
     }
 
     /**
+     * Search artists list.
+     *
+     * @param filters the filters
+     * @param type    the type
+     * @return the list
+     */
+    public List<Artist> searchArtists(final Filters filters, final String type) {
+        List<Artist> artists;
+
+        if (type.equals("artist")) {
+            artists = new ArrayList<>(Admin.getArtists());
+
+            if (filters.getName() != null) {
+                artists = filterArtistsByName(artists, filters.getName());
+            }
+        } else {
+            artists = new ArrayList<>();
+        }
+
+        while (artists.size() > MAX_RESULTS) {
+            artists.remove(artists.size() - 1);
+        }
+
+        this.artistsResults = artists;
+        this.lastSearchType = type;
+        return this.artistsResults;
+    }
+
+    /**
      * Select library entry.
      *
      * @param itemNumber the item number
@@ -152,6 +185,25 @@ public final class SearchBar {
             results.clear();
 
             return lastSelected;
+        }
+    }
+
+    /**
+     * Select artist.
+     *
+     * @param itemNumber the item number
+     * @return the artist
+     */
+    public Artist selectArtist(final Integer itemNumber) {
+        if (this.artistsResults.size() < itemNumber) {
+            artistsResults.clear();
+
+            return null;
+        } else {
+            lastSelectedArtist =  this.artistsResults.get(itemNumber - 1);
+            artistsResults.clear();
+
+            return lastSelectedArtist;
         }
     }
 }

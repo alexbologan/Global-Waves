@@ -15,6 +15,7 @@ import fileio.input.SongInput;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public final class CommandRunner {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
@@ -569,7 +570,65 @@ public final class CommandRunner {
     public static ObjectNode printCurrentPage(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         assert user != null;
-        String message = user.printCurrentPage();
+        String message;
+        if (user.getConnectionStatus() == Enums.ConnectionStatus.OFFLINE) {
+            message = user.getUsername() + " is offline.";
+        } else {
+            message = user.printCurrentPage();
+        }
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    /**
+     * Adds a new event for the artist user.
+     *
+     * @param commandInput The CommandInput with event details.
+     */
+    public static ObjectNode addEvent(final CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+        String message;
+        if (user == null) {
+            message = "The username " + commandInput.getUsername() + " doesn't exist.";
+        } else if (!Objects.equals(user.getUserType(), "artist")) {
+            message = user.getUsername() + " is not an artist.";
+        } else {
+            Artist artist = Admin.getArtist(commandInput.getUsername());
+            message = artist.addEvent(commandInput);
+        }
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+
+    /**
+     * Adds new merchandise for the artist user.
+     *
+     * @param commandInput The CommandInput with merchandise details.
+     */
+    public static ObjectNode addMerch(final CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+        String message;
+        if (user == null) {
+            message = "The username " + commandInput.getUsername() + " doesn't exist.";
+        } else if (!Objects.equals(user.getUserType(), "artist")) {
+            message = user.getUsername() + " is not an artist.";
+        } else {
+            Artist artist = Admin.getArtist(commandInput.getUsername());
+            message = artist.addMerch(commandInput);
+        }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
         objectNode.put("user", commandInput.getUsername());

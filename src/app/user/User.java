@@ -1,5 +1,8 @@
 package app.user;
 
+import app.ArtistStuff.Event;
+import app.ArtistStuff.Merch;
+import app.audio.Collections.Album;
 import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.PlaylistOutput;
@@ -10,6 +13,7 @@ import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
+import app.user.type.Artist;
 import app.utils.Enums;
 import lombok.Getter;
 
@@ -33,7 +37,8 @@ public class User {
     private final SearchBar searchBar;
     private boolean lastSearched;
     private Enums.ConnectionStatus connectionStatus;
-    private final String currentPage;
+    private String currentPage;
+    private String lastSearchedType;
 
     /**
      * Instantiates a new User.
@@ -48,7 +53,11 @@ public class User {
         this.age = age;
         this.city = city;
         this.userType = Objects.requireNonNullElse(userType, "user");
-        connectionStatus = Enums.ConnectionStatus.ONLINE;
+        if (this.userType.equals("artist")) {
+            connectionStatus = Enums.ConnectionStatus.OFFLINE;
+        } else {
+            connectionStatus = Enums.ConnectionStatus.ONLINE;
+        }
         playlists = new ArrayList<>();
         likedSongs = new ArrayList<>();
         followedPlaylists = new ArrayList<>();
@@ -56,6 +65,7 @@ public class User {
         searchBar = new SearchBar(username);
         lastSearched = false;
         currentPage = "Home";
+        lastSearchedType = null;
     }
 
     /**
@@ -71,11 +81,20 @@ public class User {
 
         lastSearched = true;
         ArrayList<String> results = new ArrayList<>();
-        List<LibraryEntry> libraryEntries = searchBar.search(filters, type);
 
-        for (LibraryEntry libraryEntry : libraryEntries) {
-            results.add(libraryEntry.getName());
+        if (Objects.equals(type, "artist")) {
+            List<Artist> libraryEntries = searchBar.searchArtists(filters, type);
+            for (Artist libraryEntry : libraryEntries) {
+                results.add(libraryEntry.getUsername());
+            }
+            lastSearchedType = "artist";
+        } else {
+            List<LibraryEntry> libraryEntries = searchBar.search(filters, type);
+            for (LibraryEntry libraryEntry : libraryEntries) {
+                results.add(libraryEntry.getName());
+            }
         }
+
         return results;
     }
 
@@ -92,13 +111,20 @@ public class User {
 
         lastSearched = false;
 
-        LibraryEntry selected = searchBar.select(itemNumber);
-
-        if (selected == null) {
-            return "The selected ID is too high.";
+        if (Objects.equals(lastSearchedType, "artist")) {
+            Artist selected = searchBar.selectArtist(itemNumber);
+            if (selected == null) {
+                return "The selected ID is too high.";
+            }
+            currentPage = "Artist";
+            return "Successfully selected %s's page.".formatted(selected.getUsername());
+        } else {
+            LibraryEntry selected = searchBar.select(itemNumber);
+            if (selected == null) {
+                return "The selected ID is too high.";
+            }
+            return "Successfully selected %s.".formatted(selected.getName());
         }
-
-        return "Successfully selected %s.".formatted(selected.getName());
     }
 
     /**
@@ -496,35 +522,67 @@ public class User {
      * @return A formatted string containing liked songs and followed playlists.
      */
     public String printCurrentPage() {
-        if (currentPage.equals("Home")) {
-            String message = "Liked songs:\n\t[";
+        switch (currentPage) {
+            case "Home" -> {
+                StringBuilder message = new StringBuilder("Liked songs:\n\t[");
 
-            for (Song song : likedSongs) {
-                message += song.getName() + ", ";
+                for (Song song : likedSongs) {
+                    message.append(song.getName()).append(", ");
+                }
+
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+
+                message.append("]\n\nFollowed playlists:\n\t[");
+
+                for (Playlist playlist : followedPlaylists) {
+                    message.append(playlist.getName()).append(", ");
+                }
+
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+                return message + "]";
             }
+            case "Artist" -> {
+                Artist artist = searchBar.getLastSelectedArtist();
+                StringBuilder message = new StringBuilder("Albums:\n\t[");
+                for (Album album : artist.getAlbums()) {
+                    message.append(album.getName()).append(", ");
+                }
 
-            if (message.charAt(message.length() - 1) == ' ') {
-                message = message.substring(0, message.length() - 2);
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+
+                message.append("]\n\nMerch:\n\t[");
+                for (Merch merch : artist.getMerchandises()) {
+                    message.append(merch.getName()).append(" - ").append(merch.getPrice())
+                            .append(":\n\t").append(merch.getDescription()).append(", ");
+                }
+
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+
+                message.append("]\n\nEvents:\n\t[");
+                for (Event event : artist.getEvents()) {
+                    message.append(event.getName()).append(" - ").append(event.getDate())
+                            .append(":\n\t").append(event.getDescription()).append(", ");
+                }
+
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+                return message + "]";
             }
-
-            message += "]\n\nFollowed playlists:\n\t[";
-
-            for (Playlist playlist : followedPlaylists) {
-                message += playlist.getName() + ", ";
+            case "Playlist" -> {
+                return "Playlist";
             }
-
-            if (message.charAt(message.length() - 1) == ' ') {
-                message = message.substring(0, message.length() - 2);
+            default -> {
+                return "Unknown";
             }
-            return message + "]";
-        } else if (currentPage.equals("Search")) {
-            return "Search";
-        } else if (currentPage.equals("Playlist")) {
-            return "Playlist";
-        } else if (currentPage.equals("Player")) {
-            return "Player";
-        } else {
-            return "Unknown";
         }
     }
 
