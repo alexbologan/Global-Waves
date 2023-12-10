@@ -71,6 +71,15 @@ public abstract class LibraryEntry {
     }
 
     /**
+     * Matches description boolean.
+     *
+     * @param genre the genre
+     * @return the boolean
+     */
+    public boolean matchesDescription(final String genre) {
+        return false;
+    }
+    /**
      * Matches artist boolean.
      *
      * @param artist the artist

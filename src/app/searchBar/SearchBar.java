@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static app.searchBar.FilterUtils.filterAlbumsByOwner;
+import static app.searchBar.FilterUtils.filterAlbumsByDescription;
+import static app.searchBar.FilterUtils.filterAlbumsByName;
 import static app.searchBar.FilterUtils.filterArtistsByName;
 import static app.searchBar.FilterUtils.filterByAlbum;
 import static app.searchBar.FilterUtils.filterByArtist;
@@ -134,9 +136,15 @@ public final class SearchBar {
 
                 break;
             case "album":
+                entries = new ArrayList<>(Admin.getAlbums());
+                if (filters.getName() != null) {
+                    entries = filterAlbumsByName(entries, filters.getName());
+                }
                 if (filters.getOwner() != null) {
-                    entries = filterAlbumsByOwner(new ArrayList<>(Admin.getArtists()),
-                            filters.getOwner());
+                    entries = filterAlbumsByOwner(entries, filters.getOwner());
+                }
+                if (filters.getDescription() != null) {
+                    entries = filterAlbumsByDescription(entries, filters.getReleaseYear());
                 }
                 break;
             default:
@@ -174,6 +182,13 @@ public final class SearchBar {
         return this.artistsResults;
     }
 
+    /**
+     * Search hosts list.
+     *
+     * @param filters the filters
+     * @param type    the type
+     * @return the list
+     */
     public List<Host> searchHost(final Filters filters, final String type) {
         List<Host> hosts = new ArrayList<>(Admin.getHosts());
         if (filters.getName() != null) {
@@ -227,6 +242,12 @@ public final class SearchBar {
         }
     }
 
+    /**
+     * Select host.
+     *
+     * @param itemNumber the item number
+     * @return the host
+     */
     public Host selectHost(final Integer itemNumber) {
         if (this.hostsResults.size() < itemNumber) {
             hostsResults.clear();

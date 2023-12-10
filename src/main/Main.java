@@ -75,7 +75,7 @@ public final class Main {
                                                                + "library/library.json"),
                                                                LibraryInput.class);
         CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH
-                                                                  + "test05_etapa2_playPause_playlist_podcast.json"),
+                                                                  + filePath1),
                                                                   CommandInput[].class);
         ArrayNode outputs = objectMapper.createArrayNode();
 

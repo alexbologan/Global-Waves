@@ -28,10 +28,11 @@ import java.util.Objects;
 public final class Admin {
     @Getter
     private static List<User> users = new ArrayList<>();
-    private static final List<Artist> ARTISTS = new ArrayList<>();
-    private static final List<Host> HOSTS = new ArrayList<>();
+    private static List<Artist> artists = new ArrayList<>();
+    private static List<Host> hosts = new ArrayList<>();
     private static List<Song> songs = new ArrayList<>();
     private static List<Podcast> podcasts = new ArrayList<>();
+    private static List<Album> albums = new ArrayList<>();
     private static int timestamp = 0;
     private static final int LIMIT = 5;
     private static Admin instance = null;
@@ -55,14 +56,14 @@ public final class Admin {
      * Resets the list of artists, clearing all existing entries.
      */
     public static void resetArtists() {
-        ARTISTS.clear();
+        artists.clear();
     }
 
     /**
      * Resets the list of hosts, clearing all existing entries.
      */
     public static void resetHosts() {
-        HOSTS.clear();
+        hosts.clear();
     }
     /**
      * Sets users.
@@ -123,8 +124,23 @@ public final class Admin {
         }
     }
 
+
+    /**
+     * Adds a podcast to the collection.
+     *
+     * @param podcast The podcast to be added.
+     */
     public static void addPodcast(final Podcast podcast) {
         podcasts.add(podcast);
+    }
+
+    /**
+     * Adds an album to the collection.
+     *
+     * @param album The album to be added.
+     */
+    public static void addAlbum(final Album album) {
+        albums.add(album);
     }
 
     /**
@@ -136,12 +152,31 @@ public final class Admin {
         return new ArrayList<>(songs);
     }
 
-    public static List<Artist> getArtists() {
-        return new ArrayList<>(ARTISTS);
+    /**
+     * Gets albums.
+     *
+     * @return the albums
+     */
+    public static List<Album> getAlbums() {
+        return new ArrayList<>(albums);
     }
 
+    /**
+     * Gets artists.
+     *
+     * @return the artists
+     */
+    public static List<Artist> getArtists() {
+        return new ArrayList<>(artists);
+    }
+
+    /**
+     * Gets hosts.
+     *
+     * @return the hosts
+     */
     public static List<Host> getHosts() {
-        return new ArrayList<>(HOSTS);
+        return new ArrayList<>(hosts);
     }
     /**
      * Gets podcasts.
@@ -180,6 +215,12 @@ public final class Admin {
         return null;
     }
 
+    /**
+     * Deletes a user from the collection, considering the user type.
+     *
+     * @param user The user to be deleted.
+     * @return A message indicating the success of the operation.
+     */
     public static String deleteUser(final User user) {
         if (Objects.equals(user.getUserType(), "artist")) {
             return deleteArtist(user.getUsername());
@@ -188,6 +229,12 @@ public final class Admin {
         return user.getUsername() + " was successfully deleted.";
     }
 
+    /**
+     * Deletes an artist from the collection.
+     *
+     * @param username The username of the artist to be deleted.
+     * @return A message indicating the success of the operation.
+     */
     public static String deleteArtist(final String username) {
         Artist artist = (Artist) getUser(username);
         for (User user1 : users) {
@@ -210,7 +257,7 @@ public final class Admin {
      * @param username The username of the artist to be retrieved.
      */
     public static Artist getArtist(final String username) {
-        for (Artist artist : Admin.ARTISTS) {
+        for (Artist artist : Admin.artists) {
             if (artist.getUsername().equals(username)) {
                 return artist;
             }
@@ -218,9 +265,13 @@ public final class Admin {
         return null;
     }
 
-
+    /**
+     * Retrieves a host based on the provided username.
+     *
+     * @param username The username of the host to be retrieved.
+     */
     public static Host getHost(final String username) {
-        for (Host host : Admin.HOSTS) {
+        for (Host host : Admin.hosts) {
             if (host.getUsername().equals(username)) {
                 return host;
             }
@@ -244,7 +295,7 @@ public final class Admin {
                         if (user.getUserType().equals("host")) {
                             users.add(new Artist(command.getUsername(), command.getAge(),
                                     command.getCity(), command.getType()));
-                            ARTISTS.add((Artist) getUser(command.getUsername()));
+                            artists.add((Artist) getUser(command.getUsername()));
                             added = true;
                             break;
                         }
@@ -252,7 +303,7 @@ public final class Admin {
                     if (!added) {
                         users.add(new Artist(command.getUsername(), command.getAge(),
                                 command.getCity(), command.getType()));
-                        ARTISTS.add((Artist) getUser(command.getUsername()));
+                        artists.add((Artist) getUser(command.getUsername()));
                     }
                 }
                 case "user" -> {
@@ -273,7 +324,7 @@ public final class Admin {
                 case "host" -> {
                     users.add(new Host(command.getUsername(), command.getAge(),
                             command.getCity(), command.getType()));
-                    HOSTS.add((Host) getUser(command.getUsername()));
+                    hosts.add((Host) getUser(command.getUsername()));
                 }
                 default -> {
                     message = "Invalid user type.";
@@ -359,6 +410,11 @@ public final class Admin {
         return onlineUsers;
     }
 
+    /**
+     * Retrieves a list of usernames for all users.
+     *
+     * @return A list of usernames representing all users.
+     */
     public static List<String> getAllUsers() {
         List<String> allUsers = new ArrayList<>();
         for (User user : Admin.users) {

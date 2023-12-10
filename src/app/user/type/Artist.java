@@ -54,6 +54,7 @@ public final class Artist extends User {
             return username + " has the same song at least twice in this album.";
         } else {
             albums.add(album);
+            Admin.addAlbum(album);
             Admin.addSongs(command.getSongs());
             return username + " has added new album successfully.";
         }

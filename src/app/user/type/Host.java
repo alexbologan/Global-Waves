@@ -26,6 +26,11 @@ public final class Host extends User {
         announcements = new ArrayList<>();
     }
 
+    /**
+     * Adds a new podcast for the host based on the provided command input.
+     *
+     * @param podcast Containing podcast information.
+     */
     public String addPodcast(final Podcast podcast) {
         if (verifyPodcastName(podcast)) {
             return username + " has another podcast with the same name.";
@@ -38,6 +43,11 @@ public final class Host extends User {
         }
     }
 
+    /**
+     * Adds a new announcement for the host based on the provided command input.
+     *
+     * @param announcement Containing announcement information.
+     */
     public String addAnnouncement(final Announcement announcement) {
         if (verifyAnnouncementName(announcement)) {
             return username + " has already added an announcement with this name.";
@@ -47,6 +57,11 @@ public final class Host extends User {
         }
     }
 
+    /**
+     * Removes an announcement from the host's list of announcements.
+     *
+     * @param name The name of the announcement to be removed.
+     */
     public String removeAnnouncement(final String name) {
         for (Announcement announcement : announcements) {
             if (announcement.getName().equals(name)) {
@@ -57,6 +72,11 @@ public final class Host extends User {
         return username + " has no announcement with the given name.";
     }
 
+    /**
+     * Removes a podcast from the host's list of podcasts.
+     *
+     * @param name The name of the podcast to be removed.
+     */
     public String removePodcast(final String name) {
         for (Podcast podcast : podcasts) {
             if (podcast.getName().equals(name)) {
@@ -67,9 +87,18 @@ public final class Host extends User {
         return username + " has no podcast with the given name.";
     }
 
+    /**
+     * Shows the podcasts of the host.
+     */
     public List<Podcast> showPodcasts() {
         return podcasts;
     }
+
+    /**
+     * Verifies if the artist has another podcast with the same name.
+     *
+     * @param podcast Containing podcast information.
+     */
     public boolean verifyPodcastName(final Podcast podcast) {
         for (Podcast p : podcasts) {
             if (p.getName().equals(podcast.getName())) {
@@ -79,6 +108,11 @@ public final class Host extends User {
         return false;
     }
 
+    /**
+     * Verifies if the host has another episode with the same name in the current podcast.
+     *
+     * @param podcast The CommandInput containing episode details and host information.
+     */
     public boolean verifyEpisodes(final Podcast podcast) {
         Map<String, Integer> elementCount = new HashMap<>();
         for (Episode episode : podcast.getEpisodes()) {
@@ -91,6 +125,11 @@ public final class Host extends User {
         return false;
     }
 
+    /**
+     * Verifies if the host has another announcement with the same name.
+     *
+     * @param announcement The CommandInput containing event details and host information.
+     */
     public boolean verifyAnnouncementName(final Announcement announcement) {
         for (Announcement a : announcements) {
             if (a.getName().equals(announcement.getName())) {
@@ -100,6 +139,12 @@ public final class Host extends User {
         return false;
     }
 
+    /**
+     * Matches name.
+     *
+     * @param nameFilter the name filter
+     * @return the boolean
+     */
     public boolean matchesName(final String nameFilter) {
         return username.toLowerCase().startsWith(nameFilter.toLowerCase());
     }

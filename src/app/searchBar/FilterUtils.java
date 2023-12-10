@@ -1,6 +1,5 @@
 package app.searchBar;
 
-import app.audio.Collections.Album;
 import app.audio.LibraryEntry;
 import app.user.type.Artist;
 import app.user.type.Host;
@@ -52,6 +51,13 @@ public final class FilterUtils {
         return result;
     }
 
+    /**
+     * Filter hosts by name list.
+     *
+     * @param entries the entries
+     * @param name    the name
+     * @return the list
+     */
     public static List<Host> filterHostsByName(final List<Host> entries,
                                                final String name) {
         List<Host> result = new ArrayList<>();
@@ -63,14 +69,55 @@ public final class FilterUtils {
         return result;
     }
 
-    public static List<LibraryEntry> filterAlbumsByOwner(final List<Artist> entries,
+    /**
+     * Filter albums by owner.
+     *
+     * @param entries the entries
+     * @param owner   the owner
+     * @return the list
+     */
+    public static List<LibraryEntry> filterAlbumsByOwner(final List<LibraryEntry> entries,
                                                    final String owner) {
         List<LibraryEntry> result = new ArrayList<>();
-        for (Artist entry : entries) {
-            for (Album album : entry.getAlbums()) {
-                if (album.matchesOwner(owner)) {
-                    result.add(album);
-                }
+        for (LibraryEntry libraryEntry: entries) {
+            if (libraryEntry.matchesOwner(owner)) {
+                result.add(libraryEntry);
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Filter albums by description.
+     *
+     * @param entries the entries
+     * @param description   the description
+     * @return the list
+     */
+    public static List<LibraryEntry> filterAlbumsByDescription(final List<LibraryEntry> entries,
+                                                   final String description) {
+        List<LibraryEntry> result = new ArrayList<>();
+        for (LibraryEntry libraryEntry: entries) {
+            if (libraryEntry.matchesDescription(description)) {
+                result.add(libraryEntry);
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Filter albums by name.
+     *
+     * @param entries the entries
+     * @param name   the name
+     * @return the list
+     */
+    public static List<LibraryEntry> filterAlbumsByName(final List<LibraryEntry> entries,
+                                                   final String name) {
+        List<LibraryEntry> result = new ArrayList<>();
+        for (LibraryEntry libraryEntry: entries) {
+            if (libraryEntry.matchesName(name)) {
+                result.add(libraryEntry);
             }
         }
         return result;

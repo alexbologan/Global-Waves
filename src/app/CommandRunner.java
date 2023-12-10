@@ -21,7 +21,6 @@ import fileio.input.EpisodeInput;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 public final class CommandRunner {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
@@ -37,6 +36,7 @@ public final class CommandRunner {
     public static ObjectNode search(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         Filters filters = new Filters(commandInput.getFilters());
+        filters.setDescription(commandInput.getDescription());
         String type = commandInput.getType();
 
         if (user == null) {
@@ -661,6 +661,11 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Deletes a user based on the provided command input.
+     *
+     * @param commandInput The command input containing the username.
+     */
     public static ObjectNode deleteUser(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         String message;
@@ -679,6 +684,11 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Adds a podcast to the host's collection based on the provided command input.
+     *
+     * @param commandInput The command input containing podcast information.
+     */
     public static ObjectNode addPodcast(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         String message;
@@ -706,6 +716,11 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Adds an announcement to the host's collection based on the provided command input.
+     *
+     * @param commandInput The command input containing announcement information.
+     */
     public static ObjectNode addAnnouncement(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         String message;
@@ -728,6 +743,11 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Removes an announcement from the host's collection based on the provided command input.
+     *
+     * @param commandInput The command input containing the announcement name.
+     */
     public static ObjectNode removeAnnouncement(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
         String message;
@@ -749,13 +769,17 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Retrieves and formats the podcasts of a host based on the provided command input.
+     *
+     * @param commandInput The command input containing the username.
+     */
     public static ObjectNode showPodcasts(final CommandInput commandInput) {
 
         Host host = Admin.getHost(commandInput.getUsername());
         List<Podcast> podcasts = host.showPodcasts();
         ArrayNode jsonArray = OBJECT_MAPPER.createArrayNode();
 
-        // Add each Podcast object to the JSON array
         for (Podcast podcast : podcasts) {
             ObjectNode podcastObject = OBJECT_MAPPER.createObjectNode();
             podcastObject.put("name", podcast.getName());
