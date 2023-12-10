@@ -20,7 +20,6 @@ public final class Player {
     @Getter
     private String type;
     private final int skipTime = 90;
-
     private ArrayList<PodcastBookmark> bookmarks = new ArrayList<>();
 
 
@@ -74,6 +73,8 @@ public final class Player {
             return new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
         } else if ("podcast".equals(type)) {
             return createPodcastSource((AudioCollection) entry, bookmarks);
+        } else if ("album".equals(type)) {
+            return new PlayerSource(Enums.PlayerSourceType.ALBUM, (AudioCollection) entry);
         }
 
         return null;
@@ -99,7 +100,6 @@ public final class Player {
         if ("podcast".equals(this.type)) {
             bookmarkPodcast();
         }
-
         this.type = sourceType;
         this.source = createSource(sourceType, entry, bookmarks);
         this.repeatMode = Enums.RepeatMode.NO_REPEAT;
@@ -261,9 +261,11 @@ public final class Player {
      * @return the stats
      */
     public PlayerStats getStats() {
+        String owner = "";
         String filename = "";
         int duration = 0;
         if (source != null && source.getAudioFile() != null) {
+            System.out.println(owner);
             filename = source.getAudioFile().getName();
             duration = source.getDuration();
         } else {

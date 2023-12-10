@@ -1,7 +1,9 @@
 package app.searchBar;
 
+import app.audio.Collections.Album;
 import app.audio.LibraryEntry;
 import app.user.type.Artist;
+import app.user.type.Host;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +47,30 @@ public final class FilterUtils {
         for (Artist entry : entries) {
             if (entry.matchesName(name)) {
                 result.add(entry);
+            }
+        }
+        return result;
+    }
+
+    public static List<Host> filterHostsByName(final List<Host> entries,
+                                               final String name) {
+        List<Host> result = new ArrayList<>();
+        for (Host entry : entries) {
+            if (entry.matchesName(name)) {
+                result.add(entry);
+            }
+        }
+        return result;
+    }
+
+    public static List<LibraryEntry> filterAlbumsByOwner(final List<Artist> entries,
+                                                   final String owner) {
+        List<LibraryEntry> result = new ArrayList<>();
+        for (Artist entry : entries) {
+            for (Album album : entry.getAlbums()) {
+                if (album.matchesOwner(owner)) {
+                    result.add(album);
+                }
             }
         }
         return result;

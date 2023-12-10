@@ -4,11 +4,13 @@ package app.searchBar;
 import app.Admin;
 import app.audio.LibraryEntry;
 import app.user.type.Artist;
+import app.user.type.Host;
 import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static app.searchBar.FilterUtils.filterAlbumsByOwner;
 import static app.searchBar.FilterUtils.filterArtistsByName;
 import static app.searchBar.FilterUtils.filterByAlbum;
 import static app.searchBar.FilterUtils.filterByArtist;
@@ -20,6 +22,7 @@ import static app.searchBar.FilterUtils.filterByOwner;
 import static app.searchBar.FilterUtils.filterByPlaylistVisibility;
 import static app.searchBar.FilterUtils.filterByReleaseYear;
 import static app.searchBar.FilterUtils.filterByTags;
+import static app.searchBar.FilterUtils.filterHostsByName;
 
 /**
  * The type Search bar.
@@ -27,6 +30,7 @@ import static app.searchBar.FilterUtils.filterByTags;
 public final class SearchBar {
     private List<LibraryEntry> results;
     private List<Artist> artistsResults;
+    private List<Host> hostsResults;
     private final String user;
     private static final Integer MAX_RESULTS = 5;
     @Getter
@@ -35,6 +39,8 @@ public final class SearchBar {
     private LibraryEntry lastSelected;
     @Getter
     private Artist lastSelectedArtist;
+    @Getter
+    private Host lastSelectedHost;
 
     /**
      * Instantiates a new Search bar.
@@ -127,6 +133,12 @@ public final class SearchBar {
                 }
 
                 break;
+            case "album":
+                if (filters.getOwner() != null) {
+                    entries = filterAlbumsByOwner(new ArrayList<>(Admin.getArtists()),
+                            filters.getOwner());
+                }
+                break;
             default:
                 entries = new ArrayList<>();
         }
@@ -147,17 +159,10 @@ public final class SearchBar {
      * @param type    the type
      * @return the list
      */
-    public List<Artist> searchArtists(final Filters filters, final String type) {
-        List<Artist> artists;
-
-        if (type.equals("artist")) {
-            artists = new ArrayList<>(Admin.getArtists());
-
-            if (filters.getName() != null) {
-                artists = filterArtistsByName(artists, filters.getName());
-            }
-        } else {
-            artists = new ArrayList<>();
+    public List<Artist> searchArtist(final Filters filters, final String type) {
+        List<Artist> artists = new ArrayList<>(Admin.getArtists());
+        if (filters.getName() != null) {
+            artists = filterArtistsByName(artists, filters.getName());
         }
 
         while (artists.size() > MAX_RESULTS) {
@@ -167,6 +172,21 @@ public final class SearchBar {
         this.artistsResults = artists;
         this.lastSearchType = type;
         return this.artistsResults;
+    }
+
+    public List<Host> searchHost(final Filters filters, final String type) {
+        List<Host> hosts = new ArrayList<>(Admin.getHosts());
+        if (filters.getName() != null) {
+            hosts = filterHostsByName(hosts, filters.getName());
+        }
+
+        while (hosts.size() > MAX_RESULTS) {
+            hosts.remove(hosts.size() - 1);
+        }
+
+        this.hostsResults = hosts;
+        this.lastSearchType = type;
+        return this.hostsResults;
     }
 
     /**
@@ -204,6 +224,19 @@ public final class SearchBar {
             artistsResults.clear();
 
             return lastSelectedArtist;
+        }
+    }
+
+    public Host selectHost(final Integer itemNumber) {
+        if (this.hostsResults.size() < itemNumber) {
+            hostsResults.clear();
+
+            return null;
+        } else {
+            lastSelectedHost =  this.hostsResults.get(itemNumber - 1);
+            hostsResults.clear();
+
+            return lastSelectedHost;
         }
     }
 }

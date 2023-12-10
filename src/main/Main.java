@@ -75,7 +75,7 @@ public final class Main {
                                                                + "library/library.json"),
                                                                LibraryInput.class);
         CommandInput[] commands = objectMapper.readValue(new File(CheckerConstants.TESTS_PATH
-                                                                  + filePath1),
+                                                                  + "test05_etapa2_playPause_playlist_podcast.json"),
                                                                   CommandInput[].class);
         ArrayNode outputs = objectMapper.createArrayNode();
 
@@ -83,7 +83,7 @@ public final class Main {
         Admin.setSongs(library.getSongs());
         Admin.setPodcasts(library.getPodcasts());
         Admin.resetArtists();
-
+        Admin.resetHosts();
         for (CommandInput command : commands) {
             if (Admin.getUser(command.getUsername()) != null) {
                 if (Admin.getUser(command.getUsername()).getConnectionStatus() == Enums
@@ -125,6 +125,12 @@ public final class Main {
                 case "printCurrentPage" -> outputs.add(CommandRunner.printCurrentPage(command));
                 case "addEvent" -> outputs.add(CommandRunner.addEvent(command));
                 case "addMerch" -> outputs.add(CommandRunner.addMerch(command));
+                case "getAllUsers" -> outputs.add(CommandRunner.getAllUsers(command));
+                case "deleteUser" -> outputs.add(CommandRunner.deleteUser(command));
+                case "addPodcast" -> outputs.add(CommandRunner.addPodcast(command));
+                case "addAnnouncement" -> outputs.add(CommandRunner.addAnnouncement(command));
+                case "removeAnnouncement" -> outputs.add(CommandRunner.removeAnnouncement(command));
+                case "showPodcasts" -> outputs.add(CommandRunner.showPodcasts(command));
                 default -> System.out.println("Invalid command " + commandName);
             }
         }

@@ -7,7 +7,7 @@ import lombok.Getter;
 public class PlayerStats {
     private final String name;
     private final int remainedTime;
-    private String repeat;
+    private final String repeat;
     private final boolean shuffle;
     private final boolean paused;
 

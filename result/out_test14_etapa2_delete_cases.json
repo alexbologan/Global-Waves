@@ -1,198 +1,281 @@
 [ {
-  "command" : "addUser",
-  "user" : "sonicpainter",
-  "timestamp" : 45,
-  "message" : "The username sonicpainter has been added successfully."
-}, {
-  "command" : "addUser",
-  "user" : "echoexplorer",
-  "timestamp" : 50,
-  "message" : "The username echoexplorer has been added successfully."
-}, {
-  "command" : "addUser",
-  "user" : "rhythmweaver",
-  "timestamp" : 55,
-  "message" : "The username rhythmweaver has been added successfully."
-}, {
-  "command" : "addUser",
-  "user" : "soundseeker21",
-  "timestamp" : 60,
-  "message" : "The username soundseeker21 has been added successfully."
-}, {
-  "command" : "addUser",
-  "user" : "melodicwanderer",
-  "timestamp" : 65,
-  "message" : "The username melodicwanderer has been added successfully."
-}, {
-  "command" : "addUser",
-  "user" : "audiosage",
-  "timestamp" : 70,
-  "message" : "The username audiosage has been added successfully."
-}, {
-  "command" : "addUser",
-  "user" : "soundcurator",
-  "timestamp" : 75,
-  "message" : "The username soundcurator has been added successfully."
-}, {
-  "command" : "addUser",
-  "user" : "musicmaven",
-  "timestamp" : 80,
-  "message" : "The username musicmaven has been added successfully."
-}, {
-  "command" : "createPlaylist",
-  "user" : "melodicwanderer",
-  "timestamp" : 305,
-  "message" : "Playlist created successfully."
-}, {
-  "command" : "addAlbum",
-  "user" : "sonicpainter",
-  "timestamp" : 310,
-  "message" : "sonicpainter has added new album successfully."
-}, {
   "command" : "search",
-  "user" : "melodicwanderer",
-  "timestamp" : 315,
-  "message" : "Search returned 2 results",
-  "results" : [ "Aurora Harmony", "Azure Echoes" ]
+  "user" : "alice22",
+  "timestamp" : 10,
+  "message" : "Search returned 1 results",
+  "results" : [ "TED Radio Hour" ]
 }, {
   "command" : "select",
-  "user" : "melodicwanderer",
-  "timestamp" : 320,
-  "message" : "Successfully selected Azure Echoes."
+  "user" : "alice22",
+  "timestamp" : 15,
+  "message" : "Successfully selected TED Radio Hour."
 }, {
   "command" : "load",
-  "user" : "melodicwanderer",
-  "timestamp" : 325,
+  "user" : "alice22",
+  "timestamp" : 20,
   "message" : "Playback loaded successfully."
 }, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 49,
+  "stats" : {
+    "name" : "The Power of Design",
+    "remainedTime" : 3075,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "addUser",
+  "user" : "soundseeker",
+  "timestamp" : 50,
+  "message" : "The username soundseeker has been added successfully."
+}, {
+  "user" : "soundseeker",
+  "command" : "addPodcast",
+  "timestamp" : 51,
+  "message" : "soundseeker has added new podcast successfully."
+}, {
+  "user" : "alice22",
+  "command" : "addPodcast",
+  "timestamp" : 52,
+  "message" : "alice22 is not a host."
+}, {
+  "user" : "soundseeker",
+  "command" : "addPodcast",
+  "timestamp" : 53,
+  "message" : "soundseeker has added new podcast successfully."
+}, {
+  "user" : "soundseeker",
+  "command" : "addPodcast",
+  "timestamp" : 53,
+  "message" : "soundseeker has another podcast with the same name."
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 55,
+  "message" : "Search returned 1 results",
+  "results" : [ "soundseeker" ]
+}, {
+  "user" : "soundseeker",
+  "command" : "addAnnouncement",
+  "timestamp" : 56,
+  "message" : "soundseeker has successfully added new announcement."
+}, {
+  "command" : "select",
+  "user" : "alice22",
+  "timestamp" : 57,
+  "message" : "Successfully selected soundseeker's page."
+}, {
+  "user" : "alice22",
+  "command" : "printCurrentPage",
+  "timestamp" : 58,
+  "message" : "Podcasts:\n\t[Auditory Adventures:\n\t[Exploring Sonic Landscapes - Journey through the world's most unique auditory experiences., The Future of Music Technology - A look into the innovations shaping the future of music production and listening., Cultural Beats - An exploration of how different cultures influence music genres.]\n, Harmony & History:\n\t[The Roots of Blues - Tracing the origins and evolution of blues music., Classical Music's Modern Impact - Discussing how classical music continues to influence contemporary artists., Jazz Journeys - Exploring the rich history and vibrant present of jazz music., The Folk Revival - Examining the resurgence of folk music in modern times.]\n]\n\nAnnouncements:\n\t[Announcement1:\n\tPrimul anunt adaugat!\n]"
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 60,
+  "message" : "Search returned 1 results",
+  "results" : [ "TED Radio Hour" ]
+}, {
+  "command" : "select",
+  "user" : "alice22",
+  "timestamp" : 65,
+  "message" : "Successfully selected TED Radio Hour."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 70,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 73,
+  "stats" : {
+    "name" : "The Power of Design",
+    "remainedTime" : 3066,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 75,
+  "message" : "Search returned 1 results",
+  "results" : [ "Auditory Adventures" ]
+}, {
+  "command" : "select",
+  "user" : "alice22",
+  "timestamp" : 80,
+  "message" : "Successfully selected Auditory Adventures."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 85,
+  "message" : "Playback loaded successfully."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 86,
+  "stats" : {
+    "name" : "Exploring Sonic Landscapes",
+    "remainedTime" : 2699,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "playPause",
+  "user" : "alice22",
+  "timestamp" : 3200,
+  "message" : "Playback paused successfully."
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 3201,
+  "stats" : {
+    "name" : "The Future of Music Technology",
+    "remainedTime" : 2785,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
+}, {
+  "command" : "createPlaylist",
+  "user" : "alice22",
+  "timestamp" : 3210,
+  "message" : "Playlist created successfully."
+}, {
+  "command" : "search",
+  "user" : "alice22",
+  "timestamp" : 3215,
+  "message" : "Search returned 2 results",
+  "results" : [ "Freedom", "Freedom" ]
+}, {
+  "command" : "select",
+  "user" : "alice22",
+  "timestamp" : 3220,
+  "message" : "Successfully selected Freedom."
+}, {
+  "command" : "load",
+  "user" : "alice22",
+  "timestamp" : 3225,
+  "message" : "Playback loaded successfully."
+}, {
+  "user" : "soundseeker",
+  "command" : "addAnnouncement",
+  "timestamp" : 3226,
+  "message" : "soundseeker has successfully added new announcement."
+}, {
   "command" : "addRemoveInPlaylist",
-  "user" : "melodicwanderer",
-  "timestamp" : 330,
+  "user" : "alice22",
+  "timestamp" : 3230,
   "message" : "Successfully added to playlist."
 }, {
   "command" : "search",
   "user" : "alice22",
-  "timestamp" : 335,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
+  "timestamp" : 3235,
+  "message" : "Search returned 1 results",
+  "results" : [ "Happier" ]
 }, {
   "command" : "select",
   "user" : "alice22",
-  "timestamp" : 340,
-  "message" : "The selected ID is too high."
+  "timestamp" : 3240,
+  "message" : "Successfully selected Happier."
 }, {
   "command" : "load",
   "user" : "alice22",
-  "timestamp" : 345,
-  "message" : "Please select a source before attempting to load."
-}, {
-  "command" : "search",
-  "user" : "bob35",
-  "timestamp" : 350,
-  "message" : "Search returned 1 results",
-  "results" : [ "Playlist bengos" ]
-}, {
-  "command" : "select",
-  "user" : "bob35",
-  "timestamp" : 355,
-  "message" : "Successfully selected Playlist bengos."
-}, {
-  "command" : "follow",
-  "user" : "bob35",
-  "timestamp" : 360,
-  "message" : "Playlist followed successfully."
-}, {
-  "command" : "search",
-  "user" : "bob35",
-  "timestamp" : 365,
-  "message" : "Search returned 1 results",
-  "results" : [ "Aurora Harmony" ]
-}, {
-  "command" : "select",
-  "user" : "bob35",
-  "timestamp" : 370,
-  "message" : "Successfully selected Aurora Harmony."
-}, {
-  "command" : "load",
-  "user" : "bob35",
-  "timestamp" : 375,
+  "timestamp" : 3245,
   "message" : "Playback loaded successfully."
 }, {
-  "command" : "like",
-  "user" : "bob35",
-  "timestamp" : 380,
-  "message" : "Like registered successfully."
+  "user" : "soundseeker",
+  "command" : "removeAnnouncement",
+  "timestamp" : 3246,
+  "message" : "soundseeker has no announcement with the given name."
 }, {
-  "command" : "repeat",
-  "user" : "melodicwanderer",
-  "timestamp" : 480,
-  "message" : "Repeat mode changed to repeat once."
+  "command" : "addUser",
+  "user" : "magichost",
+  "timestamp" : 3247,
+  "message" : "The username magichost has been added successfully."
 }, {
-  "user" : "bob35",
-  "command" : "printCurrentPage",
-  "timestamp" : 525,
-  "message" : "Liked songs:\n\t[Aurora Harmony]\n\nFollowed playlists:\n\t[Playlist bengos]"
+  "command" : "addUser",
+  "user" : "magichost",
+  "timestamp" : 3247,
+  "message" : "The username magichost is already taken."
+}, {
+  "user" : "soundseeker",
+  "command" : "showPodcasts",
+  "timestamp" : 3250,
+  "result" : [ {
+    "name" : "Auditory Adventures",
+    "episodes" : [ "Exploring Sonic Landscapes", "The Future of Music Technology", "Cultural Beats" ]
+  }, {
+    "name" : "Harmony & History",
+    "episodes" : [ "The Roots of Blues", "Classical Music's Modern Impact", "Jazz Journeys", "The Folk Revival" ]
+  } ]
+}, {
+  "command" : "addRemoveInPlaylist",
+  "user" : "alice22",
+  "timestamp" : 3250,
+  "message" : "Successfully added to playlist."
+}, {
+  "user" : "soundseeker",
+  "command" : "removeAnnouncement",
+  "timestamp" : 3251,
+  "message" : "soundseeker has successfully deleted the announcement."
 }, {
   "command" : "search",
-  "user" : "soundseeker21",
-  "timestamp" : 625,
-  "message" : "Search returned 0 results",
-  "results" : [ ]
-}, {
-  "command" : "select",
-  "user" : "soundseeker21",
-  "timestamp" : 630,
-  "message" : "The selected ID is too high."
-}, {
-  "command" : "search",
-  "user" : "carol19",
-  "timestamp" : 725,
+  "user" : "alice22",
+  "timestamp" : 3255,
   "message" : "Search returned 1 results",
-  "results" : [ "Playlist bengos" ]
+  "results" : [ "2010 hits" ]
 }, {
   "command" : "select",
-  "user" : "carol19",
-  "timestamp" : 730,
-  "message" : "Successfully selected Playlist bengos."
-}, {
-  "command" : "follow",
-  "user" : "carol19",
-  "timestamp" : 735,
-  "message" : "Playlist followed successfully."
+  "user" : "alice22",
+  "timestamp" : 3260,
+  "message" : "Successfully selected 2010 hits."
 }, {
   "command" : "load",
-  "user" : "carol19",
-  "timestamp" : 740,
+  "user" : "alice22",
+  "timestamp" : 3265,
   "message" : "Playback loaded successfully."
 }, {
-  "command" : "search",
-  "user" : "david27",
-  "timestamp" : 760,
-  "message" : "Search returned 1 results",
-  "results" : [ "sonicpainter" ]
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 3270,
+  "stats" : {
+    "name" : "Freedom",
+    "remainedTime" : 173,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
 }, {
-  "command" : "repeat",
-  "user" : "carol19",
-  "timestamp" : 965,
-  "message" : "Repeat mode changed to repeat all."
-}, {
-  "command" : "select",
-  "user" : "david27",
-  "timestamp" : 1225,
-  "message" : "Successfully selected sonicpainter's page."
-}, {
-  "command" : "repeat",
-  "user" : "carol19",
-  "timestamp" : 7200,
-  "message" : "Repeat mode changed to repeat current song."
-}, {
-  "command" : "repeat",
-  "user" : "carol19",
-  "timestamp" : 7505,
-  "message" : "Repeat mode changed to no repeat."
-}, {
-  "user" : "bob35",
+  "user" : "alice22",
   "command" : "printCurrentPage",
-  "timestamp" : 7900,
-  "message" : "Liked songs:\n\t[Aurora Harmony]\n\nFollowed playlists:\n\t[Playlist bengos]"
+  "timestamp" : 3275,
+  "message" : "Podcasts:\n\t[Auditory Adventures:\n\t[Exploring Sonic Landscapes - Journey through the world's most unique auditory experiences., The Future of Music Technology - A look into the innovations shaping the future of music production and listening., Cultural Beats - An exploration of how different cultures influence music genres.]\n, Harmony & History:\n\t[The Roots of Blues - Tracing the origins and evolution of blues music., Classical Music's Modern Impact - Discussing how classical music continues to influence contemporary artists., Jazz Journeys - Exploring the rich history and vibrant present of jazz music., The Folk Revival - Examining the resurgence of folk music in modern times.]\n]\n\nAnnouncements:\n\t[Announcement2:\n\tAl doilea anunt adaugat!\n]"
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 3448,
+  "stats" : {
+    "name" : "Happier",
+    "remainedTime" : 202,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : false
+  }
+}, {
+  "command" : "status",
+  "user" : "alice22",
+  "timestamp" : 4000,
+  "stats" : {
+    "name" : "",
+    "remainedTime" : 0,
+    "repeat" : "No Repeat",
+    "shuffle" : false,
+    "paused" : true
+  }
 } ]

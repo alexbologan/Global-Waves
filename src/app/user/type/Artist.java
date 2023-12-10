@@ -1,12 +1,11 @@
 package app.user.type;
 
 import app.Admin;
-import app.ArtistStuff.Event;
-import app.ArtistStuff.Merch;
+import app.user.type.ArtistStuff.Event;
+import app.user.type.ArtistStuff.Merch;
 import app.audio.Collections.Album;
-import app.user.User;
+import app.audio.Files.Song;
 import fileio.input.CommandInput;
-import fileio.input.SongInput;
 import lombok.Getter;
 
 import java.util.ArrayList;
@@ -16,7 +15,6 @@ import java.util.Objects;
 
 public final class Artist extends User {
     private final String username;
-    private final String type;
     @Getter
     private final ArrayList<Album> albums;
     @Getter
@@ -24,9 +22,9 @@ public final class Artist extends User {
     @Getter
     private final ArrayList<Merch> merchandises;
 
-    public Artist(final String username, final int age, final String city, final String userType) {
+    public Artist(final String username, final int age, final String city,
+                  final String userType) {
         super(username, age, city, userType);
-        type = userType;
         this.username = username;
         albums = new ArrayList<>();
         events = new ArrayList<>();
@@ -50,9 +48,7 @@ public final class Artist extends User {
     public String addAlbum(final CommandInput command) {
         Album album = new Album(command.getName(), command.getUsername(),
                 command.getReleaseYear(), command.getDescription(), command.getSongs());
-        if (!Objects.equals(type, "artist")) {
-            return username + " is not an artist.";
-        } else if (verifyAlbumName(command)) {
+        if (verifyAlbumName(command)) {
             return username + " has another album with the same name.";
         } else if (verifySongs(album)) {
             return username + " has the same song at least twice in this album.";
@@ -145,7 +141,7 @@ public final class Artist extends User {
      */
     public boolean verifySongs(final Album album) {
         Map<String, Integer> elementCount = new HashMap<>();
-        for (SongInput song : album.getSongs()) {
+        for (Song song : album.getSongs()) {
             elementCount.put(song.getName(), elementCount.getOrDefault(song.getName(), 0) + 1);
 
             if (elementCount.get(song.getName()) > 1) {

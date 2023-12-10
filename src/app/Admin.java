@@ -1,10 +1,12 @@
 package app;
 
+import app.audio.Collections.Album;
 import app.audio.Collections.Playlist;
 import app.audio.Collections.Podcast;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
-import app.user.User;
+import app.user.type.Host;
+import app.user.type.User;
 import app.user.type.Artist;
 import app.utils.Enums;
 
@@ -18,6 +20,7 @@ import lombok.Getter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * The type Admin.
@@ -26,6 +29,7 @@ public final class Admin {
     @Getter
     private static List<User> users = new ArrayList<>();
     private static final List<Artist> ARTISTS = new ArrayList<>();
+    private static final List<Host> HOSTS = new ArrayList<>();
     private static List<Song> songs = new ArrayList<>();
     private static List<Podcast> podcasts = new ArrayList<>();
     private static int timestamp = 0;
@@ -54,6 +58,12 @@ public final class Admin {
         ARTISTS.clear();
     }
 
+    /**
+     * Resets the list of hosts, clearing all existing entries.
+     */
+    public static void resetHosts() {
+        HOSTS.clear();
+    }
     /**
      * Sets users.
      *
@@ -113,6 +123,10 @@ public final class Admin {
         }
     }
 
+    public static void addPodcast(final Podcast podcast) {
+        podcasts.add(podcast);
+    }
+
     /**
      * Gets songs.
      *
@@ -124,6 +138,10 @@ public final class Admin {
 
     public static List<Artist> getArtists() {
         return new ArrayList<>(ARTISTS);
+    }
+
+    public static List<Host> getHosts() {
+        return new ArrayList<>(HOSTS);
     }
     /**
      * Gets podcasts.
@@ -162,6 +180,30 @@ public final class Admin {
         return null;
     }
 
+    public static String deleteUser(final User user) {
+        if (Objects.equals(user.getUserType(), "artist")) {
+            return deleteArtist(user.getUsername());
+        }
+        //users.remove(user);
+        return user.getUsername() + " was successfully deleted.";
+    }
+
+    public static String deleteArtist(final String username) {
+        Artist artist = (Artist) getUser(username);
+        for (User user1 : users) {
+            for (Album album : artist.getAlbums()) {
+                for (Song song : album.getSongs()) {
+                    if (Objects.equals(song.getArtist(), artist.getUsername())) {
+                        return "Artist cannot be deleted because he is the artist of a song.";
+                    }
+                }
+            }
+        }
+//        ARTISTS.remove(artist);
+//        users.remove(artist);
+        return username + " was successfully deleted.";
+    }
+
     /**
      * Retrieves an artist based on the provided username.
      *
@@ -176,6 +218,15 @@ public final class Admin {
         return null;
     }
 
+
+    public static Host getHost(final String username) {
+        for (Host host : Admin.HOSTS) {
+            if (host.getUsername().equals(username)) {
+                return host;
+            }
+        }
+        return null;
+    }
     /**
      * Adds a new user or artist based on the provided command input.
      *
@@ -188,18 +239,41 @@ public final class Admin {
         } else {
             switch (command.getType()) {
                 case "artist" -> {
-                    users.add(new Artist(command.getUsername(), command.getAge(), command.getCity(),
-                            command.getType()));
-                    ARTISTS.add((Artist) getUser(command.getUsername()));
+                    boolean added = false;
+                    for (User user : users) {
+                        if (user.getUserType().equals("host")) {
+                            users.add(new Artist(command.getUsername(), command.getAge(),
+                                    command.getCity(), command.getType()));
+                            ARTISTS.add((Artist) getUser(command.getUsername()));
+                            added = true;
+                            break;
+                        }
+                    }
+                    if (!added) {
+                        users.add(new Artist(command.getUsername(), command.getAge(),
+                                command.getCity(), command.getType()));
+                        ARTISTS.add((Artist) getUser(command.getUsername()));
+                    }
                 }
                 case "user" -> {
-                    users.add(new User(command.getUsername(), command.getAge(),
-                            command.getCity(), command.getType()));
+                    boolean added = false;
+                    for (User user : users) {
+                        if (user.getUserType().equals("artist")) {
+                            users.add(users.indexOf(user), new User(command.getUsername(),
+                                    command.getAge(), command.getCity(), command.getType()));
+                            added = true;
+                            break;
+                        }
+                    }
+                    if (!added) {
+                        users.add(new User(command.getUsername(), command.getAge(),
+                                command.getCity(), command.getType()));
+                    }
                 }
                 case "host" -> {
-                    message = "Invalid user type.";
-                    users.add(new User(command.getUsername(), command.getAge(),
+                    users.add(new Host(command.getUsername(), command.getAge(),
                             command.getCity(), command.getType()));
+                    HOSTS.add((Host) getUser(command.getUsername()));
                 }
                 default -> {
                     message = "Invalid user type.";
@@ -285,6 +359,13 @@ public final class Admin {
         return onlineUsers;
     }
 
+    public static List<String> getAllUsers() {
+        List<String> allUsers = new ArrayList<>();
+        for (User user : Admin.users) {
+            allUsers.add(user.getUsername());
+        }
+        return allUsers;
+    }
     /**
      * Reset.
      */

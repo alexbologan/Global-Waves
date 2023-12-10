@@ -1,6 +1,7 @@
 package app.audio.Collections;
 
 import app.audio.Files.AudioFile;
+import app.audio.Files.Song;
 import fileio.input.SongInput;
 import lombok.Getter;
 
@@ -8,7 +9,7 @@ import java.util.ArrayList;
 
 @Getter
 public final class Album extends AudioCollection {
-    private final ArrayList<SongInput> songs;
+    private final ArrayList<Song> songs = new ArrayList<>();
     private final Integer releaseYear;
     private final String description;
 
@@ -17,17 +18,21 @@ public final class Album extends AudioCollection {
         super(name, owner);
         this.releaseYear = releaseYear;
         this.description = description;
-        this.songs = songs;
+        for (SongInput song : songs) {
+            this.songs.add(new Song(song.getName(), song.getDuration(), song.getAlbum(),
+                    song.getTags(), song.getLyrics(), song.getGenre(), song.getReleaseYear(),
+                    song.getArtist()));
+        }
     }
 
     @Override
     public int getNumberOfTracks() {
-        return 0;
+        return songs.size();
     }
 
     @Override
     public AudioFile getTrackByIndex(final int index) {
-        return null;
+        return songs.get(index);
     }
 
 

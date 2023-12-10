@@ -1,11 +1,13 @@
-package app.user;
+package app.user.type;
 
-import app.ArtistStuff.Event;
-import app.ArtistStuff.Merch;
 import app.audio.Collections.Album;
 import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Playlist;
+import app.audio.Collections.Podcast;
 import app.audio.Collections.PlaylistOutput;
+import app.audio.Files.Episode;
+import app.user.type.ArtistStuff.Event;
+import app.user.type.ArtistStuff.Merch;
 import app.audio.Files.AudioFile;
 import app.audio.Files.Song;
 import app.audio.LibraryEntry;
@@ -13,7 +15,7 @@ import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
 import app.searchBar.SearchBar;
-import app.user.type.Artist;
+import app.user.type.HostStuff.Announcement;
 import app.utils.Enums;
 import lombok.Getter;
 
@@ -83,16 +85,23 @@ public class User {
         ArrayList<String> results = new ArrayList<>();
 
         if (Objects.equals(type, "artist")) {
-            List<Artist> libraryEntries = searchBar.searchArtists(filters, type);
+            List<Artist> libraryEntries = searchBar.searchArtist(filters, type);
             for (Artist libraryEntry : libraryEntries) {
                 results.add(libraryEntry.getUsername());
             }
             lastSearchedType = "artist";
+        } else if (Objects.equals(type, "host")) {
+            List<Host> libraryEntries = searchBar.searchHost(filters, type);
+            for (Host libraryEntry : libraryEntries) {
+                results.add(libraryEntry.getUsername());
+            }
+            lastSearchedType = "host";
         } else {
             List<LibraryEntry> libraryEntries = searchBar.search(filters, type);
             for (LibraryEntry libraryEntry : libraryEntries) {
                 results.add(libraryEntry.getName());
             }
+            lastSearchedType = type;
         }
 
         return results;
@@ -117,6 +126,13 @@ public class User {
                 return "The selected ID is too high.";
             }
             currentPage = "Artist";
+            return "Successfully selected %s's page.".formatted(selected.getUsername());
+        } else if (Objects.equals(lastSearchedType, "host")) {
+            Host selected = searchBar.selectHost(itemNumber);
+            if (selected == null) {
+                return "The selected ID is too high.";
+            }
+            currentPage = "Host";
             return "Successfully selected %s's page.".formatted(selected.getUsername());
         } else {
             LibraryEntry selected = searchBar.select(itemNumber);
@@ -577,8 +593,35 @@ public class User {
                 }
                 return message + "]";
             }
-            case "Playlist" -> {
-                return "Playlist";
+            case "Host" -> {
+                Host host = searchBar.getLastSelectedHost();
+                StringBuilder message = new StringBuilder("Podcasts:\n\t[");
+                for (Podcast podcast : host.getPodcasts()) {
+                    message.append(podcast.getName()).append(":\n\t[");
+                    for (Episode episode : podcast.getEpisodes()) {
+                        message.append(episode.getName()).append((" - ")).
+                                append(episode.getDescription()).append(", ");
+                    }
+                    if (message.charAt(message.length() - 1) == ' ') {
+                        message = new StringBuilder(message.substring(0, message.length() - 2));
+                    }
+                    message.append("]\n, ");
+                }
+
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+
+                message.append("]\n\nAnnouncements:\n\t[");
+                for (Announcement announcement : host.getAnnouncements()) {
+                    message.append(announcement.getName()).append(":\n\t")
+                            .append(announcement.getDescription()).append("\n, ");
+                }
+
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+                return message + "]";
             }
             default -> {
                 return "Unknown";
