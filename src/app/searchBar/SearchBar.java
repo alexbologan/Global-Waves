@@ -68,11 +68,12 @@ public final class SearchBar {
      * @return the list
      */
     public List<LibraryEntry> search(final Filters filters, final String type) {
+        Admin admin = Admin.getInstance();
         List<LibraryEntry> entries;
 
         switch (type) {
             case "song":
-                entries = new ArrayList<>(Admin.getSongs());
+                entries = new ArrayList<>(admin.getSongs());
 
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
@@ -104,7 +105,7 @@ public final class SearchBar {
 
                 break;
             case "playlist":
-                entries = new ArrayList<>(Admin.getPlaylists());
+                entries = new ArrayList<>(admin.getPlaylists());
 
                 entries = filterByPlaylistVisibility(entries, user);
 
@@ -122,7 +123,7 @@ public final class SearchBar {
 
                 break;
             case "podcast":
-                entries = new ArrayList<>(Admin.getPodcasts());
+                entries = new ArrayList<>(admin.getPodcasts());
 
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
@@ -134,7 +135,7 @@ public final class SearchBar {
 
                 break;
             case "album":
-                entries = new ArrayList<>(Admin.getAlbums());
+                entries = new ArrayList<>(admin.getAlbums());
 
                 if (filters.getName() != null) {
                     entries = filterByName(entries, filters.getName());
@@ -169,7 +170,8 @@ public final class SearchBar {
      * @return the list
      */
     public List<Artist> searchArtist(final Filters filters, final String type) {
-        List<Artist> artists = new ArrayList<>(Admin.getArtists());
+        Admin admin = Admin.getInstance();
+        List<Artist> artists = new ArrayList<>(admin.getArtists());
         if (filters.getName() != null) {
             artists = filterArtistsByName(artists, filters.getName());
         }
@@ -191,7 +193,8 @@ public final class SearchBar {
      * @return the list
      */
     public List<Host> searchHost(final Filters filters, final String type) {
-        List<Host> hosts = new ArrayList<>(Admin.getHosts());
+        Admin admin = Admin.getInstance();
+        List<Host> hosts = new ArrayList<>(admin.getHosts());
         if (filters.getName() != null) {
             hosts = filterHostsByName(hosts, filters.getName());
         }

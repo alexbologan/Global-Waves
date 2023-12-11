@@ -80,19 +80,20 @@ public final class Main {
                                                                   CommandInput[].class);
         ArrayNode outputs = objectMapper.createArrayNode();
 
-        Admin.setUsers(library.getUsers());
-        Admin.setSongs(library.getSongs());
-        Admin.setPodcasts(library.getPodcasts());
-        Admin.resetArtists();
-        Admin.resetHosts();
-        Admin.resetAlbums();
+        Admin admin = Admin.getInstance();
+        admin.setUsers(library.getUsers());
+        admin.setSongs(library.getSongs());
+        admin.setPodcasts(library.getPodcasts());
+        admin.resetArtists();
+        admin.resetHosts();
+        admin.resetAlbums();
 
         for (CommandInput command : commands) {
-            User user = Admin.getUser(command.getUsername());
+            User user = admin.getUser(command.getUsername());
             if (user != null) {
                 if (user.getConnectionStatus() == Enums.ConnectionStatus.ONLINE
                         || Objects.equals(user.getUserType(), "artist")) {
-                    Admin.updateTimestamp(command.getTimestamp());
+                    admin.updateTimestamp(command.getTimestamp());
                 }
             }
 
@@ -146,6 +147,6 @@ public final class Main {
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePath2), outputs);
 
-        Admin.reset();
+        admin.reset();
     }
 }

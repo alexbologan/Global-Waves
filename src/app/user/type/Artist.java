@@ -46,6 +46,7 @@ public final class Artist extends User {
      * @param command The CommandInput containing album details and artist information.
      */
     public String addAlbum(final CommandInput command) {
+        Admin admin = Admin.getInstance();
         Album album = new Album(command.getName(), command.getUsername(),
                 command.getReleaseYear(), command.getDescription(), command.getSongs());
         if (verifyAlbumName(command)) {
@@ -54,8 +55,8 @@ public final class Artist extends User {
             return username + " has the same song at least twice in this album.";
         } else {
             albums.add(album);
-            Admin.addAlbum(album);
-            Admin.addSongs(command.getSongs());
+            admin.addAlbum(album);
+            admin.addSongs(command.getSongs());
             return username + " has added new album successfully.";
         }
     }
@@ -66,13 +67,14 @@ public final class Artist extends User {
      * @param name The name of the album to be removed.
      */
     public String removeAlbum(final String name) {
+        Admin admin = Admin.getInstance();
         for (Album album : albums) {
             if (album.getName().equals(name)) {
-                if (Admin.verifyIfAlbumIsUsed(album.getOwner())) {
+                if (admin.verifyIfAlbumIsUsed(album.getOwner())) {
                     return username + " can't delete this album.";
                 }
                 for (Song song : album.getSongs()) {
-                    Admin.removeSong(song.getName());
+                    admin.removeSong(song.getName());
                 }
                 albums.remove(album);
                 return username + " deleted the album successfully.";

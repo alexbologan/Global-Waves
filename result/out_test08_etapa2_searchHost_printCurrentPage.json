@@ -347,7 +347,7 @@
   "user" : "soundseeker",
   "command" : "deleteUser",
   "timestamp" : 4010,
-  "message" : "soundseeker was successfully deleted."
+  "message" : null
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -363,5 +363,5 @@
   "user" : "soundseeker",
   "command" : "deleteUser",
   "timestamp" : 100000,
-  "message" : "soundseeker was successfully deleted."
+  "message" : null
 } ]

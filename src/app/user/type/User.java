@@ -290,6 +290,7 @@ public class User {
      * @return the string
      */
     public String like() {
+        Admin admin = Admin.getInstance();
         if (player.getCurrentAudioFile() == null) {
             return "Please load a source before liking or unliking.";
         }
@@ -303,16 +304,16 @@ public class User {
         if (likedSongs.contains(song)) {
             likedSongs.remove(song);
             song.dislike();
-            if (Admin.findSong(song.getName()) != null) {
-                Admin.findSong(song.getName()).dislike();
+            if (admin.findSong(song.getName()) != null) {
+                admin.findSong(song.getName()).dislike();
             }
             return "Unlike registered successfully.";
         }
 
         likedSongs.add(song);
         song.like();
-        if (Admin.findSong(song.getName()) != null) {
-            Admin.findSong(song.getName()).like();
+        if (admin.findSong(song.getName()) != null) {
+            admin.findSong(song.getName()).like();
         }
         return "Like registered successfully.";
     }

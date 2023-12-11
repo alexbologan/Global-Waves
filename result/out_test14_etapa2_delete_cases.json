@@ -213,7 +213,7 @@
   "user" : "audiosage",
   "command" : "deleteUser",
   "timestamp" : 930,
-  "message" : "audiosage was successfully deleted."
+  "message" : null
 }, {
   "user" : "soundseeker21",
   "command" : "changePage",
@@ -223,7 +223,7 @@
   "user" : "melodicwanderer",
   "command" : "deleteUser",
   "timestamp" : 960,
-  "message" : "melodicwanderer was successfully deleted."
+  "message" : "melodicwanderer can't be deleted."
 }, {
   "command" : "repeat",
   "user" : "carol19",
@@ -243,7 +243,7 @@
   "user" : "audiosage",
   "command" : "deleteUser",
   "timestamp" : 1100,
-  "message" : "audiosage was successfully deleted."
+  "message" : null
 }, {
   "command" : "select",
   "user" : "david27",
@@ -253,12 +253,12 @@
   "user" : "melodicwanderer",
   "command" : "deleteUser",
   "timestamp" : 1500,
-  "message" : "melodicwanderer was successfully deleted."
+  "message" : "melodicwanderer can't be deleted."
 }, {
   "user" : "musicmaven",
   "command" : "deleteUser",
   "timestamp" : 6900,
-  "message" : "musicmaven was successfully deleted."
+  "message" : null
 }, {
   "command" : "repeat",
   "user" : "carol19",
@@ -298,5 +298,5 @@
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 7900,
-  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[Playlist bengos]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[]"
 } ]

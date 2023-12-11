@@ -38,7 +38,8 @@ public final class Host extends User {
             return username + " has the same episode in this podcast.";
         } else {
             podcasts.add(podcast);
-            Admin.addPodcast(podcast);
+            Admin admin = Admin.getInstance();
+            admin.addPodcast(podcast);
             return username + " has added new podcast successfully.";
         }
     }
