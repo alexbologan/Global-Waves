@@ -61,6 +61,26 @@ public final class Artist extends User {
     }
 
     /**
+     * Removes an album from the artist's list of albums.
+     *
+     * @param name The name of the album to be removed.
+     */
+    public String removeAlbum(final String name) {
+        for (Album album : albums) {
+            if (album.getName().equals(name)) {
+                if (Admin.verifyIfAlbumIsUsed(album.getOwner())) {
+                    return username + " can't delete this album.";
+                }
+                for (Song song : album.getSongs()) {
+                    Admin.removeSong(song.getName());
+                }
+                albums.remove(album);
+                return username + " deleted the album successfully.";
+            }
+        }
+        return username + " doesn't have an album with the given name.";
+    }
+    /**
      * Adds a new event for the user.
      *
      * @param command The CommandInput with event details.
@@ -74,6 +94,21 @@ public final class Artist extends User {
             events.add(new Event(command.getName(), command.getDate(), command.getDescription()));
             return username + " has added new event successfully.";
         }
+    }
+
+    /**
+     * Removes an event from the artist's list of events.
+     *
+     * @param name The name of the event to be removed.
+     */
+    public String removeEvent(final String name) {
+        for (Event event : events) {
+            if (event.getName().equals(name)) {
+                events.remove(event);
+                return username + " deleted the event successfully.";
+            }
+        }
+        return username + " doesn't have an event with the given name.";
     }
 
     /**

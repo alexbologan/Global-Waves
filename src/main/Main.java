@@ -2,6 +2,7 @@ package main;
 
 import app.Admin;
 import app.CommandRunner;
+import app.user.type.User;
 import app.utils.Enums;
 import checker.Checker;
 import checker.CheckerConstants;
@@ -84,10 +85,13 @@ public final class Main {
         Admin.setPodcasts(library.getPodcasts());
         Admin.resetArtists();
         Admin.resetHosts();
+        Admin.resetAlbums();
+
         for (CommandInput command : commands) {
-            if (Admin.getUser(command.getUsername()) != null) {
-                if (Admin.getUser(command.getUsername()).getConnectionStatus() == Enums
-                        .ConnectionStatus.ONLINE) {
+            User user = Admin.getUser(command.getUsername());
+            if (user != null) {
+                if (user.getConnectionStatus() == Enums.ConnectionStatus.ONLINE
+                        || Objects.equals(user.getUserType(), "artist")) {
                     Admin.updateTimestamp(command.getTimestamp());
                 }
             }
@@ -121,16 +125,20 @@ public final class Main {
                 case "getOnlineUsers" -> outputs.add(CommandRunner.getOnlineUsers(command));
                 case "addUser" -> outputs.add(CommandRunner.addUser(command));
                 case "addAlbum" -> outputs.add(CommandRunner.addAlbum(command));
+                case "removeAlbum" -> outputs.add(CommandRunner.removeAlbum(command));
                 case "showAlbums" -> outputs.add(CommandRunner.showAlbums(command));
                 case "printCurrentPage" -> outputs.add(CommandRunner.printCurrentPage(command));
                 case "addEvent" -> outputs.add(CommandRunner.addEvent(command));
+                case "removeEvent" -> outputs.add(CommandRunner.removeEvent(command));
                 case "addMerch" -> outputs.add(CommandRunner.addMerch(command));
                 case "getAllUsers" -> outputs.add(CommandRunner.getAllUsers(command));
                 case "deleteUser" -> outputs.add(CommandRunner.deleteUser(command));
                 case "addPodcast" -> outputs.add(CommandRunner.addPodcast(command));
+                case "removePodcast" -> outputs.add(CommandRunner.removePodcast(command));
                 case "addAnnouncement" -> outputs.add(CommandRunner.addAnnouncement(command));
                 case "removeAnnouncement" -> outputs.add(CommandRunner.removeAnnouncement(command));
                 case "showPodcasts" -> outputs.add(CommandRunner.showPodcasts(command));
+                case "changePage" -> outputs.add(CommandRunner.changePage(command));
                 default -> System.out.println("Invalid command " + commandName);
             }
         }

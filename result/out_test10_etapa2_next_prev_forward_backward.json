@@ -231,6 +231,11 @@
   "timestamp" : 1050,
   "message" : "Skipped forward successfully."
 }, {
+  "user" : "soundseeker",
+  "command" : "removePodcast",
+  "timestamp" : 1050,
+  "message" : "soundseeker has successfully deleted the podcast."
+}, {
   "command" : "status",
   "user" : "bob35",
   "timestamp" : 1051,

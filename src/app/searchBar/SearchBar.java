@@ -10,9 +10,7 @@ import lombok.Getter;
 import java.util.ArrayList;
 import java.util.List;
 
-import static app.searchBar.FilterUtils.filterAlbumsByOwner;
 import static app.searchBar.FilterUtils.filterAlbumsByDescription;
-import static app.searchBar.FilterUtils.filterAlbumsByName;
 import static app.searchBar.FilterUtils.filterArtistsByName;
 import static app.searchBar.FilterUtils.filterByAlbum;
 import static app.searchBar.FilterUtils.filterByArtist;
@@ -70,7 +68,7 @@ public final class SearchBar {
      * @return the list
      */
     public List<LibraryEntry> search(final Filters filters, final String type) {
-        List<LibraryEntry> entries = null;
+        List<LibraryEntry> entries;
 
         switch (type) {
             case "song":
@@ -137,12 +135,15 @@ public final class SearchBar {
                 break;
             case "album":
                 entries = new ArrayList<>(Admin.getAlbums());
+
                 if (filters.getName() != null) {
-                    entries = filterAlbumsByName(entries, filters.getName());
+                    entries = filterByName(entries, filters.getName());
                 }
+
                 if (filters.getOwner() != null) {
-                    entries = filterAlbumsByOwner(entries, filters.getOwner());
+                    entries = filterByOwner(entries, filters.getOwner());
                 }
+
                 if (filters.getDescription() != null) {
                     entries = filterAlbumsByDescription(entries, filters.getReleaseYear());
                 }

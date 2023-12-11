@@ -60,6 +60,13 @@ public final class Admin {
     }
 
     /**
+     * Resets the list of albums, clearing all existing entries.
+     */
+    public static void resetAlbums() {
+        albums.clear();
+    }
+
+    /**
      * Resets the list of hosts, clearing all existing entries.
      */
     public static void resetHosts() {
@@ -104,6 +111,53 @@ public final class Admin {
                     songInput.getTags(), songInput.getLyrics(), songInput.getGenre(),
                     songInput.getReleaseYear(), songInput.getArtist()));
         }
+    }
+
+    /**
+     * Finds a song based on its name from the collection of albums.
+     *
+     * @param name The name of the song to find.
+     * @return The Song object if found, or null if not found.
+     */
+    public static Song findSong(final String name) {
+        for (Album album : albums) {
+            for (Song song : album.getSongs()) {
+                if (song.getName().equals(name)) {
+                    return song;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Removes a song from the collection based on its name.
+     *
+     * @param name The name of the song to be removed.
+     */
+    public static void removeSong(final String name) {
+        for (Song song : songs) {
+            if (song.getName().equals(name)) {
+                songs.remove(song);
+                break;
+            }
+        }
+    }
+
+    /**
+     * Verifies if an album owned by a user is currently being used by any player.
+     *
+     * @param owner The owner of the album to check.
+     * @return True if the album is in use, false otherwise.
+     */
+    public static boolean verifyIfAlbumIsUsed(final String owner) {
+        for (User user : Admin.users) {
+            if (!user.getPlayerStats().isPaused() && user.getPlayer().getSource()
+                    .getAudioCollection().getOwner().equals(owner)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -238,16 +292,32 @@ public final class Admin {
     public static String deleteArtist(final String username) {
         Artist artist = (Artist) getUser(username);
         for (User user1 : users) {
-            for (Album album : artist.getAlbums()) {
-                for (Song song : album.getSongs()) {
-                    if (Objects.equals(song.getArtist(), artist.getUsername())) {
-                        return "Artist cannot be deleted because he is the artist of a song.";
+            if (!user1.getPlayerStats().isPaused()) {
+                if (user1.getPlayer().getSource().getAudioCollection() != null) {
+                    System.out.println(user1.getPlayer().getPaused());
+                    if (user1.getPlayer().getSource().getAudioCollection().getOwner()
+                            .equals(username)) {
+                        return username + " can't be deleted.";
+                    }
+                } else {
+                    Song song = (Song) user1.getPlayer().getSource().getAudioFile();
+                    if (song.getArtist().equals(username)) {
+                        return username + " can't be deleted.";
                     }
                 }
             }
         }
-//        ARTISTS.remove(artist);
-//        users.remove(artist);
+        for (Album album : artist.getAlbums()) {
+            for (Song song : album.getSongs()) {
+                for (User user : users) {
+                    user.getLikedSongs().removeIf(song1 -> song1.getName().equals(song.getName()));
+                }
+                removeSong(song.getName());
+            }
+            albums.remove(album);
+        }
+        artists.remove(artist);
+        users.remove(artist);
         return username + " was successfully deleted.";
     }
 

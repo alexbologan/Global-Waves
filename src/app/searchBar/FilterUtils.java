@@ -69,23 +69,6 @@ public final class FilterUtils {
         return result;
     }
 
-    /**
-     * Filter albums by owner.
-     *
-     * @param entries the entries
-     * @param owner   the owner
-     * @return the list
-     */
-    public static List<LibraryEntry> filterAlbumsByOwner(final List<LibraryEntry> entries,
-                                                   final String owner) {
-        List<LibraryEntry> result = new ArrayList<>();
-        for (LibraryEntry libraryEntry: entries) {
-            if (libraryEntry.matchesOwner(owner)) {
-                result.add(libraryEntry);
-            }
-        }
-        return result;
-    }
 
     /**
      * Filter albums by description.
@@ -96,31 +79,7 @@ public final class FilterUtils {
      */
     public static List<LibraryEntry> filterAlbumsByDescription(final List<LibraryEntry> entries,
                                                    final String description) {
-        List<LibraryEntry> result = new ArrayList<>();
-        for (LibraryEntry libraryEntry: entries) {
-            if (libraryEntry.matchesDescription(description)) {
-                result.add(libraryEntry);
-            }
-        }
-        return result;
-    }
-
-    /**
-     * Filter albums by name.
-     *
-     * @param entries the entries
-     * @param name   the name
-     * @return the list
-     */
-    public static List<LibraryEntry> filterAlbumsByName(final List<LibraryEntry> entries,
-                                                   final String name) {
-        List<LibraryEntry> result = new ArrayList<>();
-        for (LibraryEntry libraryEntry: entries) {
-            if (libraryEntry.matchesName(name)) {
-                result.add(libraryEntry);
-            }
-        }
-        return result;
+        return filter(entries, entry -> entry.matchesDescription(description));
     }
 
     /**
@@ -235,7 +194,7 @@ public final class FilterUtils {
                                              final FilterCriteria criteria) {
         List<LibraryEntry> result = new ArrayList<>();
         for (LibraryEntry entry : entries) {
-            if (criteria.matches(entry)) {
+            if (criteria.matches(entry) && !result.contains(entry)) {
                 result.add(entry);
             }
         }

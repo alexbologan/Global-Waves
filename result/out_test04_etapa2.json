@@ -98,7 +98,7 @@
   "user" : "beatblazer",
   "command" : "deleteUser",
   "timestamp" : 150,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "beatblazer can't be deleted."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -119,7 +119,7 @@
   "user" : "beatblazer",
   "command" : "deleteUser",
   "timestamp" : 1158,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "beatblazer can't be deleted."
 }, {
   "command" : "prev",
   "user" : "alice22",
@@ -129,13 +129,13 @@
   "user" : "beatblazer",
   "command" : "deleteUser",
   "timestamp" : 1380,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "beatblazer was successfully deleted."
 }, {
   "command" : "search",
   "user" : "melodicmind42",
   "timestamp" : 1385,
-  "message" : "Search returned 2 results",
-  "results" : [ "Rapid Rhythms", "Rapid Fire" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Rapid Rhythms" ]
 }, {
   "command" : "select",
   "user" : "melodicmind42",
@@ -155,5 +155,5 @@
   "user" : "melodicmind42",
   "command" : "printCurrentPage",
   "timestamp" : 1480,
-  "message" : "Liked songs:\n\t[Rhythmic Revolution, Rapid Rhythms]\n\nFollowed playlists:\n\t[]"
+  "message" : "Liked songs:\n\t[Rapid Rhythms]\n\nFollowed playlists:\n\t[]"
 } ]

@@ -15,7 +15,9 @@ import java.util.List;
 public final class Player {
     private Enums.RepeatMode repeatMode;
     private boolean shuffle;
+    @Getter
     private boolean paused;
+    @Getter
     private PlayerSource source;
     @Getter
     private String type;

@@ -149,8 +149,8 @@
   "command" : "search",
   "user" : "emily30",
   "timestamp" : 2000,
-  "message" : "Search returned 5 results",
-  "results" : [ "Harmonic Horizons", "Harmonic Horizons", "Harmonic Horizons", "Harmonic Horizons", "Harmonic Horizons" ]
+  "message" : "Search returned 1 results",
+  "results" : [ "Harmonic Horizons" ]
 }, {
   "command" : "forward",
   "user" : "emily30",

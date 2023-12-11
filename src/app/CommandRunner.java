@@ -511,12 +511,41 @@ public final class CommandRunner {
      * @param commandInput The CommandInput containing album details and artist information.
      */
     public static ObjectNode addAlbum(final CommandInput commandInput) {
-        Artist artist = Admin.getArtist(commandInput.getUsername());
+        User user = Admin.getUser(commandInput.getUsername());
         String message;
-        if (artist == null) {
+        if (user == null) {
             message = "The username " + commandInput.getUsername() + " doesn't exist.";
+        } else if (!Objects.equals(user.getUserType(), "artist")) {
+            message = user.getUsername() + " is not an artist.";
         } else {
+            Artist artist = Admin.getArtist(commandInput.getUsername());
             message = artist.addAlbum(commandInput);
+        }
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    /**
+     * Removes an album for the artist based on the provided command input.
+     *
+     * @param commandInput The CommandInput containing album details and artist information.
+     */
+    public static ObjectNode removeAlbum(final CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+        String message;
+        if (user == null) {
+            message = "The username " + commandInput.getUsername() + " doesn't exist.";
+        } else if (!Objects.equals(user.getUserType(), "artist")) {
+            message = user.getUsername() + " is not an artist.";
+        } else {
+            Artist artist = Admin.getArtist(commandInput.getUsername());
+            message = artist.removeAlbum(commandInput.getName());
         }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
@@ -532,8 +561,6 @@ public final class CommandRunner {
      * Retrieves and formats the list of albums for the artist.
      *
      * @param commandInput The CommandInput containing user information.
-     * @return An ObjectNode containing information about the operation result.
-     *         The result includes the command, user, timestamp, and a formatted list of albums.
      */
     public static ObjectNode showAlbums(final CommandInput commandInput) {
         Artist artist = Admin.getArtist(commandInput.getUsername());
@@ -569,9 +596,6 @@ public final class CommandRunner {
      * Retrieves and formats the current page information for the user.
      *
      * @param commandInput The CommandInput containing user information.
-     * @return An ObjectNode containing information about the operation result.
-     *         The result includes the user, command, timestamp, and a message
-     *         with the current page information.
      */
     public static ObjectNode printCurrentPage(final CommandInput commandInput) {
         User user = Admin.getUser(commandInput.getUsername());
@@ -581,6 +605,30 @@ public final class CommandRunner {
             message = user.getUsername() + " is offline.";
         } else {
             message = user.printCurrentPage();
+        }
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    /**
+     * Changes the current page for the user.
+     *
+     * @param commandInput The CommandInput containing user information.
+     */
+    public static ObjectNode changePage(final CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+        assert user != null;
+        String message;
+        if (user.getConnectionStatus() == Enums.ConnectionStatus.OFFLINE) {
+            message = user.getUsername() + " is offline.";
+        } else {
+            message = user.changePage(commandInput.getNextPage());
         }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
@@ -618,6 +666,31 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Removes an event from the artist user.
+     *
+     * @param commandInput The CommandInput with event details.
+     */
+    public static ObjectNode removeEvent(final CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+        String message;
+        if (user == null) {
+            message = "The username " + commandInput.getUsername() + " doesn't exist.";
+        } else if (!Objects.equals(user.getUserType(), "artist")) {
+            message = user.getUsername() + " is not an artist.";
+        } else {
+            Artist artist = Admin.getArtist(commandInput.getUsername());
+            message = artist.removeEvent(commandInput.getName());
+        }
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
 
     /**
      * Adds new merchandise for the artist user.
@@ -705,6 +778,32 @@ public final class CommandRunner {
             }
             message = host.addPodcast(new Podcast(commandInput.getName(),
                     commandInput.getUsername(), episodes));
+        }
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    /**
+     * Adds an announcement to the host's collection based on the provided command input.
+     *
+     * @param commandInput The command input containing announcement information.
+     */
+    public static ObjectNode removePodcast(final CommandInput commandInput) {
+        User user = Admin.getUser(commandInput.getUsername());
+        String message;
+        if (user == null) {
+            message = "The username " + commandInput.getUsername() + " doesn't exist.";
+        } else if (!Objects.equals(user.getUserType(), "host")) {
+            message = user.getUsername() + " is not a host.";
+        } else {
+            Host host = Admin.getHost(commandInput.getUsername());
+            message = host.removePodcast(commandInput.getName());
         }
 
         ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();

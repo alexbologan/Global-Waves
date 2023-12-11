@@ -1,5 +1,6 @@
 package app.user.type;
 
+import app.Admin;
 import app.audio.Collections.Album;
 import app.audio.Collections.AudioCollection;
 import app.audio.Collections.Playlist;
@@ -302,12 +303,17 @@ public class User {
         if (likedSongs.contains(song)) {
             likedSongs.remove(song);
             song.dislike();
-
+            if (Admin.findSong(song.getName()) != null) {
+                Admin.findSong(song.getName()).dislike();
+            }
             return "Unlike registered successfully.";
         }
 
         likedSongs.add(song);
         song.like();
+        if (Admin.findSong(song.getName()) != null) {
+            Admin.findSong(song.getName()).like();
+        }
         return "Like registered successfully.";
     }
 
@@ -623,10 +629,47 @@ public class User {
                 }
                 return message + "]";
             }
+            case "LikedContent" -> {
+                StringBuilder message = new StringBuilder("Liked songs:\n\t[");
+
+                for (Song song : likedSongs) {
+                    message.append(song.getName()).append(" - ").append(song.getArtist())
+                            .append(", ");
+                }
+
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+
+                message.append("]\n\nFollowed playlists:\n\t[");
+
+                for (Playlist playlist : followedPlaylists) {
+                    message.append(playlist.getName()).append(" - ").append(playlist.getOwner())
+                            .append(", ");
+                }
+
+                if (message.charAt(message.length() - 1) == ' ') {
+                    message = new StringBuilder(message.substring(0, message.length() - 2));
+                }
+                return message + "]";
+            }
             default -> {
                 return "Unknown";
             }
         }
+    }
+
+    /**
+     * Change page.
+     *
+     * @return the next page.
+     */
+    public String changePage(final String nextPage) {
+        if (Objects.equals(nextPage, "Home") || Objects.equals(nextPage, "LikedContent")) {
+            currentPage = nextPage;
+            return username + " accessed " + nextPage + " successfully.";
+        }
+        return username + " is trying to access a non-existent page.";
     }
 
     /**

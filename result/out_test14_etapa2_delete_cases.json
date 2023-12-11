@@ -165,7 +165,7 @@
   "user" : "sonicpainter",
   "command" : "deleteUser",
   "timestamp" : 620,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "sonicpainter can't be deleted."
 }, {
   "command" : "search",
   "user" : "soundseeker21",
@@ -208,12 +208,17 @@
   "user" : "sonicpainter",
   "command" : "deleteUser",
   "timestamp" : 900,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "sonicpainter was successfully deleted."
 }, {
   "user" : "audiosage",
   "command" : "deleteUser",
   "timestamp" : 930,
   "message" : "audiosage was successfully deleted."
+}, {
+  "user" : "soundseeker21",
+  "command" : "changePage",
+  "timestamp" : 955,
+  "message" : "soundseeker21 accessed Home successfully."
 }, {
   "user" : "melodicwanderer",
   "command" : "deleteUser",
@@ -228,7 +233,12 @@
   "user" : "sonicpainter",
   "command" : "deleteUser",
   "timestamp" : 975,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "The username sonicpainter doesn't exist."
+}, {
+  "user" : "musicmaven",
+  "command" : "removePodcast",
+  "timestamp" : 980,
+  "message" : "musicmaven has successfully deleted the podcast."
 }, {
   "user" : "audiosage",
   "command" : "deleteUser",
@@ -258,7 +268,7 @@
   "user" : "sonicpainter",
   "command" : "deleteUser",
   "timestamp" : 7225,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "The username sonicpainter doesn't exist."
 }, {
   "command" : "repeat",
   "user" : "carol19",
@@ -273,15 +283,20 @@
   "user" : "sonicpainter",
   "command" : "deleteUser",
   "timestamp" : 7860,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "The username sonicpainter doesn't exist."
+}, {
+  "user" : "david27",
+  "command" : "changePage",
+  "timestamp" : 7885,
+  "message" : "david27 accessed Home successfully."
 }, {
   "user" : "sonicpainter",
   "command" : "deleteUser",
   "timestamp" : 7890,
-  "message" : "Artist cannot be deleted because he is the artist of a song."
+  "message" : "The username sonicpainter doesn't exist."
 }, {
   "user" : "bob35",
   "command" : "printCurrentPage",
   "timestamp" : 7900,
-  "message" : "Liked songs:\n\t[Aurora Harmony]\n\nFollowed playlists:\n\t[Playlist bengos]"
+  "message" : "Liked songs:\n\t[]\n\nFollowed playlists:\n\t[Playlist bengos]"
 } ]
