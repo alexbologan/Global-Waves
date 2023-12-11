@@ -1,6 +1,7 @@
 Starting audit...
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:282:24: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:327:5: Missing a Javadoc comment. [MissingJavadocMethod]
-[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:347: Line is longer than 100 characters (found 102). [LineLength]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:76:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:83:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:338:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_second_try\oop-project-2023-main\etapa2\.\src\app\Admin.java:373:5: Missing a Javadoc comment. [MissingJavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 4 errors.

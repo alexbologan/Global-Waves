@@ -81,11 +81,16 @@ public final class Host extends User {
     public String removePodcast(final String name) {
         for (Podcast podcast : podcasts) {
             if (podcast.getName().equals(name)) {
+                Admin admin = Admin.getInstance();
+                if (admin.verifyIfAudioCollectionIsUsed(podcast.getOwner())) {
+                    return username + " can't delete this podcast.";
+                }
+                admin.removePodcast(podcast.getName());
                 podcasts.remove(podcast);
-                return username + " has successfully deleted the podcast.";
+                return username + " deleted the podcast successfully.";
             }
         }
-        return username + " has no podcast with the given name.";
+        return username + " doesn't have a podcast with the given name.";
     }
 
     /**

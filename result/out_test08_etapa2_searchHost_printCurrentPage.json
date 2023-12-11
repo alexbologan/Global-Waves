@@ -198,7 +198,7 @@
   "user" : "soundseeker",
   "command" : "removePodcast",
   "timestamp" : 3233,
-  "message" : "soundseeker has no podcast with the given name."
+  "message" : "soundseeker doesn't have a podcast with the given name."
 }, {
   "command" : "search",
   "user" : "alice22",
@@ -214,7 +214,7 @@
   "user" : "soundseeker",
   "command" : "removePodcast",
   "timestamp" : 3243,
-  "message" : "soundseeker has successfully deleted the podcast."
+  "message" : "soundseeker deleted the podcast successfully."
 }, {
   "command" : "load",
   "user" : "alice22",
@@ -341,13 +341,13 @@
     "name" : "2010 hits",
     "songs" : [ "Freedom", "Happier" ],
     "visibility" : "public",
-    "followers" : 1
+    "followers" : 0
   } ]
 }, {
   "user" : "soundseeker",
   "command" : "deleteUser",
   "timestamp" : 4010,
-  "message" : null
+  "message" : "soundseeker can't be deleted."
 }, {
   "command" : "status",
   "user" : "carol19",
@@ -363,5 +363,5 @@
   "user" : "soundseeker",
   "command" : "deleteUser",
   "timestamp" : 100000,
-  "message" : null
+  "message" : "soundseeker can't be deleted."
 } ]

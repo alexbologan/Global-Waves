@@ -41,6 +41,7 @@ public class User {
     private boolean lastSearched;
     private Enums.ConnectionStatus connectionStatus;
     private String currentPage;
+    private String currentOwnerPage;
     private String lastSearchedType;
 
     /**
@@ -68,6 +69,7 @@ public class User {
         searchBar = new SearchBar(username);
         lastSearched = false;
         currentPage = "Home";
+        currentOwnerPage = "";
         lastSearchedType = null;
     }
 
@@ -127,6 +129,7 @@ public class User {
                 return "The selected ID is too high.";
             }
             currentPage = "Artist";
+            currentOwnerPage = selected.getUsername();
             return "Successfully selected %s's page.".formatted(selected.getUsername());
         } else if (Objects.equals(lastSearchedType, "host")) {
             Host selected = searchBar.selectHost(itemNumber);
@@ -134,6 +137,7 @@ public class User {
                 return "The selected ID is too high.";
             }
             currentPage = "Host";
+            currentOwnerPage = selected.getUsername();
             return "Successfully selected %s's page.".formatted(selected.getUsername());
         } else {
             LibraryEntry selected = searchBar.select(itemNumber);

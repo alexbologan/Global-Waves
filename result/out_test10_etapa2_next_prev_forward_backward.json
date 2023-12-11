@@ -234,7 +234,7 @@
   "user" : "soundseeker",
   "command" : "removePodcast",
   "timestamp" : 1050,
-  "message" : "soundseeker has successfully deleted the podcast."
+  "message" : "soundseeker can't delete this podcast."
 }, {
   "command" : "status",
   "user" : "bob35",

@@ -72,6 +72,17 @@ public final class Admin {
     public void resetHosts() {
         hosts.clear();
     }
+
+    public void removePlaylist(final String name) {
+        for (User user : users) {
+            user.getFollowedPlaylists().removeIf(playlist -> playlist.getName().equals(name));
+        }
+        getPlaylists().removeIf(playlist -> playlist.getName().equals(name));
+    }
+
+    public void removePodcast(final String name) {
+        podcasts.removeIf(podcast -> podcast.getName().equals(name));
+    }
     /**
      * Sets users.
      *
@@ -150,7 +161,7 @@ public final class Admin {
      * @param owner The owner of the album to check.
      * @return True if the album is in use, false otherwise.
      */
-    public boolean verifyIfAlbumIsUsed(final String owner) {
+    public boolean verifyIfAudioCollectionIsUsed(final String owner) {
         for (User user : users) {
             if (!user.getPlayerStats().isPaused() && user.getPlayer().getSource()
                     .getAudioCollection().getOwner().equals(owner)) {
@@ -279,7 +290,7 @@ public final class Admin {
         if (Objects.equals(user.getUserType(), "artist")) {
             return deleteArtist(user.getUsername());
         } else if (Objects.equals(user.getUserType(), "host")) {
-            return null;//deleteHost(user.getUsername());
+            return deleteHost(user.getUsername());
         } else {
             return deleteSimpleUser(user.getUsername());
 
@@ -341,17 +352,49 @@ public final class Admin {
                 }
             }
         }
-        for (Playlist playlist : user.getPlaylists()) {
-            for (Song song : playlist.getSongs()) {
-                for (User user1 : users) {
-                    //user1.getLikedSongs().removeIf(song1 -> song1.getName().equals(song.getName()));
-                    user1.getFollowedPlaylists().removeIf(playlist1 -> playlist1.getName()
-                            .equals(playlist.getName()));
+        for (User user1 : users) {
+            for (Playlist playlist : user.getPlaylists()) {
+                for (Playlist playlist1 : user1.getFollowedPlaylists()) {
+                    if (playlist1.getName().equals(playlist.getName())) {
+                        playlist1.decreaseFollowers();
+                    }
                 }
-                removeSong(song.getName());
+                user1.getFollowedPlaylists().removeIf(playlist1 -> playlist1.getName()
+                        .equals(playlist.getName()));
             }
         }
+        for (Playlist playlist : user.getFollowedPlaylists()) {
+            playlist.decreaseFollowers();
+        }
         users.remove(user);
+        return username + " was successfully deleted.";
+    }
+
+    public String deleteHost(final String username) {
+        Host host = (Host) getUser(username);
+        for (User user1 : users) {
+            if (!user1.getPlayerStats().isPaused()) {
+                if (user1.getPlayer().getSource().getAudioCollection() != null) {
+                    if (user1.getPlayer().getSource().getAudioCollection().getOwner()
+                            .equals(username)) {
+                        return username + " can't be deleted.";
+                    }
+                } else {
+                    Song song = (Song) user1.getPlayer().getSource().getAudioFile();
+                    if (song.getArtist().equals(username)) {
+                        return username + " can't be deleted.";
+                    }
+                }
+            }
+            if (Objects.equals(user1.getCurrentOwnerPage(), username)) {
+                return username + " can't be deleted.";
+            }
+        }
+        for (Podcast podcast : host.getPodcasts()) {
+            removePodcast(podcast.getName());
+        }
+        hosts.remove(host);
+        users.remove(host);
         return username + " was successfully deleted.";
     }
     /**

@@ -70,7 +70,7 @@ public final class Artist extends User {
         Admin admin = Admin.getInstance();
         for (Album album : albums) {
             if (album.getName().equals(name)) {
-                if (admin.verifyIfAlbumIsUsed(album.getOwner())) {
+                if (admin.verifyIfAudioCollectionIsUsed(album.getOwner())) {
                     return username + " can't delete this album.";
                 }
                 for (Song song : album.getSongs()) {
