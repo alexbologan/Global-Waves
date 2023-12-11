@@ -161,11 +161,26 @@ public final class Admin {
      * @param owner The owner of the album to check.
      * @return True if the album is in use, false otherwise.
      */
-    public boolean verifyIfAudioCollectionIsUsed(final String owner) {
+    public boolean verifyIfAudioCollectionIsUsed(final String owner, final String type) {
         for (User user : users) {
+            if (!user.getPlayerStats().isPaused() && Objects.equals(type, "album")){
+                Song song = (Song) user.getPlayer().getSource().getAudioFile();
+                if (song.getArtist().equals(owner)) {
+                    return true;
+                }
+            }
+
             if (!user.getPlayerStats().isPaused() && user.getPlayer().getSource()
                     .getAudioCollection().getOwner().equals(owner)) {
                 return true;
+            }
+
+            for (Playlist playlist : user.getPlaylists()) {
+                for (Song song : playlist.getSongs()) {
+                    if (song.getArtist().equals(owner)) {
+                        return true;
+                    }
+                }
             }
         }
         return false;

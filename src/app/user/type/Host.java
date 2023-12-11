@@ -82,7 +82,7 @@ public final class Host extends User {
         for (Podcast podcast : podcasts) {
             if (podcast.getName().equals(name)) {
                 Admin admin = Admin.getInstance();
-                if (admin.verifyIfAudioCollectionIsUsed(podcast.getOwner())) {
+                if (admin.verifyIfAudioCollectionIsUsed(podcast.getOwner(), "podcast")) {
                     return username + " can't delete this podcast.";
                 }
                 admin.removePodcast(podcast.getName());

@@ -7,7 +7,6 @@ import app.audio.Collections.Album;
 import app.audio.Files.Song;
 import fileio.input.CommandInput;
 import lombok.Getter;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -70,7 +69,7 @@ public final class Artist extends User {
         Admin admin = Admin.getInstance();
         for (Album album : albums) {
             if (album.getName().equals(name)) {
-                if (admin.verifyIfAudioCollectionIsUsed(album.getOwner())) {
+                if (admin.verifyIfAudioCollectionIsUsed(album.getOwner(), "album")) {
                     return username + " can't delete this album.";
                 }
                 for (Song song : album.getSongs()) {
@@ -90,7 +89,7 @@ public final class Artist extends User {
     public String addEvent(final CommandInput command) {
         if (verifyEventName(command)) {
             return username + " has another event with the same name.";
-        } else if (verifyEventDate(command)) {
+        } else if (verifyEventDate(command.getDate())) {
             return "Event for " + username + " does not have a valid date.";
         } else {
             events.add(new Event(command.getName(), command.getDate(), command.getDescription()));
@@ -192,9 +191,17 @@ public final class Artist extends User {
     /**
      * Verifies if the event has a valid date.
      *
-     * @param command The CommandInput containing event details and artist information.
+     * @param dateStr The date as string.
      */
-    public boolean verifyEventDate(final CommandInput command) {
-        return false;
+    public boolean verifyEventDate(final String dateStr) {
+        int day = Integer.parseInt(dateStr.substring(0, 2));
+        int month = Integer.parseInt(dateStr.substring(3, 5));
+        int year = Integer.parseInt(dateStr.substring(6));
+
+        if (day > 28 && month == 2) {
+            return true;
+        }
+
+        return day > 31 || month > 12 || year < 1900 || year > 2023;
     }
 }
