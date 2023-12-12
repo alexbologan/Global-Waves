@@ -264,11 +264,9 @@ public final class Player {
      * @return the stats
      */
     public PlayerStats getStats() {
-        String owner = "";
         String filename = "";
         int duration = 0;
         if (source != null && source.getAudioFile() != null) {
-            System.out.println(owner);
             filename = source.getAudioFile().getName();
             duration = source.getDuration();
         } else {
