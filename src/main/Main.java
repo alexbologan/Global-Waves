@@ -92,8 +92,11 @@ public final class Main {
             User user = admin.getUser(command.getUsername());
             if (user != null) {
                 if (user.getConnectionStatus() == Enums.ConnectionStatus.ONLINE
-                        || Objects.equals(user.getUserType(), "artist")) {
+                        || Objects.equals(user.getUserType(), "artist")
+                        || Objects.equals(user.getUserType(), "host")) {
                     admin.updateTimestamp(command.getTimestamp());
+                } else if (Objects.equals(command.getCommand(), "switchConnectionStatus")) {
+                    admin.setTimestamp(command.getTimestamp());
                 }
             }
 
@@ -140,6 +143,8 @@ public final class Main {
                 case "removeAnnouncement" -> outputs.add(CommandRunner.removeAnnouncement(command));
                 case "showPodcasts" -> outputs.add(CommandRunner.showPodcasts(command));
                 case "changePage" -> outputs.add(CommandRunner.changePage(command));
+                case "getTop5Albums" -> outputs.add(CommandRunner.getTop5Albums(command));
+                case "getTop5Artists" -> outputs.add(CommandRunner.getTop5Artists(command));
                 default -> System.out.println("Invalid command " + commandName);
             }
         }

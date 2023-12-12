@@ -53,6 +53,15 @@ public final class Admin {
     }
 
     /**
+     * Sets the timestamp to the provided value.
+     *
+     * @param timestamp The new value for the timestamp.
+     */
+    public void setTimestamp(final int timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    /**
      * Resets the list of artists, clearing all existing entries.
      */
     public void resetArtists() {
@@ -73,6 +82,11 @@ public final class Admin {
         hosts.clear();
     }
 
+    /**
+     * Removes a playlist from the collection.
+     *
+     * @param name The name of the playlist to be removed.
+     */
     public void removePlaylist(final String name) {
         for (User user : users) {
             user.getFollowedPlaylists().removeIf(playlist -> playlist.getName().equals(name));
@@ -80,9 +94,13 @@ public final class Admin {
         getPlaylists().removeIf(playlist -> playlist.getName().equals(name));
     }
 
+    /**
+     * Removes a podcast from the collection.
+     */
     public void removePodcast(final String name) {
         podcasts.removeIf(podcast -> podcast.getName().equals(name));
     }
+
     /**
      * Sets users.
      *
@@ -113,15 +131,11 @@ public final class Admin {
     /**
      * Adds a list of songs to the existing collection.
      *
-     * @param songInputList The list of SongInput objects containing song details.
+     * @param songList The list of SongInput objects containing song details.
      *                      Each SongInput object corresponds to a song to be added.
      */
-    public void addSongs(final List<SongInput> songInputList) {
-        for (SongInput songInput : songInputList) {
-            songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
-                    songInput.getTags(), songInput.getLyrics(), songInput.getGenre(),
-                    songInput.getReleaseYear(), songInput.getArtist()));
-        }
+    public void addSongs(final List<Song> songList) {
+        songs.addAll(songList);
     }
 
     /**
@@ -163,7 +177,7 @@ public final class Admin {
      */
     public boolean verifyIfAudioCollectionIsUsed(final String owner, final String type) {
         for (User user : users) {
-            if (!user.getPlayerStats().isPaused() && Objects.equals(type, "album")){
+            if (!user.getPlayerStats().isPaused() && Objects.equals(type, "album")) {
                 Song song = (Song) user.getPlayer().getSource().getAudioFile();
                 if (song.getArtist().equals(owner)) {
                     return true;
@@ -319,54 +333,37 @@ public final class Admin {
      * @return A message indicating the success of the operation.
      */
     public String deleteArtist(final String username) {
-        Artist artist = (Artist) getUser(username);
-        for (User user1 : users) {
-            if (!user1.getPlayerStats().isPaused()) {
-                if (user1.getPlayer().getSource().getAudioCollection() != null) {
-                    System.out.println(user1.getPlayer().getPaused());
-                    if (user1.getPlayer().getSource().getAudioCollection().getOwner()
-                            .equals(username)) {
-                        return username + " can't be deleted.";
-                    }
-                } else {
-                    Song song = (Song) user1.getPlayer().getSource().getAudioFile();
-                    if (song.getArtist().equals(username)) {
-                        return username + " can't be deleted.";
-                    }
-                }
-            }
+        if (checkIfUserCanBeDeleted(username)) {
+            return username + " can't be deleted.";
         }
-        for (Album album : artist.getAlbums()) {
-            for (Song song : album.getSongs()) {
-                for (User user : users) {
+
+        Artist artist = (Artist) getUser(username);
+        for (User user : users) {
+            for (Album album : artist.getAlbums()) {
+                for (Song song : album.getSongs()) {
                     user.getLikedSongs().removeIf(song1 -> song1.getName().equals(song.getName()));
+                    removeSong(song.getName());
                 }
-                removeSong(song.getName());
+                albums.remove(album);
             }
-            albums.remove(album);
         }
         artists.remove(artist);
         users.remove(artist);
         return username + " was successfully deleted.";
     }
 
+    /**
+     * Deletes a simple user from the collection.
+     *
+     * @param username The username of the user to be deleted.
+     * @return A message indicating the success of the operation.
+     */
     public String deleteSimpleUser(final String username) {
-        User user = getUser(username);
-        for (User user1 : users) {
-            if (!user1.getPlayerStats().isPaused()) {
-                if (user1.getPlayer().getSource().getAudioCollection() != null) {
-                    if (user1.getPlayer().getSource().getAudioCollection().getOwner()
-                            .equals(username)) {
-                        return username + " can't be deleted.";
-                    }
-                } else {
-                    Song song = (Song) user1.getPlayer().getSource().getAudioFile();
-                    if (song.getArtist().equals(username)) {
-                        return username + " can't be deleted.";
-                    }
-                }
-            }
+        if (checkIfUserCanBeDeleted(username)) {
+            return username + " can't be deleted.";
         }
+
+        User user = getUser(username);
         for (User user1 : users) {
             for (Playlist playlist : user.getPlaylists()) {
                 for (Playlist playlist1 : user1.getFollowedPlaylists()) {
@@ -385,32 +382,52 @@ public final class Admin {
         return username + " was successfully deleted.";
     }
 
+    /**
+     * Deletes a host from the collection.
+     *
+     * @param username The username of the host to be deleted.
+     * @return A message indicating the success of the operation.
+     */
     public String deleteHost(final String username) {
-        Host host = (Host) getUser(username);
-        for (User user1 : users) {
-            if (!user1.getPlayerStats().isPaused()) {
-                if (user1.getPlayer().getSource().getAudioCollection() != null) {
-                    if (user1.getPlayer().getSource().getAudioCollection().getOwner()
-                            .equals(username)) {
-                        return username + " can't be deleted.";
-                    }
-                } else {
-                    Song song = (Song) user1.getPlayer().getSource().getAudioFile();
-                    if (song.getArtist().equals(username)) {
-                        return username + " can't be deleted.";
-                    }
-                }
-            }
-            if (Objects.equals(user1.getCurrentOwnerPage(), username)) {
-                return username + " can't be deleted.";
-            }
+        if (checkIfUserCanBeDeleted(username)) {
+            return username + " can't be deleted.";
         }
+
+        Host host = (Host) getUser(username);
         for (Podcast podcast : host.getPodcasts()) {
             removePodcast(podcast.getName());
         }
         hosts.remove(host);
         users.remove(host);
         return username + " was successfully deleted.";
+    }
+
+    /**
+     * Checks if a user can be deleted from the collection.
+     *
+     * @param username The username of the user to be checked.
+     * @return True if the user can't be deleted, false otherwise.
+     */
+    public boolean checkIfUserCanBeDeleted(final String username) {
+        for (User user : users) {
+            if (!user.getPlayerStats().isPaused()) {
+                if (user.getPlayer().getSource().getAudioCollection() != null
+                        && user.getPlayer().getSource().getAudioCollection().getOwner()
+                        .equals(username)) {
+                    return true;
+                } else {
+                    if (user.getPlayer().getSource().getAudioFile() instanceof Song song) {
+                        if (song.getArtist().equals(username)) {
+                            return true;
+                        }
+                    }
+                }
+            }
+            if (Objects.equals(user.getCurrentOwnerPage(), username)) {
+                return true;
+            }
+        }
+        return false;
     }
     /**
      * Retrieves an artist based on the provided username.
@@ -454,8 +471,8 @@ public final class Admin {
                     boolean added = false;
                     for (User user : users) {
                         if (user.getUserType().equals("host")) {
-                            users.add(new Artist(command.getUsername(), command.getAge(),
-                                    command.getCity(), command.getType()));
+                            users.add(users.indexOf(user), new Artist(command.getUsername(),
+                                    command.getAge(), command.getCity(), command.getType()));
                             artists.add((Artist) getUser(command.getUsername()));
                             added = true;
                             break;
@@ -557,6 +574,56 @@ public final class Admin {
     }
 
     /**
+     * Gets top 5 albums.
+     *
+     * @return the top 5 albums
+     */
+    public List<String> getTop5Albums() {
+        List<Album> sortedAlbums = new ArrayList<>(albums);
+        countAlbumLikes();
+        sortedAlbums.sort(Comparator.comparingInt(Album::getLikes).reversed()
+                .thenComparing(Album::getName));
+        List<String> topAlbums = new ArrayList<>();
+        int count = 0;
+        for (Album album : sortedAlbums) {
+            if (count >= limit) {
+                break;
+            }
+            topAlbums.add(album.getName());
+            count++;
+        }
+        return topAlbums;
+    }
+
+    /**
+     * Gets top 5 artists.
+     *
+     * @return the top 5 artists
+     */
+    public List<String> getTop5Artists() {
+        List<Artist> sortedArtists = new ArrayList<>(artists);
+        for (Artist artist : sortedArtists) {
+            int likes = 0;
+            for (Album album : artist.getAlbums()) {
+                likes += album.getLikes();
+            }
+            artist.setLikes(likes);
+        }
+        sortedArtists.sort(Comparator.comparingInt(Artist::getLikes).reversed()
+                .thenComparing(Artist::getUsername));
+        List<String> topArtists = new ArrayList<>();
+        int count = 0;
+        for (Artist artist : sortedArtists) {
+            if (count >= limit) {
+                break;
+            }
+            topArtists.add(artist.getUsername());
+            count++;
+        }
+        return topArtists;
+    }
+
+    /**
      * Retrieves a list of usernames for users who are currently online.
      *
      * @return A list of usernames representing online users.
@@ -564,13 +631,26 @@ public final class Admin {
     public List<String> getOnlineUsers() {
         List<String> onlineUsers = new ArrayList<>();
         for (User user : users) {
-            if (user.getConnectionStatus() == Enums.ConnectionStatus.ONLINE) {
+            if (user.getConnectionStatus() == Enums.ConnectionStatus.ONLINE
+                    && Objects.equals(user.getUserType(), "user")) {
                 onlineUsers.add(user.getUsername());
             }
         }
         return onlineUsers;
     }
 
+    /**
+     * Counts the number of likes for each album.
+     */
+    public void countAlbumLikes() {
+        for (Album album : albums) {
+            int likes = 0;
+            for (Song song : album.getSongs()) {
+                likes += song.getLikes();
+            }
+            album.setLikes(likes);
+        }
+    }
     /**
      * Retrieves a list of usernames for all users.
      *

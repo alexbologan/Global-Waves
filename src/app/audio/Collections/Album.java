@@ -12,6 +12,7 @@ public final class Album extends AudioCollection {
     private final ArrayList<Song> songs = new ArrayList<>();
     private final Integer releaseYear;
     private final String description;
+    private int likes;
 
     public Album(final String name, final String owner, final Integer releaseYear,
                  final String description, final ArrayList<SongInput> songs) {
@@ -23,6 +24,7 @@ public final class Album extends AudioCollection {
                     song.getTags(), song.getLyrics(), song.getGenre(), song.getReleaseYear(),
                     song.getArtist()));
         }
+        this.likes = 0;
     }
 
     @Override
@@ -35,5 +37,7 @@ public final class Album extends AudioCollection {
         return songs.get(index);
     }
 
-
+    public void setLikes(final int likes) {
+        this.likes = likes;
+    }
 }

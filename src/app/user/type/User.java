@@ -21,6 +21,7 @@ import app.utils.Enums;
 import lombok.Getter;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
@@ -34,7 +35,7 @@ public class User {
     private final String city;
     private final String userType;
     private final ArrayList<Playlist> playlists;
-    private final ArrayList<Song> likedSongs;
+    private ArrayList<Song> likedSongs;
     private final ArrayList<Playlist> followedPlaylists;
     private final Player player;
     private final SearchBar searchBar;
@@ -43,6 +44,7 @@ public class User {
     private String currentPage;
     private String currentOwnerPage;
     private String lastSearchedType;
+    private static final int MAX_SONGS_TO_DISPLAY = 5;
 
     /**
      * Instantiates a new User.
@@ -300,7 +302,8 @@ public class User {
             return "Please load a source before liking or unliking.";
         }
 
-        if (!player.getType().equals("song") && !player.getType().equals("playlist")) {
+        if (!player.getType().equals("song") && !player.getType().equals("playlist")
+                && !player.getType().equals("album")) {
             return "Loaded source is not a song.";
         }
 
@@ -309,17 +312,11 @@ public class User {
         if (likedSongs.contains(song)) {
             likedSongs.remove(song);
             song.dislike();
-            if (admin.findSong(song.getName()) != null) {
-                admin.findSong(song.getName()).dislike();
-            }
             return "Unlike registered successfully.";
         }
 
         likedSongs.add(song);
         song.like();
-        if (admin.findSong(song.getName()) != null) {
-            admin.findSong(song.getName()).like();
-        }
         return "Like registered successfully.";
     }
 
@@ -553,9 +550,15 @@ public class User {
         switch (currentPage) {
             case "Home" -> {
                 StringBuilder message = new StringBuilder("Liked songs:\n\t[");
-
-                for (Song song : likedSongs) {
+                List<Song> sortedSongs = new ArrayList<>(likedSongs);
+                sortedSongs.sort(Comparator.comparingInt(Song::getLikes).reversed());
+                int count = MAX_SONGS_TO_DISPLAY;
+                for (Song song : sortedSongs) {
+                    if (count == 0) {
+                        break;
+                    }
                     message.append(song.getName()).append(", ");
+                    count--;
                 }
 
                 if (message.charAt(message.length() - 1) == ' ') {
@@ -673,6 +676,7 @@ public class User {
     public String changePage(final String nextPage) {
         if (Objects.equals(nextPage, "Home") || Objects.equals(nextPage, "LikedContent")) {
             currentPage = nextPage;
+            currentOwnerPage = "";
             return username + " accessed " + nextPage + " successfully.";
         }
         return username + " is trying to access a non-existent page.";

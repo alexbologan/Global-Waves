@@ -20,6 +20,8 @@ public final class Artist extends User {
     private final ArrayList<Event> events;
     @Getter
     private final ArrayList<Merch> merchandises;
+    @Getter
+    private int likes;
 
     public Artist(final String username, final int age, final String city,
                   final String userType) {
@@ -55,7 +57,7 @@ public final class Artist extends User {
         } else {
             albums.add(album);
             admin.addAlbum(album);
-            admin.addSongs(command.getSongs());
+            admin.addSongs(album.getSongs());
             return username + " has added new album successfully.";
         }
     }
@@ -73,6 +75,10 @@ public final class Artist extends User {
                     return username + " can't delete this album.";
                 }
                 for (Song song : album.getSongs()) {
+                    for (User user : admin.getUsers()) {
+                        user.getLikedSongs().removeIf(song1 -> song1.getName()
+                                .equals(song.getName()));
+                    }
                     admin.removeSong(song.getName());
                 }
                 albums.remove(album);
@@ -194,14 +200,36 @@ public final class Artist extends User {
      * @param dateStr The date as string.
      */
     public boolean verifyEventDate(final String dateStr) {
-        int day = Integer.parseInt(dateStr.substring(0, 2));
-        int month = Integer.parseInt(dateStr.substring(3, 5));
-        int year = Integer.parseInt(dateStr.substring(6));
+        final int maxDaysInFebruary = 28;
+        final int february = 2;
+        final int maxDaysInMonth = 31;
+        final int maxMonth = 12;
+        final int minYear = 1900;
+        final int maxYear = 2023;
+        final int dayStartIndex = 0;
+        final int dayEndIndex = 2;
+        final int monthStartIndex = 3;
+        final int monthEndIndex = 5;
+        final int yearStartIndex = 6;
 
-        if (day > 28 && month == 2) {
+        int day = Integer.parseInt(dateStr.substring(dayStartIndex, dayEndIndex));
+        int month = Integer.parseInt(dateStr.substring(monthStartIndex, monthEndIndex));
+        int year = Integer.parseInt(dateStr.substring(yearStartIndex));
+
+        if (day > maxDaysInFebruary && month == february) {
             return true;
         }
 
-        return day > 31 || month > 12 || year < 1900 || year > 2023;
+        return day > maxDaysInMonth || month > maxMonth || year < minYear || year > maxYear;
+
+    }
+
+    /**
+     * Sets the number of likes for the artist.
+     *
+     * @param likes The number of likes.
+     */
+    public void setLikes(final int likes) {
+        this.likes = likes;
     }
 }

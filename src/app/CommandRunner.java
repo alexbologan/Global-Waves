@@ -460,6 +460,8 @@ public final class CommandRunner {
         String message;
         if (user == null) {
             message = "The username " + commandInput.getUsername() + " doesn't exist.";
+        } else if (!Objects.equals(user.getUserType(), "user")) {
+            message = commandInput.getUsername() + " is not a normal user.";
         } else {
             message = user.switchConnectionStatus();
         }
@@ -899,6 +901,38 @@ public final class CommandRunner {
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("timestamp", commandInput.getTimestamp());
         objectNode.put("result", OBJECT_MAPPER.valueToTree(jsonArray));
+
+        return objectNode;
+    }
+
+    /**
+     * Gets the top 5 podcasts in the application.
+     *
+     * @param commandInput The command input.
+     */
+    public static ObjectNode getTop5Albums(final CommandInput commandInput) {
+        List<String> playlists = ADMIN.getTop5Albums();
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", OBJECT_MAPPER.valueToTree(playlists));
+
+        return objectNode;
+    }
+
+    /**
+     * Gets the top 5 artists in the application.
+     *
+     * @param commandInput The command input.
+     */
+    public static ObjectNode getTop5Artists(final CommandInput commandInput) {
+        List<String> playlists = ADMIN.getTop5Artists();
+
+        ObjectNode objectNode = OBJECT_MAPPER.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", OBJECT_MAPPER.valueToTree(playlists));
 
         return objectNode;
     }
