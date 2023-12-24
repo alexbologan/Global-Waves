@@ -1,0 +1,6 @@
+Starting audit...
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_et3\oop-project-2023-main\etapa3\.\src\app\CommandRunner.java:785:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_et3\oop-project-2023-main\etapa3\.\src\app\CommandRunner.java:797:5: Missing a Javadoc comment. [MissingJavadocMethod]
+[ERROR] C:\Users\Alex\IdeaProjects\Spotify\oop-project-2023-main_et3\oop-project-2023-main\etapa3\.\src\main\Main.java:94:13: switch without "default" clause. [MissingSwitchDefault]
+Audit done.
+Checkstyle ends with 3 errors.

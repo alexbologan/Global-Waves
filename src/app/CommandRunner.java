@@ -781,4 +781,26 @@ public final class CommandRunner {
 
         return objectNode;
     }
+
+    public static ObjectNode wrapped(final CommandInput commandInput) {
+        List<String> playlists = admin.getTop5Playlists();
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("result", objectMapper.valueToTree(playlists));
+
+        return objectNode;
+    }
+
+    public static ObjectNode endProgram(final CommandInput commandInput) {
+        List<String> playlists = admin.getTop5Playlists();
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("result", objectMapper.valueToTree(playlists));
+
+        return objectNode;
+    }
 }
