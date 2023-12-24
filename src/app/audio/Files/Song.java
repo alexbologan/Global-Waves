@@ -17,7 +17,6 @@ public final class Song extends AudioFile {
     private final Integer releaseYear;
     private final String artist;
     private Integer likes;
-    private final String description;
 
     /**
      * Instantiates a new Song.
@@ -42,7 +41,6 @@ public final class Song extends AudioFile {
         this.releaseYear = releaseYear;
         this.artist = artist;
         this.likes = 0;
-        this.description = "";
     }
 
     @Override
@@ -69,10 +67,6 @@ public final class Song extends AudioFile {
         return this.getLyrics().toLowerCase().contains(lyricFilter.toLowerCase());
     }
 
-    @Override
-    public boolean matchesDescription(final String descriptionFilter) {
-        return this.getDescription().toLowerCase().contains(descriptionFilter.toLowerCase());
-    }
     @Override
     public boolean matchesGenre(final String genreFilter) {
         return this.getGenre().equalsIgnoreCase(genreFilter);

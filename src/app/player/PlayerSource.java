@@ -156,13 +156,15 @@ public class PlayerSource {
                         indexShuffled--;
                     }
                     index = indices.get(indexShuffled);
+                    updateAudioFile();
+                    remainedDuration = audioFile.getDuration();
                 } else {
                     if (index > 0) {
                         index--;
                     }
+                    updateAudioFile();
+                    remainedDuration = audioFile.getDuration();
                 }
-                updateAudioFile();
-                remainedDuration = audioFile.getDuration();
             }
         }
     }

@@ -2,29 +2,37 @@ package app.audio.Collections;
 
 import app.audio.Files.AudioFile;
 import app.audio.Files.Song;
-import fileio.input.SongInput;
 import lombok.Getter;
+import lombok.Setter;
 
-import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * The type Album.
+ */
 @Getter
+@Setter
 public final class Album extends AudioCollection {
-    private final ArrayList<Song> songs = new ArrayList<>();
-    private final Integer releaseYear;
-    private final String description;
-    private int likes;
+    private String description;
+    private List<Song> songs;
+    private Integer releaseYear;
+    private Integer followers;
 
-    public Album(final String name, final String owner, final Integer releaseYear,
-                 final String description, final ArrayList<SongInput> songs) {
+    /**
+     * Instantiates a new Album.
+     *
+     * @param name        the name
+     * @param description the description
+     * @param owner       the owner
+     * @param songs       the songs
+     * @param releaseYear the release year
+     */
+    public Album(final String name, final String description, final String owner,
+                 final List<Song> songs, final Integer releaseYear) {
         super(name, owner);
-        this.releaseYear = releaseYear;
+        this.songs = songs;
         this.description = description;
-        for (SongInput song : songs) {
-            this.songs.add(new Song(song.getName(), song.getDuration(), song.getAlbum(),
-                    song.getTags(), song.getLyrics(), song.getGenre(), song.getReleaseYear(),
-                    song.getArtist()));
-        }
-        this.likes = 0;
+        this.releaseYear = releaseYear;
     }
 
     @Override
@@ -37,7 +45,13 @@ public final class Album extends AudioCollection {
         return songs.get(index);
     }
 
-    public void setLikes(final int likes) {
-        this.likes = likes;
+    @Override
+    public boolean matchesDescription(final String desc) {
+        return description.equals(desc);
+    }
+
+    @Override
+    public boolean containsTrack(final AudioFile track) {
+        return songs.contains(track);
     }
 }

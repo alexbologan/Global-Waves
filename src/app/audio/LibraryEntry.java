@@ -71,15 +71,6 @@ public abstract class LibraryEntry {
     }
 
     /**
-     * Matches description boolean.
-     *
-     * @param genre the genre
-     * @return the boolean
-     */
-    public boolean matchesDescription(final String genre) {
-        return false;
-    }
-    /**
      * Matches artist boolean.
      *
      * @param artist the artist
@@ -106,6 +97,16 @@ public abstract class LibraryEntry {
      * @return the boolean
      */
     public boolean matchesOwner(final String user) {
+        return false;
+    }
+
+    /**
+     * Matches description boolean.
+     *
+     * @param description the description
+     * @return the boolean
+     */
+    public boolean matchesDescription(final String description) {
         return false;
     }
 

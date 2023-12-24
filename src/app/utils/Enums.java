@@ -18,29 +18,11 @@ public class Enums { // diferite enumuri, le-am gurpat pe toate intr-un loc
         PODCAST
     }
 
-    public enum UserType {
-        USER,
-        ARTIST,
-        HOST
-    }
-
     public enum RepeatMode {
-        REPEAT_ALL,
-        REPEAT_ONCE,
-        REPEAT_INFINITE,
-        REPEAT_CURRENT_SONG,
-        NO_REPEAT,
-    }
-
-    public enum ConnectionStatus {
-        ONLINE,
-        OFFLINE
+        REPEAT_ALL, REPEAT_ONCE, REPEAT_INFINITE, REPEAT_CURRENT_SONG, NO_REPEAT,
     }
 
     public enum PlayerSourceType {
-        LIBRARY,
-        PLAYLIST,
-        PODCAST,
-        ALBUM
+        LIBRARY, PLAYLIST, PODCAST, ALBUM
     }
 }

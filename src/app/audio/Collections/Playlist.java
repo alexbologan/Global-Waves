@@ -15,7 +15,7 @@ public final class Playlist extends AudioCollection {
     private final ArrayList<Song> songs;
     private Enums.Visibility visibility;
     private Integer followers;
-    private final int timestamp;
+    private int timestamp;
 
     /**
      * Instantiates a new Playlist.
@@ -134,5 +134,10 @@ public final class Playlist extends AudioCollection {
         } else {
             return count == Integer.parseInt(query);
         }
+    }
+
+    @Override
+    public boolean containsTrack(final AudioFile track) {
+        return songs.contains(track);
     }
 }

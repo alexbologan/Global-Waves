@@ -1,8 +1,6 @@
 package app.searchBar;
 
 import app.audio.LibraryEntry;
-import app.user.type.Artist;
-import app.user.type.Host;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,55 +29,6 @@ public final class FilterUtils {
             }
         }
         return result;
-    }
-
-    /**
-     * Filter artists by name list.
-     *
-     * @param entries the entries
-     * @param name    the name
-     * @return the list
-     */
-    public static List<Artist> filterArtistsByName(final List<Artist> entries,
-                                                   final String name) {
-        List<Artist> result = new ArrayList<>();
-        for (Artist entry : entries) {
-            if (entry.matchesName(name)) {
-                result.add(entry);
-            }
-        }
-        return result;
-    }
-
-    /**
-     * Filter hosts by name list.
-     *
-     * @param entries the entries
-     * @param name    the name
-     * @return the list
-     */
-    public static List<Host> filterHostsByName(final List<Host> entries,
-                                               final String name) {
-        List<Host> result = new ArrayList<>();
-        for (Host entry : entries) {
-            if (entry.matchesName(name)) {
-                result.add(entry);
-            }
-        }
-        return result;
-    }
-
-
-    /**
-     * Filter albums by description.
-     *
-     * @param entries the entries
-     * @param description   the description
-     * @return the list
-     */
-    public static List<LibraryEntry> filterAlbumsByDescription(final List<LibraryEntry> entries,
-                                                   final String description) {
-        return filter(entries, entry -> entry.matchesDescription(description));
     }
 
     /**
@@ -167,6 +116,18 @@ public final class FilterUtils {
     }
 
     /**
+     * Filter by description list.
+     *
+     * @param entries     the entries
+     * @param description the description
+     * @return the list
+     */
+    public static List<LibraryEntry> filterByDescription(final List<LibraryEntry> entries,
+                                                         final String description) {
+        return filter(entries, entry -> entry.matchesDescription(description));
+    }
+
+    /**
      * Filter by playlist visibility list.
      *
      * @param entries the entries
@@ -194,7 +155,7 @@ public final class FilterUtils {
                                              final FilterCriteria criteria) {
         List<LibraryEntry> result = new ArrayList<>();
         for (LibraryEntry entry : entries) {
-            if (criteria.matches(entry) && !result.contains(entry)) {
+            if (criteria.matches(entry)) {
                 result.add(entry);
             }
         }

@@ -15,13 +15,13 @@ import java.util.List;
 public final class Player {
     private Enums.RepeatMode repeatMode;
     private boolean shuffle;
-    @Getter
     private boolean paused;
     @Getter
     private PlayerSource source;
     @Getter
     private String type;
     private final int skipTime = 90;
+
     private ArrayList<PodcastBookmark> bookmarks = new ArrayList<>();
 
 
@@ -95,13 +95,14 @@ public final class Player {
     /**
      * Sets source.
      *
-     * @param entry the entry
-     * @param sourceType  the sourceType
+     * @param entry      the entry
+     * @param sourceType the sourceType
      */
     public void setSource(final LibraryEntry entry, final String sourceType) {
         if ("podcast".equals(this.type)) {
             bookmarkPodcast();
         }
+
         this.type = sourceType;
         this.source = createSource(sourceType, entry, bookmarks);
         this.repeatMode = Enums.RepeatMode.NO_REPEAT;
@@ -127,7 +128,7 @@ public final class Player {
         }
 
         if (source.getType() == Enums.PlayerSourceType.PLAYLIST
-                || source.getType() == Enums.PlayerSourceType.ALBUM) {
+            || source.getType() == Enums.PlayerSourceType.ALBUM) {
             shuffle = !shuffle;
             if (shuffle) {
                 source.updateShuffleIndex();
@@ -241,6 +242,18 @@ public final class Player {
     }
 
     /**
+     * Gets current audio collection.
+     *
+     * @return the current audio collection
+     */
+    public AudioCollection getCurrentAudioCollection() {
+        if (source == null) {
+            return null;
+        }
+        return source.getAudioCollection();
+    }
+
+    /**
      * Gets paused.
      *
      * @return the paused
@@ -272,6 +285,7 @@ public final class Player {
         } else {
             stop();
         }
+
         return new PlayerStats(filename, duration, repeatMode, shuffle, paused);
     }
 }

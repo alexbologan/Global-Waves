@@ -28,5 +28,6 @@ public class Filters {
         this.artist = filters.getArtist();
         this.owner = filters.getOwner();
         this.followers = filters.getFollowers();
+        this.description = filters.getDescription();
     }
 }

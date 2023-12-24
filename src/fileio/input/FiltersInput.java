@@ -1,5 +1,7 @@
 package fileio.input;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 
 public final class FiltersInput {
@@ -12,6 +14,8 @@ public final class FiltersInput {
     private String artist;
     private String owner; // pentru search playlist si podcast
     private String followers; // pentru search playlist -> followers
+    @Getter
+    private String description; // pentru search album -> followers
 
     public FiltersInput() {
     }
