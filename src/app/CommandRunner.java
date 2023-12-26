@@ -8,6 +8,7 @@ import app.searchBar.Filters;
 import app.user.Artist;
 import app.user.Host;
 import app.user.User;
+import app.user.UserAbstract;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
@@ -783,23 +784,34 @@ public final class CommandRunner {
     }
 
     public static ObjectNode wrapped(final CommandInput commandInput) {
-        List<String> playlists = admin.getTop5Playlists();
+        UserAbstract user = admin.getAbstractUser(commandInput.getUsername());
+        ObjectNode resultNode = admin.wrapped(commandInput, objectMapper);
 
         ObjectNode objectNode = objectMapper.createObjectNode();
-        objectNode.put("user", commandInput.getUsername());
         objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
-        objectNode.put("result", objectMapper.valueToTree(playlists));
+        if (resultNode != null) {
+            objectNode.put("result", resultNode);
+        } else {
+            if (user == null) {
+                objectNode.put("message", "User %s not found."
+                        .formatted(commandInput.getUsername()));
+            } else {
+                objectNode.put("message", "No data to show for %s %s."
+                        .formatted(user.userType(), commandInput.getUsername()));
+            }
+        }
 
         return objectNode;
     }
 
-    public static ObjectNode endProgram(final CommandInput commandInput) {
-        List<String> playlists = admin.getTop5Playlists();
+    public static ObjectNode endProgram() {
+        ObjectNode resultNode = admin.endProgram(objectMapper);
 
         ObjectNode objectNode = objectMapper.createObjectNode();
-        objectNode.put("command", commandInput.getCommand());
-        objectNode.put("result", objectMapper.valueToTree(playlists));
+        objectNode.put("command", "endProgram");
+        objectNode.put("result", resultNode);
 
         return objectNode;
     }

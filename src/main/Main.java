@@ -88,7 +88,6 @@ public final class Main {
 
         for (CommandInput command : commands) {
             admin.updateTimestamp(command.getTimestamp());
-
             String commandName = command.getCommand();
 
             switch (commandName) {
@@ -137,10 +136,10 @@ public final class Main {
                 case "showAlbums" -> outputs.add(CommandRunner.showAlbums(command));
                 case "showPodcasts" -> outputs.add(CommandRunner.showPodcasts(command));
                 case "wrapped" -> outputs.add(CommandRunner.wrapped(command));
-                case "endProgram" -> outputs.add(CommandRunner.endProgram(command));
                 //default -> System.out.println("Invalid command " + commandName);
             }
         }
+        outputs.add(CommandRunner.endProgram());
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
         objectWriter.writeValue(new File(filePath2), outputs);

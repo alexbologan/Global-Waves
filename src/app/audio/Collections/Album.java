@@ -15,6 +15,7 @@ import java.util.List;
 public final class Album extends AudioCollection {
     private String description;
     private List<Song> songs;
+    private Song lastListenedSong;
     private Integer releaseYear;
     private Integer followers;
 

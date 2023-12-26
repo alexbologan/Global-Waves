@@ -43,7 +43,7 @@ public final class Player {
 
         repeatMode = Enums.RepeatMode.NO_REPEAT;
         paused = true;
-        source = null;
+        //source = null;
         shuffle = false;
     }
 
@@ -169,6 +169,7 @@ public final class Player {
      * @param time the time
      */
     public void simulatePlayer(final int time) {
+
         int elapsedTime = time;
         if (!paused) {
             while (elapsedTime >= source.getDuration()) {

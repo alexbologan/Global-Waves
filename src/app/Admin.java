@@ -8,13 +8,10 @@ import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.player.Player;
-import app.user.Announcement;
-import app.user.Artist;
-import app.user.Event;
-import app.user.Host;
-import app.user.Merchandise;
-import app.user.User;
-import app.user.UserAbstract;
+import app.user.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
 import fileio.input.EpisodeInput;
 import fileio.input.PodcastInput;
@@ -22,15 +19,7 @@ import fileio.input.SongInput;
 import fileio.input.UserInput;
 import lombok.Getter;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -232,7 +221,7 @@ public final class Admin {
         users.forEach(user -> user.simulateTime(elapsed));
     }
 
-    private UserAbstract getAbstractUser(final String username) {
+    public UserAbstract getAbstractUser(final String username) {
         ArrayList<UserAbstract> allUsers = new ArrayList<>();
 
         allUsers.addAll(users);
@@ -777,6 +766,57 @@ public final class Admin {
         }
     }
 
+    public ObjectNode wrapped(final CommandInput commandInput, final ObjectMapper objectMapper) {
+        ObjectNode resultNode = objectMapper.createObjectNode();
+        String username = commandInput.getUsername();
+        UserAbstract currentUser = getAbstractUser(username);
+
+        if (currentUser == null) {
+            return null;
+        } else if (currentUser.userType().equals("user")) {
+            User user = (User) currentUser;
+
+            addTopNode(resultNode, "topArtists", user.getTopArtists(), objectMapper);
+            addTopNode(resultNode, "topGenres", user.getTopGenres(), objectMapper);
+            addTopNode(resultNode, "topSongs", user.getTopSongs(), objectMapper);
+            addTopNode(resultNode, "topAlbums", user.getTopAlbums(), objectMapper);
+            addTopNode(resultNode, "topEpisodes", user.getTopPodcasts(), objectMapper);
+        } else if (currentUser.userType().equals("artist")) {
+            Artist artist = (Artist) currentUser;
+
+            addTopNode(resultNode, "topAlbums", artist.getTopAlbums(), objectMapper);
+            addTopNode(resultNode, "topSongs", artist.getTopSongs(), objectMapper);
+            ArrayNode topFansNode = resultNode.putArray("topFans");
+            artist.getListeners().stream()
+                    .map(Pair::getFirst)
+                    .forEach(topFansNode::add);
+
+
+            resultNode.put("listeners", artist.getListeners().size());
+        } else {
+            Host host = (Host) currentUser;
+            addTopNode(resultNode, "topEpisodes", host.getTopEpisodes(), objectMapper);
+
+            resultNode.put("listeners", host.getListeners());
+        }
+        return resultNode;
+    }
+
+
+    private void addTopNode(final ObjectNode resultNode, final String nodeName,
+                            final List<Pair<String, Integer>> list,
+                            final ObjectMapper objectMapper) {
+        ObjectNode node = objectMapper.createObjectNode();
+        list.sort(Comparator.comparing(Pair<String, Integer>::getSecond).reversed()
+                .thenComparing(Pair::getFirst));
+
+        list.stream()
+                .limit(5)
+                .forEach(pair -> node.put(pair.getFirst(), pair.getSecond()));
+
+        resultNode.set(nodeName, node);
+    }
+
     /**
      * Gets online users.
      *
@@ -871,5 +911,25 @@ public final class Admin {
             count++;
         }
         return topPlaylists;
+    }
+
+    public ObjectNode endProgram(final ObjectMapper objectMapper) {
+        ObjectNode resultNode = objectMapper.createObjectNode();
+        ArrayList<Artist> artists = new ArrayList<>(this.artists);
+        artists.sort(Comparator.comparingInt(artist -> artist.getListeners().size()));
+        int rank = 1;
+        for (Artist artist : artists) {
+            if (!artist.getListeners().isEmpty()) {
+                ObjectNode artistNode = objectMapper.createObjectNode();
+
+                artistNode.put("merchRevenue", artist.getMerchRevenue());
+                artistNode.put("songRevenue", artist.getSongRevenue());
+                artistNode.put("ranking", rank++);
+                artistNode.put("mostProfitableSong", "N/A");
+
+                resultNode.set(artist.getUsername(), artistNode);
+            }
+        }
+        return resultNode;
     }
 }

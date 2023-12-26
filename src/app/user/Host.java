@@ -1,16 +1,23 @@
 package app.user;
 
 import app.audio.Collections.Podcast;
+import app.audio.Files.Episode;
 import app.pages.HostPage;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 
 /**
  * The type Host.
  */
+@Getter
+@Setter
 public final class Host extends ContentCreator {
     private ArrayList<Podcast> podcasts;
     private ArrayList<Announcement> announcements;
+    private ArrayList<Pair<String, Integer>> topEpisodes;
+    private Integer listeners;
 
     /**
      * Instantiates a new Host.
@@ -23,44 +30,10 @@ public final class Host extends ContentCreator {
         super(username, age, city);
         podcasts = new ArrayList<>();
         announcements = new ArrayList<>();
+        topEpisodes = new ArrayList<>();
+        listeners = 0;
 
         super.setPage(new HostPage(this));
-    }
-
-    /**
-     * Gets podcasts.
-     *
-     * @return the podcasts
-     */
-    public ArrayList<Podcast> getPodcasts() {
-        return podcasts;
-    }
-
-    /**
-     * Sets podcasts.
-     *
-     * @param podcasts the podcasts
-     */
-    public void setPodcasts(final ArrayList<Podcast> podcasts) {
-        this.podcasts = podcasts;
-    }
-
-    /**
-     * Gets announcements.
-     *
-     * @return the announcements
-     */
-    public ArrayList<Announcement> getAnnouncements() {
-        return announcements;
-    }
-
-    /**
-     * Sets announcements.
-     *
-     * @param announcements the announcements
-     */
-    public void setAnnouncements(final ArrayList<Announcement> announcements) {
-        this.announcements = announcements;
     }
 
     /**
@@ -93,6 +66,13 @@ public final class Host extends ContentCreator {
         }
 
         return null;
+    }
+
+    /**
+     * Add listeners.
+     */
+    public void addListeners() {
+        this.listeners++;
     }
 
     @Override
