@@ -23,7 +23,7 @@ public final class Artist extends ContentCreator {
     @Setter
     private ArrayList<Pair<String, Integer>> topAlbums;
     @Setter
-    private ArrayList<String> topFans;
+    private ArrayList<Pair<String, Integer>> topFans;
     private ArrayList<Pair<String, Integer>> listeners;
     private double merchRevenue;
     private double songRevenue;

@@ -17,7 +17,7 @@ public final class Host extends ContentCreator {
     private ArrayList<Podcast> podcasts;
     private ArrayList<Announcement> announcements;
     private ArrayList<Pair<String, Integer>> topEpisodes;
-    private Integer listeners;
+    private ArrayList<Pair<String, Integer>> listeners;
 
     /**
      * Instantiates a new Host.
@@ -31,7 +31,7 @@ public final class Host extends ContentCreator {
         podcasts = new ArrayList<>();
         announcements = new ArrayList<>();
         topEpisodes = new ArrayList<>();
-        listeners = 0;
+        listeners = new ArrayList<>();
 
         super.setPage(new HostPage(this));
     }
@@ -66,13 +66,6 @@ public final class Host extends ContentCreator {
         }
 
         return null;
-    }
-
-    /**
-     * Add listeners.
-     */
-    public void addListeners() {
-        this.listeners++;
     }
 
     @Override

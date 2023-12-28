@@ -28,6 +28,7 @@ import java.util.List;
  * The type User.
  */
 @Getter
+@Setter
 public final class User extends UserAbstract {
     private ArrayList<Playlist> playlists;
     private ArrayList<Song> likedSongs;
@@ -36,22 +37,15 @@ public final class User extends UserAbstract {
     private boolean status;
     private final SearchBar searchBar;
     private boolean lastSearched;
-    @Setter
     private Page currentPage;
-    @Setter
     private HomePage homePage;
-    @Setter
     private LikedContentPage likedContentPage;
-    @Setter
     private ArrayList<Pair<String, Integer>> topArtists;
-    @Setter
     private ArrayList<Pair<String, Integer>> topGenres;
-    @Setter
     private ArrayList<Pair<String, Integer>> topSongs;
-    @Setter
     private ArrayList<Pair<String, Integer>> topAlbums;
-    @Setter
     private ArrayList<Pair<String, Integer>> topPodcasts;
+    private Song lastListenedSong;
     /**
      * Instantiates a new User.
      *
@@ -92,6 +86,7 @@ public final class User extends UserAbstract {
      * @return the array list
      */
     public ArrayList<String> search(final Filters filters, final String type) {
+        setLastListenedSong(null);
         searchBar.clearSelection();
         player.stop();
 
@@ -171,8 +166,10 @@ public final class User extends UserAbstract {
             && ((AudioCollection) searchBar.getLastSelected()).getNumberOfTracks() == 0) {
             return "You can't load an empty audio collection!";
         }
-        Admin admin = Admin.getInstance();
+
         player.setSource(searchBar.getLastSelected(), searchBar.getLastSearchType());
+
+        Admin admin = Admin.getInstance();
         if (Objects.equal(player.getType(), "song")) {
             Song song = (Song) player.getCurrentAudioFile();
             if (!isStringInArray(topSongs, song.getName())) {
@@ -187,17 +184,20 @@ public final class User extends UserAbstract {
             if (!isStringInArray(topAlbums, song.getAlbum())) {
                 topAlbums.add(new Pair<>(song.getAlbum(), 1));
             }
+
             Artist artist = (Artist)admin.getAbstractUser(song.getArtist());
-            if (artist != null) {
-                if (!isStringInArray(artist.getTopSongs(), song.getName())) {
-                    artist.getTopSongs().add(new Pair<>(song.getName(), 1));
-                }
-                if (!isStringInArray(artist.getTopAlbums(), song.getAlbum())) {
-                    artist.getTopAlbums().add(new Pair<>(song.getAlbum(), 1));
-                }
-                if (!isStringInArray(artist.getListeners(), getUsername())) {
-                    artist.getListeners().add(new Pair<>(getUsername(), 1));
-                }
+            if (artist == null) {
+                artist = new Artist(song.getArtist(), 0, "");
+                admin.addArtist(artist);
+            }
+            if (!isStringInArray(artist.getTopSongs(), song.getName())) {
+                artist.getTopSongs().add(new Pair<>(song.getName(), 1));
+            }
+            if (!isStringInArray(artist.getTopAlbums(), song.getAlbum())) {
+                artist.getTopAlbums().add(new Pair<>(song.getAlbum(), 1));
+            }
+            if (!isStringInArray(artist.getListeners(), getUsername())) {
+                artist.getListeners().add(new Pair<>(getUsername(), 1));
             }
         } else if (Objects.equal(player.getType(), "podcast")) {
             Podcast podcast = (Podcast) player.getCurrentAudioCollection();
@@ -205,6 +205,7 @@ public final class User extends UserAbstract {
                 topPodcasts.add(new Pair<>(podcast.getName(), 1));
             }
         }
+
         searchBar.clearSelection();
 
         player.pause();
@@ -646,8 +647,9 @@ public final class User extends UserAbstract {
             if (Objects.equal(player.getType(), "album")) {
                 Album album = (Album) player.getCurrentAudioCollection();
                 Admin admin = Admin.getInstance();
-                Artist artist = (Artist)admin.getAbstractUser(album.getOwner());
-                if (album.getLastListenedSong() == null) {
+                Artist artist = (Artist) admin.getAbstractUser(album.getOwner());
+                int stop = 0;
+                if (lastListenedSong == null) {
                     for (Song song : album.getSongs()) {
                         if (!isStringInArray(topAlbums, song.getAlbum())) {
                             topAlbums.add(new Pair<>(song.getAlbum(), 1));
@@ -671,9 +673,49 @@ public final class User extends UserAbstract {
                             artist.getListeners().add(new Pair<>(getUsername(), 1));
                         }
                         if (Objects.equal(player.getCurrentAudioFile().getName(), song.getName())) {
+                            stop++;
                             break;
                         }
                     }
+                } else {
+                    int found = 0;
+                    for (Song song : album.getSongs()) {
+                        if (found == 1) {
+                            if (!isStringInArray(topAlbums, song.getAlbum())) {
+                                topAlbums.add(new Pair<>(song.getAlbum(), 1));
+                            }
+                            if (!isStringInArray(topArtists, song.getArtist())) {
+                                topArtists.add(new Pair<>(song.getArtist(), 1));
+                            }
+                            if (!isStringInArray(topSongs, song.getName())) {
+                                topSongs.add(new Pair<>(song.getName(), 1));
+                            }
+                            if (!isStringInArray(topGenres, song.getGenre())) {
+                                topGenres.add(new Pair<>(song.getGenre(), 1));
+                            }
+                            if (!isStringInArray(artist.getTopSongs(), song.getName())) {
+                                artist.getTopSongs().add(new Pair<>(song.getName(), 1));
+                            }
+                            if (!isStringInArray(artist.getTopAlbums(), song.getAlbum())) {
+                                artist.getTopAlbums().add(new Pair<>(song.getAlbum(), 1));
+                            }
+                            if (!isStringInArray(artist.getListeners(), getUsername())) {
+                                artist.getListeners().add(new Pair<>(getUsername(), 1));
+                            }
+                        }
+                        if (Objects.equal(player.getCurrentAudioFile().getName(), song.getName())) {
+                            stop++;
+                            break;
+                        }
+                        if (Objects.equal(song.getName(), lastListenedSong.getName())) {
+                            found = 1;
+                        }
+                    }
+                }
+                if (stop != 0) {
+                    setLastListenedSong((Song) player.getCurrentAudioFile());
+                } else {
+                    setLastListenedSong(null);
                 }
             }
         }

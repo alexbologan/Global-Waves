@@ -190,6 +190,9 @@ public final class Admin {
                 .orElse(null);
     }
 
+    public void addArtist(final Artist artist) {
+        artists.add(artist);
+    }
     /**
      * Gets host.
      *
@@ -766,6 +769,15 @@ public final class Admin {
         }
     }
 
+    public static boolean isStringInList(List<Pair<String, Integer>> pairList, String targetString) {
+        for (Pair<String, Integer> pair : pairList) {
+            if (pair.getFirst().equals(targetString)) {
+                return true; // Found the target string in the list
+            }
+        }
+        return false; // Target string not found in the list
+    }
+
     public ObjectNode wrapped(final CommandInput commandInput, final ObjectMapper objectMapper) {
         ObjectNode resultNode = objectMapper.createObjectNode();
         String username = commandInput.getUsername();
@@ -776,6 +788,18 @@ public final class Admin {
         } else if (currentUser.userType().equals("user")) {
             User user = (User) currentUser;
 
+            if (username.equals("henry26")){
+                if (isStringInList(user.getTopArtists(), "Jay Z")) {
+                    System.out.println("here2");
+                }
+            }
+
+            if (user.getTopArtists().isEmpty() && user.getTopGenres().isEmpty()
+                    && user.getTopSongs().isEmpty() && user.getTopAlbums().isEmpty()
+                    && user.getTopPodcasts().isEmpty()) {
+                return null;
+            }
+
             addTopNode(resultNode, "topArtists", user.getTopArtists(), objectMapper);
             addTopNode(resultNode, "topGenres", user.getTopGenres(), objectMapper);
             addTopNode(resultNode, "topSongs", user.getTopSongs(), objectMapper);
@@ -784,10 +808,18 @@ public final class Admin {
         } else if (currentUser.userType().equals("artist")) {
             Artist artist = (Artist) currentUser;
 
+            if (artist.getTopAlbums().isEmpty() && artist.getTopSongs().isEmpty()
+                    && artist.getListeners().isEmpty()) {
+                return null;
+            }
+
             addTopNode(resultNode, "topAlbums", artist.getTopAlbums(), objectMapper);
             addTopNode(resultNode, "topSongs", artist.getTopSongs(), objectMapper);
             ArrayNode topFansNode = resultNode.putArray("topFans");
+            artist.getListeners().sort(Comparator.comparing(Pair<String, Integer>::getSecond)
+                    .reversed().thenComparing(Pair::getFirst));
             artist.getListeners().stream()
+                    .limit(5)
                     .map(Pair::getFirst)
                     .forEach(topFansNode::add);
 
@@ -795,9 +827,14 @@ public final class Admin {
             resultNode.put("listeners", artist.getListeners().size());
         } else {
             Host host = (Host) currentUser;
+
+            if (host.getTopEpisodes().isEmpty() && host.getListeners().isEmpty()) {
+                return null;
+            }
+
             addTopNode(resultNode, "topEpisodes", host.getTopEpisodes(), objectMapper);
 
-            resultNode.put("listeners", host.getListeners());
+            resultNode.put("listeners", host.getListeners().size());
         }
         return resultNode;
     }
@@ -916,7 +953,9 @@ public final class Admin {
     public ObjectNode endProgram(final ObjectMapper objectMapper) {
         ObjectNode resultNode = objectMapper.createObjectNode();
         ArrayList<Artist> artists = new ArrayList<>(this.artists);
-        artists.sort(Comparator.comparingInt(artist -> artist.getListeners().size()));
+
+        artists.sort(Comparator.comparing(Artist::getUsername));
+
         int rank = 1;
         for (Artist artist : artists) {
             if (!artist.getListeners().isEmpty()) {
