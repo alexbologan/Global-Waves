@@ -8,14 +8,7 @@ import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.player.Player;
-import app.user.Artist;
-import app.user.Host;
-import app.user.User;
-import app.user.UserAbstract;
-import app.user.Event;
-import app.user.Merchandise;
-import app.user.Announcement;
-import app.user.Pair;
+import app.user.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -567,6 +560,7 @@ public final class Admin {
             return "Event for %s does not have a valid date.".formatted(username);
         }
 
+        currentArtist.notifySubscribers("Event");
         currentArtist.getEvents().add(new Event(eventName,
                                                 commandInput.getDescription(),
                                                 commandInput.getDate()));
@@ -790,6 +784,22 @@ public final class Admin {
         if (currentUser.userType().equals("user")) {
             ((User) currentUser).switchStatus();
             return username + " has changed status successfully.";
+        } else {
+            return username + " is not a normal user.";
+        }
+    }
+
+    public String buyMerch(final CommandInput commandInput) {
+        String username = commandInput.getUsername();
+        String merchName = commandInput.getName();
+        UserAbstract currentUser = getAbstractUser(username);
+
+        if (currentUser == null) {
+            return "The username %s doesn't exist.".formatted(username);
+        }
+
+        if (currentUser.userType().equals("user")) {
+            return ((User) currentUser).buyMerch(merchName);
         } else {
             return username + " is not a normal user.";
         }
@@ -1060,12 +1070,13 @@ public final class Admin {
             }
         }
 
-        currArtists.sort(Comparator.comparingDouble(Artist::getSongsRevenue).reversed()
+        currArtists.sort(Comparator.comparingDouble((Artist artist1) -> artist1.getSongsRevenue()
+                        + artist1.getMerchRevenue()).reversed()
                 .thenComparing(Artist::getUsername));
 
         int rank = 1;
         for (Artist artist : currArtists) {
-            if (!artist.getListeners().isEmpty() || !artist.getSongRevenue().isEmpty()) {
+            if (!artist.getListeners().isEmpty() || artist.getMerchRevenue() != 0) {
                 ObjectNode artistNode = objectMapper.createObjectNode();
 
                 artistNode.put("merchRevenue", (double) Math.round(artist.getMerchRevenue()

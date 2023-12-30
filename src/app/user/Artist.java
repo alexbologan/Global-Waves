@@ -146,6 +146,15 @@ public final class Artist extends ContentCreator {
     }
 
     /**
+     * Add merch revenue.
+     *
+     * @param revenue the revenue
+     */
+    public void addMerchRevenue(final double revenue) {
+        merchRevenue += revenue;
+    }
+
+    /**
      * Notifies all subscribers about a specific message from the artist.
      *
      * @param message The message to be sent to subscribers.

@@ -31,8 +31,8 @@ public final class LikedContentPage implements Page {
     }
 
     @Override
-    public String getPageType() {
-        return "liked content";
+    public String buyMerch(final User user, final String merchName) {
+        return "Cannot buy merch from this page.";
     }
 
     @Override

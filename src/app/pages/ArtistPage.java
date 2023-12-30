@@ -1,8 +1,10 @@
 package app.pages;
 
+import app.Admin;
 import app.audio.Collections.Album;
 import app.user.Artist;
 import app.user.Subscriber;
+import app.user.User;
 import app.user.Merchandise;
 import app.user.Event;
 
@@ -32,8 +34,15 @@ public final class ArtistPage implements Page {
     }
 
     @Override
-    public String getPageType() {
-        return "artist";
+    public String buyMerch(final User user, final String merchName) {
+        for (Merchandise merchItem : merch) {
+            if (merchItem.getName().equals(merchName)) {
+                user.addMerch(merchItem);
+                Admin.getInstance().getArtist(name).addMerchRevenue(merchItem.getPrice());
+                return user.getUsername() + " has added new merch successfully.";
+            }
+        }
+        return "The merch " + merchName + " doesn't exist.";
     }
 
     @Override

@@ -27,8 +27,8 @@ public final class HomePage implements Page {
     }
 
     @Override
-    public String getPageType() {
-        return "home";
+    public String buyMerch(final User user, final String merchName) {
+        return "Cannot buy merch from this page.";
     }
 
     @Override

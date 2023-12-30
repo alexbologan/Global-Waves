@@ -4,6 +4,7 @@ import app.audio.Collections.Podcast;
 import app.user.Announcement;
 import app.user.Host;
 import app.user.Subscriber;
+import app.user.User;
 
 import java.util.List;
 
@@ -29,8 +30,8 @@ public final class HostPage implements Page {
     }
 
     @Override
-    public String getPageType() {
-        return "host";
+    public String buyMerch(final User user, final String merchName) {
+        return "Cannot buy merch from this page.";
     }
 
     @Override

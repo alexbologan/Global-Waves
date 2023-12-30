@@ -52,6 +52,7 @@ public final class User extends UserAbstract implements Subscriber {
     private Integer adPrice;
     private boolean adBreakPlayed;
     private ArrayList<Pair<String, String>> notifications;
+    private ArrayList<Merchandise> merch;
     private final Admin admin = Admin.getInstance();
     /**
      * Instantiates a new User.
@@ -83,6 +84,7 @@ public final class User extends UserAbstract implements Subscriber {
         topSongsPremium = new ArrayList<>();
         topSongsNonPremium = new ArrayList<>();
         notifications = new ArrayList<>();
+        merch = new ArrayList<>();
     }
 
     @Override
@@ -457,6 +459,15 @@ public final class User extends UserAbstract implements Subscriber {
     }
 
     /**
+     * Add merch string.
+     *
+     * @param merchandise the merchandise
+     */
+    public void addMerch(final Merchandise merchandise) {
+        merch.add(merchandise);
+    }
+
+    /**
      * Add remove in playlist string.
      *
      * @param id the id
@@ -628,6 +639,17 @@ public final class User extends UserAbstract implements Subscriber {
         status = !status;
     }
 
+    public String buyMerch(final String merchName) {
+        return currentPage.buyMerch(this, merchName);
+    }
+
+    public ArrayList<String> seeMerch() {
+        ArrayList<String> merchNames = new ArrayList<>();
+        for (Merchandise merchItem : merch) {
+            merchNames.add(merchItem.getName());
+        }
+        return merchNames;
+    }
     /**
      * Attempts to upgrade the user to a premium subscription.
      *

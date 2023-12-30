@@ -1,6 +1,7 @@
 package app.pages;
 
 import app.user.Subscriber;
+import app.user.User;
 
 /**
  * The interface Page.
@@ -13,12 +14,7 @@ public interface Page {
      */
     String printCurrentPage();
 
-    /**
-     * Gets page type.
-     *
-     * @return the page type
-     */
-    String getPageType();
+    String buyMerch(User user, String merchName);
 
     /**
      * Process subscriptions.

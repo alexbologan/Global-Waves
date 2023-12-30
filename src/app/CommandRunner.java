@@ -452,6 +452,7 @@ public final class CommandRunner {
      */
     public static ObjectNode deleteUser(final CommandInput commandInput) {
         String message = admin.deleteUser(commandInput.getUsername());
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
@@ -460,7 +461,6 @@ public final class CommandRunner {
 
         return objectNode;
     }
-
 
     public static ObjectNode buyPremium(final CommandInput commandInput) {
         String message = admin.buyPremium(commandInput.getUsername());
@@ -585,6 +585,7 @@ public final class CommandRunner {
      */
     public static ObjectNode addEvent(final CommandInput commandInput) {
         String message = admin.addEvent(commandInput);
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
@@ -678,6 +679,35 @@ public final class CommandRunner {
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("timestamp", commandInput.getTimestamp());
         objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode buyMerch(final CommandInput commandInput) {
+        String message = admin.buyMerch(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode seeMerch(final CommandInput commandInput) {
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+
+        if (admin.getUser(commandInput.getUsername()) == null) {
+            objectNode.put("message", "The username %s doesn't exist."
+                    .formatted(commandInput.getUsername()));
+        } else {
+            ArrayList<String> result = admin.getUser(commandInput.getUsername()).seeMerch();
+            objectNode.put("result", objectMapper.valueToTree(result));
+        }
 
         return objectNode;
     }
