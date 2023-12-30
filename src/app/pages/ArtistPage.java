@@ -2,8 +2,9 @@ package app.pages;
 
 import app.audio.Collections.Album;
 import app.user.Artist;
-import app.user.Event;
+import app.user.Subscriber;
 import app.user.Merchandise;
+import app.user.Event;
 
 import java.util.List;
 
@@ -11,9 +12,11 @@ import java.util.List;
  * The type Artist page.
  */
 public final class ArtistPage implements Page {
+    private String name;
     private List<Album> albums;
     private List<Merchandise> merch;
     private List<Event> events;
+    private List<Subscriber> subscribers;
 
     /**
      * Instantiates a new Artist page.
@@ -24,6 +27,23 @@ public final class ArtistPage implements Page {
         albums = artist.getAlbums();
         merch = artist.getMerch();
         events = artist.getEvents();
+        subscribers = artist.getSubscribers();
+        name = artist.getUsername();
+    }
+
+    @Override
+    public String getPageType() {
+        return "artist";
+    }
+
+    @Override
+    public String processSubscription(final Subscriber subscriber) {
+        if (subscribers.contains(subscriber)) {
+            subscribers.remove(subscriber);
+            return subscriber.getUsername() + " unsubscribed from " + name + " successfully.";
+        }
+        subscribers.add(subscriber);
+        return subscriber.getUsername() + " subscribed to " + name + " successfully.";
     }
 
     @Override

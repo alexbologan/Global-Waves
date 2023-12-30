@@ -26,7 +26,8 @@ public final class Artist extends ContentCreator {
     private ArrayList<Pair<String, Integer>> topFans;
     private ArrayList<Pair<String, Integer>> listeners;
     private double merchRevenue;
-    private double songRevenue;
+    private ArrayList<Pair<String, Double>> songRevenue;
+    private ArrayList<Subscriber> subscribers;
 
     /**
      * Instantiates a new Artist.
@@ -44,10 +45,15 @@ public final class Artist extends ContentCreator {
         topAlbums = new ArrayList<>();
         topFans = new ArrayList<>();
         listeners = new ArrayList<>();
+        songRevenue = new ArrayList<>();
+        subscribers = new ArrayList<>();
         merchRevenue = 0;
-        songRevenue = 0;
 
         super.setPage(new ArtistPage(this));
+    }
+
+    public void setNotifications(final String notification) {
+
     }
 
     /**
@@ -108,6 +114,60 @@ public final class Artist extends ContentCreator {
         return albumOutput;
     }
 
+    /**
+     * Check if the artist has a song
+     *
+     * @param songName the song name
+     * @return true if the artist has the song
+     */
+    public boolean hasSong(final String songName) {
+        for (Pair<String, Integer> pair : topSongs) {
+            if (pair.getFirst().equals(songName)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void addSongRevenue(final String songName, final double revenue) {
+        boolean found = false;
+
+        for (Pair<String, Double> pair : songRevenue) {
+            if (pair.getFirst().equals(songName)) {
+                pair.setSecond(pair.getSecond() + revenue);
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            songRevenue.add(new Pair<>(songName, revenue));
+        }
+    }
+
+    /**
+     * Notifies all subscribers about a specific message from the artist.
+     *
+     * @param message The message to be sent to subscribers.
+     */
+    public void notifySubscribers(final String message) {
+        for (Subscriber subscriber : subscribers) {
+            subscriber.update(message, getUsername());
+        }
+    }
+
+    /**
+     * Get the revenue from the songs
+     *
+     * @return the revenue
+     */
+    public double getSongsRevenue() {
+        double revenue = 0;
+        for (Pair<String, Double> pair : songRevenue) {
+            revenue += pair.getSecond();
+        }
+        return revenue;
+    }
     /**
      * Get user type
      *

@@ -115,6 +115,17 @@ public final class Playlist extends AudioCollection {
     }
 
     @Override
+    public void addTrack(final AudioFile track, final int index) {
+        songs.add(index, (Song) track);
+    }
+    @Override
+    public void getAudioFiles() {
+        for (Song song : songs) {
+            System.out.println(song.getName());
+        }
+    }
+
+    @Override
     public boolean isVisibleToUser(final String user) {
         return this.getVisibility() == Enums.Visibility.PUBLIC
                || (this.getVisibility() == Enums.Visibility.PRIVATE

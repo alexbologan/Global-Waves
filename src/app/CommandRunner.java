@@ -5,10 +5,11 @@ import app.audio.Collections.PlaylistOutput;
 import app.audio.Collections.PodcastOutput;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
-import app.user.Artist;
-import app.user.Host;
 import app.user.User;
 import app.user.UserAbstract;
+import app.user.Artist;
+import app.user.Host;
+import app.user.NotificationOutput;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fileio.input.CommandInput;
@@ -460,6 +461,68 @@ public final class CommandRunner {
         return objectNode;
     }
 
+
+    public static ObjectNode buyPremium(final CommandInput commandInput) {
+        String message = admin.buyPremium(commandInput.getUsername());
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode cancelPremium(final CommandInput commandInput) {
+        String message = admin.cancelPremium(commandInput.getUsername());
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode adBreak(final CommandInput commandInput) {
+        String message = admin.adBreak(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode subscribe(final CommandInput commandInput) {
+        String message = admin.subscribe(commandInput.getUsername());
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    public static ObjectNode getNotifications(final CommandInput commandInput) {
+        ArrayList<NotificationOutput> result = admin.getUser(commandInput.getUsername())
+                .getNotifications();
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("notifications", objectMapper.valueToTree(result));
+
+        return objectNode;
+    }
+
     /**
      * Add album object node.
      *
@@ -468,6 +531,7 @@ public final class CommandRunner {
      */
     public static ObjectNode addAlbum(final CommandInput commandInput) {
         String message = admin.addAlbum(commandInput);
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
@@ -608,6 +672,7 @@ public final class CommandRunner {
      */
     public static ObjectNode addMerch(final CommandInput commandInput) {
         String message = admin.addMerch(commandInput);
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());

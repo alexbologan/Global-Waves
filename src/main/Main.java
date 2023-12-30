@@ -136,7 +136,12 @@ public final class Main {
                 case "showAlbums" -> outputs.add(CommandRunner.showAlbums(command));
                 case "showPodcasts" -> outputs.add(CommandRunner.showPodcasts(command));
                 case "wrapped" -> outputs.add(CommandRunner.wrapped(command));
-                //default -> System.out.println("Invalid command " + commandName);
+                case "buyPremium" -> outputs.add(CommandRunner.buyPremium(command));
+                case "cancelPremium" -> outputs.add(CommandRunner.cancelPremium(command));
+                case "adBreak" -> outputs.add(CommandRunner.adBreak(command));
+                case "subscribe" -> outputs.add(CommandRunner.subscribe(command));
+                case "getNotifications" -> outputs.add(CommandRunner.getNotifications(command));
+                default -> System.out.println("Invalid command " + commandName);
             }
         }
         outputs.add(CommandRunner.endProgram());

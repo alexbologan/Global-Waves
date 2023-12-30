@@ -2,6 +2,7 @@ package app.pages;
 
 import app.audio.Collections.Playlist;
 import app.audio.Files.Song;
+import app.user.Subscriber;
 import app.user.User;
 
 import java.util.List;
@@ -27,6 +28,16 @@ public final class LikedContentPage implements Page {
     public LikedContentPage(final User user) {
         likedSongs = user.getLikedSongs();
         followedPlaylists = user.getFollowedPlaylists();
+    }
+
+    @Override
+    public String getPageType() {
+        return "liked content";
+    }
+
+    @Override
+    public String processSubscription(final Subscriber subscriber) {
+        return "To subscribe you need to be on the page of an artist or host.";
     }
 
     @Override

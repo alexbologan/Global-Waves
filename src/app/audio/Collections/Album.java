@@ -46,6 +46,18 @@ public final class Album extends AudioCollection {
     }
 
     @Override
+    public void addTrack(final AudioFile track, final int index) {
+        songs.add(index, (Song) track);
+    }
+
+    @Override
+    public void getAudioFiles() {
+        for (Song song : songs) {
+            System.out.println(song.getName());
+        }
+    }
+
+    @Override
     public boolean matchesDescription(final String desc) {
         return description.equals(desc);
     }

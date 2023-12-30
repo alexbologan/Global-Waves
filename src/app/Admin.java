@@ -8,7 +8,14 @@ import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.player.Player;
-import app.user.*;
+import app.user.Artist;
+import app.user.Host;
+import app.user.User;
+import app.user.UserAbstract;
+import app.user.Event;
+import app.user.Merchandise;
+import app.user.Announcement;
+import app.user.Pair;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -19,7 +26,15 @@ import fileio.input.SongInput;
 import fileio.input.UserInput;
 import lombok.Getter;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -34,6 +49,8 @@ public final class Admin {
     private List<Host> hosts = new ArrayList<>();
     private List<Song> songs = new ArrayList<>();
     private List<Podcast> podcasts = new ArrayList<>();
+    @Getter
+    private Song ad;
     private int timestamp = 0;
     private final int limit = 5;
     private final int dateStringLength = 10;
@@ -45,6 +62,9 @@ public final class Admin {
     private final int dateDayLowerLimit = 1;
     private final int dateDayHigherLimit = 31;
     private final int dateFebHigherLimit = 28;
+    private final int premiumPrice = 1000000;
+    private final int roundingFactor = 100;
+
     private static Admin instance;
 
     private Admin() {
@@ -90,9 +110,13 @@ public final class Admin {
             songs.add(new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
                     songInput.getTags(), songInput.getLyrics(), songInput.getGenre(),
                     songInput.getReleaseYear(), songInput.getArtist()));
+            if (songInput.getName().equals("Ad Break")) {
+                ad = new Song(songInput.getName(), songInput.getDuration(), songInput.getAlbum(),
+                        songInput.getTags(), songInput.getLyrics(), songInput.getGenre(),
+                        songInput.getReleaseYear(), songInput.getArtist());
+            }
         }
     }
-
     /**
      * Sets podcasts.
      *
@@ -294,7 +318,7 @@ public final class Admin {
                 .filter(player -> player != user.getPlayer())
                 .map(Player::getCurrentAudioCollection)
                 .filter(Objects::nonNull)
-                .anyMatch(collection -> collection == playlist))) {
+                .anyMatch(collection -> collection == playlist)) && user.getPremium() == 1) {
             return "%s can't be deleted.".formatted(user.getUsername());
         }
 
@@ -380,6 +404,7 @@ public final class Admin {
             return "%s has the same song at least twice in this album.".formatted(username);
         }
 
+        currentArtist.notifySubscribers("Album");
         songs.addAll(newSongs);
         currentArtist.getAlbums().add(new Album(albumName,
                                                 commandInput.getDescription(),
@@ -626,6 +651,7 @@ public final class Admin {
             return "Price for merchandise can not be negative.";
         }
 
+        currentArtist.notifySubscribers("Merchandise");
         currentArtist.getMerch().add(new Merchandise(commandInput.getName(),
                                                      commandInput.getDescription(),
                                                      commandInput.getPrice()));
@@ -769,13 +795,60 @@ public final class Admin {
         }
     }
 
-    public static boolean isStringInList(List<Pair<String, Integer>> pairList, String targetString) {
-        for (Pair<String, Integer> pair : pairList) {
-            if (pair.getFirst().equals(targetString)) {
-                return true; // Found the target string in the list
-            }
+    public String buyPremium(final String username) {
+        UserAbstract currentUser = getAbstractUser(username);
+
+        if (currentUser == null) {
+            return "The username %s doesn't exist.".formatted(username);
         }
-        return false; // Target string not found in the list
+
+        if (currentUser.userType().equals("user")) {
+            return ((User) currentUser).buyPremium();
+        } else {
+            return username + " is not a normal user.";
+        }
+    }
+
+    public String cancelPremium(final String username) {
+        UserAbstract currentUser = getAbstractUser(username);
+
+        if (currentUser == null) {
+            return "The username %s doesn't exist.".formatted(username);
+        }
+
+        if (currentUser.userType().equals("user")) {
+            return ((User) currentUser).cancelPremium();
+        } else {
+            return username + " is not a normal user.";
+        }
+    }
+
+    public String adBreak(final CommandInput commandInput) {
+        UserAbstract currentUser = getAbstractUser(commandInput.getUsername());
+
+        if (currentUser == null) {
+            return "The username %s doesn't exist.".formatted(commandInput.getUsername());
+        }
+
+        if (currentUser.userType().equals("user")) {
+            return ((User) currentUser).adBreak(commandInput.getPrice());
+        } else {
+            return commandInput.getUsername() + " is not a normal user.";
+        }
+    }
+
+    public String subscribe(final String username) {
+        UserAbstract currentUser = getAbstractUser(username);
+
+        if (currentUser == null) {
+            return "The username %s doesn't exist.".formatted(username);
+        }
+
+        if (currentUser.userType().equals("user")) {
+            return ((User) currentUser).subscribe();
+        } else {
+            return username + " is not a normal user.";
+        }
     }
 
     public ObjectNode wrapped(final CommandInput commandInput, final ObjectMapper objectMapper) {
@@ -787,12 +860,6 @@ public final class Admin {
             return null;
         } else if (currentUser.userType().equals("user")) {
             User user = (User) currentUser;
-
-            if (username.equals("henry26")){
-                if (isStringInList(user.getTopArtists(), "Jay Z")) {
-                    System.out.println("here2");
-                }
-            }
 
             if (user.getTopArtists().isEmpty() && user.getTopGenres().isEmpty()
                     && user.getTopSongs().isEmpty() && user.getTopAlbums().isEmpty()
@@ -819,7 +886,7 @@ public final class Admin {
             artist.getListeners().sort(Comparator.comparing(Pair<String, Integer>::getSecond)
                     .reversed().thenComparing(Pair::getFirst));
             artist.getListeners().stream()
-                    .limit(5)
+                    .limit(limit)
                     .map(Pair::getFirst)
                     .forEach(topFansNode::add);
 
@@ -848,7 +915,7 @@ public final class Admin {
                 .thenComparing(Pair::getFirst));
 
         list.stream()
-                .limit(5)
+                .limit(limit)
                 .forEach(pair -> node.put(pair.getFirst(), pair.getSecond()));
 
         resultNode.set(nodeName, node);
@@ -950,21 +1017,63 @@ public final class Admin {
         return topPlaylists;
     }
 
+    /**
+     * Calculate's revenue for artists.
+     *
+     * @param user the user
+     */
+    public void calculateRevenue(final User user) {
+        int numberOfListenedSongs = user.getTopSongsPremium().stream().mapToInt(Pair::getSecond)
+                                        .sum();
+
+        user.getTopSongsPremium().forEach(pair -> artists.forEach(artist -> {
+            if (artist.hasSong(pair.getFirst())) {
+                artist.addSongRevenue(pair.getFirst(), (double) premiumPrice
+                        / numberOfListenedSongs * pair.getSecond());
+            }
+        }));
+    }
+
+    private String getMostProfitableSong(final Artist artist) {
+        if (artist.getSongRevenue().isEmpty()) {
+            return "N/A";
+        }
+
+        artist.getSongRevenue().sort(Comparator.comparing(Pair<String, Double>::getSecond)
+                .reversed().thenComparing(Pair::getFirst));
+        return artist.getSongRevenue().get(0).getFirst();
+    }
+
+    /**
+     * Last command, used for analytics.
+     *
+     * @param objectMapper the object mapper
+     * @return the object node containing the result
+     */
     public ObjectNode endProgram(final ObjectMapper objectMapper) {
         ObjectNode resultNode = objectMapper.createObjectNode();
-        ArrayList<Artist> artists = new ArrayList<>(this.artists);
+        ArrayList<Artist> currArtists = new ArrayList<>(this.artists);
 
-        artists.sort(Comparator.comparing(Artist::getUsername));
+        for (User user : users) {
+            if (user.getPremium() == 1) {
+                calculateRevenue(user);
+            }
+        }
+
+        currArtists.sort(Comparator.comparingDouble(Artist::getSongsRevenue).reversed()
+                .thenComparing(Artist::getUsername));
 
         int rank = 1;
-        for (Artist artist : artists) {
-            if (!artist.getListeners().isEmpty()) {
+        for (Artist artist : currArtists) {
+            if (!artist.getListeners().isEmpty() || !artist.getSongRevenue().isEmpty()) {
                 ObjectNode artistNode = objectMapper.createObjectNode();
 
-                artistNode.put("merchRevenue", artist.getMerchRevenue());
-                artistNode.put("songRevenue", artist.getSongRevenue());
+                artistNode.put("merchRevenue", (double) Math.round(artist.getMerchRevenue()
+                        * roundingFactor) / roundingFactor);
+                artistNode.put("songRevenue", (double) Math.round(artist.getSongsRevenue()
+                        * roundingFactor) / roundingFactor);
                 artistNode.put("ranking", rank++);
-                artistNode.put("mostProfitableSong", "N/A");
+                artistNode.put("mostProfitableSong", getMostProfitableSong(artist));
 
                 resultNode.set(artist.getUsername(), artistNode);
             }

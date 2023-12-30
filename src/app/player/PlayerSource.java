@@ -4,6 +4,7 @@ import app.audio.Collections.AudioCollection;
 import app.audio.Files.AudioFile;
 import app.utils.Enums;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,13 +18,22 @@ public class PlayerSource {
     @Getter
     private Enums.PlayerSourceType type;
     @Getter
+    @Setter
     private AudioCollection audioCollection;
+    /**
+     * -- SETTER --
+     *  Sets audio file.
+     *
+     * @param audioFile the audio file
+     */
+    @Setter
     @Getter
     private AudioFile audioFile;
     @Getter
     private int index;
     private int indexShuffled;
     @Getter
+    @Setter
     private int remainedDuration;
     private final List<Integer> indices = new ArrayList<>();
 
@@ -146,28 +156,22 @@ public class PlayerSource {
      * @param shuffle the shuffle
      */
     public void setPrevAudioFile(final boolean shuffle) {
-        if (type == Enums.PlayerSourceType.LIBRARY) {
-            remainedDuration = audioFile.getDuration();
-        } else {
-            if (remainedDuration != audioFile.getDuration()) {
-                remainedDuration = audioFile.getDuration();
-            } else {
+        if (type != Enums.PlayerSourceType.LIBRARY) {
+            if (remainedDuration == audioFile.getDuration()) {
                 if (shuffle) {
                     if (indexShuffled > 0) {
                         indexShuffled--;
                     }
                     index = indices.get(indexShuffled);
-                    updateAudioFile();
-                    remainedDuration = audioFile.getDuration();
                 } else {
                     if (index > 0) {
                         index--;
                     }
-                    updateAudioFile();
-                    remainedDuration = audioFile.getDuration();
                 }
+                updateAudioFile();
             }
         }
+        remainedDuration = audioFile.getDuration();
     }
 
     /**
@@ -215,14 +219,4 @@ public class PlayerSource {
     private void updateAudioFile() {
         setAudioFile(audioCollection.getTrackByIndex(index));
     }
-
-    /**
-     * Sets audio file.
-     *
-     * @param audioFile the audio file
-     */
-    public void setAudioFile(final AudioFile audioFile) {
-        this.audioFile = audioFile;
-    }
-
 }

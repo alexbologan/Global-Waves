@@ -1,7 +1,6 @@
 package app.user;
 
 import app.audio.Collections.Podcast;
-import app.audio.Files.Episode;
 import app.pages.HostPage;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,7 +17,7 @@ public final class Host extends ContentCreator {
     private ArrayList<Announcement> announcements;
     private ArrayList<Pair<String, Integer>> topEpisodes;
     private ArrayList<Pair<String, Integer>> listeners;
-
+    private ArrayList<Subscriber> subscribers;
     /**
      * Instantiates a new Host.
      *
@@ -50,6 +49,17 @@ public final class Host extends ContentCreator {
         }
 
         return null;
+    }
+
+    /**
+     * Notifies all subscribers about a specific message from the host.
+     *
+     * @param message The message to be sent to subscribers.
+     */
+    public void notifySubscribers(final String message) {
+        for (Subscriber subscriber : subscribers) {
+            subscriber.update(message, getUsername());
+        }
     }
 
     /**

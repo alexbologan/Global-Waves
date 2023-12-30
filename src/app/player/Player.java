@@ -5,6 +5,7 @@ import app.audio.Files.AudioFile;
 import app.audio.LibraryEntry;
 import app.utils.Enums;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,13 @@ public final class Player {
     @Getter
     private String type;
     private final int skipTime = 90;
-
+    @Getter
+    @Setter
+    private int adBreakPrice = -1;
+    private final int adBreak = 10;
+    @Getter
+    @Setter
+    private boolean adBreakActive = false;
     private ArrayList<PodcastBookmark> bookmarks = new ArrayList<>();
 
 
@@ -168,13 +175,19 @@ public final class Player {
      *
      * @param time the time
      */
-    public void simulatePlayer(final int time) {
-
+    public boolean simulatePlayer(final int time) {
+        boolean adBreakPlayed = false;
         int elapsedTime = time;
         if (!paused) {
             while (elapsedTime >= source.getDuration()) {
-                elapsedTime -= source.getDuration();
-                next();
+                if (adBreakActive) {
+                    elapsedTime -= adBreak;
+                    adBreakActive = false;
+                    adBreakPlayed = true;
+                } else {
+                    elapsedTime -= source.getDuration();
+                    next();
+                }
                 if (paused) {
                     break;
                 }
@@ -183,6 +196,7 @@ public final class Player {
                 source.skip(-elapsedTime);
             }
         }
+        return adBreakPlayed;
     }
 
     /**
