@@ -14,6 +14,13 @@ public interface Page {
      */
     String printCurrentPage();
 
+    /**
+     * Buy merch string.
+     *
+     * @param user      the user
+     * @param merchName the merch name
+     * @return the result of the merch purchase
+     */
     String buyMerch(User user, String merchName);
 
     /**

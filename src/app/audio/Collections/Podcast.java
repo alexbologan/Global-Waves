@@ -22,17 +22,6 @@ public final class Podcast extends AudioCollection {
     }
 
     @Override
-    public void addTrack(final AudioFile track, final int index) {
-        episodes.add(index, (Episode) track);
-    }
-
-    @Override
-    public void getAudioFiles() {
-        for (Episode episode : episodes) {
-            System.out.println(episode.getName());
-        }
-    }
-    @Override
     public AudioFile getTrackByIndex(final int index) {
         return episodes.get(index);
     }

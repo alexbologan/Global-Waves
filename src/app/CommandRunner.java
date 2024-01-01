@@ -462,6 +462,12 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Buy premium subscription object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
     public static ObjectNode buyPremium(final CommandInput commandInput) {
         String message = admin.buyPremium(commandInput.getUsername());
 
@@ -474,6 +480,12 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Cancel premium subscription object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
     public static ObjectNode cancelPremium(final CommandInput commandInput) {
         String message = admin.cancelPremium(commandInput.getUsername());
 
@@ -486,6 +498,12 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Ad break object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
     public static ObjectNode adBreak(final CommandInput commandInput) {
         String message = admin.adBreak(commandInput);
 
@@ -498,6 +516,12 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Subscribe object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
     public static ObjectNode subscribe(final CommandInput commandInput) {
         String message = admin.subscribe(commandInput.getUsername());
 
@@ -510,6 +534,12 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Get notifications object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
     public static ObjectNode getNotifications(final CommandInput commandInput) {
         ArrayList<NotificationOutput> result = admin.getUser(commandInput.getUsername())
                 .getNotifications();
@@ -523,6 +553,41 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Update recommendations object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
+    public static ObjectNode updateRecommendations(final CommandInput commandInput) {
+        String message = admin.updateRecommendations(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    /**
+     * Load recommendations object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
+    public static ObjectNode loadRecommendations(final CommandInput commandInput) {
+        String message = admin.getUser(commandInput.getUsername()).loadRecommendations();
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
     /**
      * Add album object node.
      *
@@ -683,6 +748,12 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Buy merch object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
     public static ObjectNode buyMerch(final CommandInput commandInput) {
         String message = admin.buyMerch(commandInput);
 
@@ -695,6 +766,12 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * See merch object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
     public static ObjectNode seeMerch(final CommandInput commandInput) {
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
@@ -786,6 +863,43 @@ public final class CommandRunner {
      */
     public static ObjectNode changePage(final CommandInput commandInput) {
         String message = admin.changePage(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    /**
+     * Previous page object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
+    public static ObjectNode previousPage(final CommandInput commandInput) {
+        String message = admin.previousPage(commandInput);
+
+        ObjectNode objectNode = objectMapper.createObjectNode();
+        objectNode.put("command", commandInput.getCommand());
+        objectNode.put("user", commandInput.getUsername());
+        objectNode.put("timestamp", commandInput.getTimestamp());
+        objectNode.put("message", message);
+
+        return objectNode;
+    }
+
+    /**
+     * Next page object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
+    public static ObjectNode nextPage(final CommandInput commandInput) {
+        String message = admin.nextPage(commandInput);
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("command", commandInput.getCommand());
         objectNode.put("user", commandInput.getUsername());
@@ -803,6 +917,7 @@ public final class CommandRunner {
      */
     public static ObjectNode printCurrentPage(final CommandInput commandInput) {
         String message = admin.printCurrentPage(commandInput);
+
         ObjectNode objectNode = objectMapper.createObjectNode();
         objectNode.put("user", commandInput.getUsername());
         objectNode.put("command", commandInput.getCommand());
@@ -878,6 +993,12 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * Wrapped object node.
+     *
+     * @param commandInput the command input
+     * @return the object node
+     */
     public static ObjectNode wrapped(final CommandInput commandInput) {
         UserAbstract user = admin.getAbstractUser(commandInput.getUsername());
         ObjectNode resultNode = admin.wrapped(commandInput, objectMapper);
@@ -901,6 +1022,11 @@ public final class CommandRunner {
         return objectNode;
     }
 
+    /**
+     * End program object node.
+     *
+     * @return the object node with the result of the command
+     */
     public static ObjectNode endProgram() {
         ObjectNode resultNode = admin.endProgram(objectMapper);
 

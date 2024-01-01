@@ -8,7 +8,14 @@ import app.audio.Files.AudioFile;
 import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.player.Player;
-import app.user.*;
+import app.user.Artist;
+import app.user.Host;
+import app.user.User;
+import app.user.UserAbstract;
+import app.user.Merchandise;
+import app.user.Event;
+import app.user.Announcement;
+import app.user.Pair;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -207,8 +214,18 @@ public final class Admin {
                 .orElse(null);
     }
 
+    /**
+     * Add artist.
+     */
     public void addArtist(final Artist artist) {
         artists.add(artist);
+    }
+
+    /**
+     * Add host.
+     */
+    public void addHost(final Host host) {
+        hosts.add(host);
     }
     /**
      * Gets host.
@@ -241,6 +258,12 @@ public final class Admin {
         users.forEach(user -> user.simulateTime(elapsed));
     }
 
+    /**
+     * Gets abstract user.
+     *
+     * @param username the username
+     * @return the abstract user
+     */
     public UserAbstract getAbstractUser(final String username) {
         ArrayList<UserAbstract> allUsers = new ArrayList<>();
 
@@ -733,15 +756,83 @@ public final class Admin {
             return "%s is offline.".formatted(user.getUsername());
         }
 
+        user.addPreviousPage(user.getCurrentPage());
         switch (nextPage) {
             case "Home" -> user.setCurrentPage(user.getHomePage());
             case "LikedContent" -> user.setCurrentPage(user.getLikedContentPage());
+            case "Artist" -> user.setCurrentPage(user.getArtistPage());
+            case "Host" -> user.setCurrentPage(user.getHostPage());
             default -> {
+                user.removePreviousPage();
                 return "%s is trying to access a non-existent page.".formatted(username);
             }
         }
-
+        user.clearNextPages();
         return "%s accessed %s successfully.".formatted(username, nextPage);
+    }
+
+    /**
+     * Return to the previous page.
+     *
+     * @param commandInput the command input
+     * @return the string
+     */
+    public String previousPage(final CommandInput commandInput) {
+        String username = commandInput.getUsername();
+        UserAbstract currentUser = getAbstractUser(username);
+
+        if (currentUser == null) {
+            return "The username %s doesn't exist.".formatted(username);
+        }
+
+        if (!currentUser.userType().equals("user")) {
+            return "%s is not a normal user.".formatted(username);
+        }
+
+        User user = (User) currentUser;
+        if (!user.isStatus()) {
+            return "%s is offline.".formatted(user.getUsername());
+        }
+
+        if (user.getPreviousPages().isEmpty()) {
+            return "There are no pages left to go back.";
+        }
+
+        user.addNextPage(user.getCurrentPage());
+        user.setCurrentPage(user.popPreviousPage());
+        return "The user %s has navigated successfully to the previous page.".formatted(username);
+    }
+
+    /**
+     * Go to the next page.
+     *
+     * @param commandInput the command input
+     * @return the string
+     */
+    public String nextPage(final CommandInput commandInput) {
+        String username = commandInput.getUsername();
+        UserAbstract currentUser = getAbstractUser(username);
+
+        if (currentUser == null) {
+            return "The username %s doesn't exist.".formatted(username);
+        }
+
+        if (!currentUser.userType().equals("user")) {
+            return "%s is not a normal user.".formatted(username);
+        }
+
+        User user = (User) currentUser;
+        if (!user.isStatus()) {
+            return "%s is offline.".formatted(user.getUsername());
+        }
+
+        if (user.getNextPages().isEmpty()) {
+            return "There are no pages left to go forward.";
+        }
+
+        user.addPreviousPage(user.getCurrentPage());
+        user.setCurrentPage(user.popNextPage());
+        return "The user %s has navigated successfully to the next page.".formatted(username);
     }
 
     /**
@@ -789,6 +880,12 @@ public final class Admin {
         }
     }
 
+    /**
+     * Buy merch string.
+     *
+     * @param commandInput the command input
+     * @return the string
+     */
     public String buyMerch(final CommandInput commandInput) {
         String username = commandInput.getUsername();
         String merchName = commandInput.getName();
@@ -805,6 +902,12 @@ public final class Admin {
         }
     }
 
+    /**
+     * Buy premium subscription string.
+     *
+     * @param username the username
+     * @return the string
+     */
     public String buyPremium(final String username) {
         UserAbstract currentUser = getAbstractUser(username);
 
@@ -819,6 +922,12 @@ public final class Admin {
         }
     }
 
+    /**
+     * Cancel premium subscription string.
+     *
+     * @param username the username
+     * @return the string
+     */
     public String cancelPremium(final String username) {
         UserAbstract currentUser = getAbstractUser(username);
 
@@ -833,6 +942,12 @@ public final class Admin {
         }
     }
 
+    /**
+     * Add an ad break.
+     *
+     * @param commandInput the command input
+     * @return the string
+     */
     public String adBreak(final CommandInput commandInput) {
         UserAbstract currentUser = getAbstractUser(commandInput.getUsername());
 
@@ -847,6 +962,12 @@ public final class Admin {
         }
     }
 
+    /**
+     * Subscribe to an Artist/Host.
+     *
+     * @param username the username
+     * @return the string
+     */
     public String subscribe(final String username) {
         UserAbstract currentUser = getAbstractUser(username);
 
@@ -861,6 +982,34 @@ public final class Admin {
         }
     }
 
+    /**
+     * Update recommendations for user.
+     *
+     * @param commandInput the command input
+     * @return the string
+     */
+    public String updateRecommendations(final CommandInput commandInput) {
+        UserAbstract currentUser = getAbstractUser(commandInput.getUsername());
+
+        if (currentUser == null) {
+            return "The username %s doesn't exist.".formatted(commandInput.getUsername());
+        }
+
+        if (currentUser.userType().equals("user")) {
+            return ((User) currentUser).updateRecommendations(commandInput.getRecommendationType());
+        } else {
+            return commandInput.getUsername() + " is not a normal user.";
+        }
+    }
+
+    /**
+     * Wraps user, artist or host data.
+     *
+     * @param commandInput the command input
+     * @param objectMapper The ObjectMapper for JSON processing.
+     * @return An ObjectNode containing wrapped user or artist data,
+     * or null if the user does not exist or has no relevant data.
+     */
     public ObjectNode wrapped(final CommandInput commandInput, final ObjectMapper objectMapper) {
         ObjectNode resultNode = objectMapper.createObjectNode();
         String username = commandInput.getUsername();
@@ -873,7 +1022,7 @@ public final class Admin {
 
             if (user.getTopArtists().isEmpty() && user.getTopGenres().isEmpty()
                     && user.getTopSongs().isEmpty() && user.getTopAlbums().isEmpty()
-                    && user.getTopPodcasts().isEmpty()) {
+                    && user.getTopEpisodes().isEmpty()) {
                 return null;
             }
 
@@ -881,7 +1030,7 @@ public final class Admin {
             addTopNode(resultNode, "topGenres", user.getTopGenres(), objectMapper);
             addTopNode(resultNode, "topSongs", user.getTopSongs(), objectMapper);
             addTopNode(resultNode, "topAlbums", user.getTopAlbums(), objectMapper);
-            addTopNode(resultNode, "topEpisodes", user.getTopPodcasts(), objectMapper);
+            addTopNode(resultNode, "topEpisodes", user.getTopEpisodes(), objectMapper);
         } else if (currentUser.userType().equals("artist")) {
             Artist artist = (Artist) currentUser;
 
@@ -916,7 +1065,14 @@ public final class Admin {
         return resultNode;
     }
 
-
+    /**
+     * Adds a top node to the resultNode based on the provided list of pairs and ObjectMapper.
+     *
+     * @param resultNode The parent ObjectNode to which the top node will be added.
+     * @param nodeName   The name of the top node.
+     * @param list       The list of pairs containing data to be added to the top node.
+     * @param objectMapper The ObjectMapper for JSON processing.
+     */
     private void addTopNode(final ObjectNode resultNode, final String nodeName,
                             final List<Pair<String, Integer>> list,
                             final ObjectMapper objectMapper) {

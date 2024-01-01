@@ -22,8 +22,6 @@ public final class Artist extends ContentCreator {
     private ArrayList<Pair<String, Integer>> topSongs;
     @Setter
     private ArrayList<Pair<String, Integer>> topAlbums;
-    @Setter
-    private ArrayList<Pair<String, Integer>> topFans;
     private ArrayList<Pair<String, Integer>> listeners;
     private double merchRevenue;
     private ArrayList<Pair<String, Double>> songRevenue;
@@ -43,17 +41,12 @@ public final class Artist extends ContentCreator {
         events = new ArrayList<>();
         topSongs = new ArrayList<>();
         topAlbums = new ArrayList<>();
-        topFans = new ArrayList<>();
         listeners = new ArrayList<>();
         songRevenue = new ArrayList<>();
         subscribers = new ArrayList<>();
         merchRevenue = 0;
 
         super.setPage(new ArtistPage(this));
-    }
-
-    public void setNotifications(final String notification) {
-
     }
 
     /**
@@ -129,6 +122,12 @@ public final class Artist extends ContentCreator {
         return false;
     }
 
+    /**
+     * Add song revenue.
+     *
+     * @param songName the song name
+     * @param revenue the revenue
+     */
     public void addSongRevenue(final String songName, final double revenue) {
         boolean found = false;
 

@@ -37,10 +37,6 @@ public abstract class AudioCollection extends LibraryEntry {
      */
     public abstract AudioFile getTrackByIndex(int index);
 
-    public abstract void addTrack(AudioFile track, int index);
-
-    public abstract void getAudioFiles();
-
     /**
      *
      * @param user the user

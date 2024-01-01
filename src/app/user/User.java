@@ -7,11 +7,14 @@ import app.audio.Collections.Playlist;
 import app.audio.Collections.Podcast;
 import app.audio.Collections.PlaylistOutput;
 import app.audio.Files.AudioFile;
+import app.audio.Files.Episode;
 import app.audio.Files.Song;
 import app.audio.LibraryEntry;
-import app.pages.HomePage;
+import app.pages.ArtistPage;
+import app.pages.HostPage;
 import app.pages.LikedContentPage;
 import app.pages.Page;
+import app.pages.HomePage;
 import app.player.Player;
 import app.player.PlayerStats;
 import app.searchBar.Filters;
@@ -22,7 +25,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 
 /**
  * The type User.
@@ -33,27 +38,39 @@ public final class User extends UserAbstract implements Subscriber {
     private ArrayList<Playlist> playlists;
     private ArrayList<Song> likedSongs;
     private ArrayList<Playlist> followedPlaylists;
+    private ArrayList<Song> songRecommendations;
+    private ArrayList<Playlist> playlistRecommendations;
+    private String lastRecommendationType;
     private final Player player;
     private boolean status;
     private final SearchBar searchBar;
     private boolean lastSearched;
+    private ArrayList<Page> previousPages;
+    private ArrayList<Page> nextPages;
     private Page currentPage;
     private HomePage homePage;
     private LikedContentPage likedContentPage;
+    private ArtistPage artistPage;
+    private HostPage hostPage;
     private ArrayList<Pair<String, Integer>> topArtists;
     private ArrayList<Pair<String, Integer>> topGenres;
     private ArrayList<Pair<String, Integer>> topSongs;
     private ArrayList<Pair<String, Integer>> topSongsPremium;
     private ArrayList<Pair<String, Integer>> topSongsNonPremium;
     private ArrayList<Pair<String, Integer>> topAlbums;
-    private ArrayList<Pair<String, Integer>> topPodcasts;
+    private ArrayList<Pair<String, Integer>> topEpisodes;
     private Song lastListenedSong;
+    private Episode lastListenedEpisode;
     private int premium;
     private Integer adPrice;
     private boolean adBreakPlayed;
     private ArrayList<Pair<String, String>> notifications;
     private ArrayList<Merchandise> merch;
     private final Admin admin = Admin.getInstance();
+    private final int limit = 5;
+    private final int limit2 = 3;
+    private final int listenLimit = 30;
+
     /**
      * Instantiates a new User.
      *
@@ -65,6 +82,8 @@ public final class User extends UserAbstract implements Subscriber {
         super(username, age, city);
         playlists = new ArrayList<>();
         likedSongs = new ArrayList<>();
+        songRecommendations = new ArrayList<>();
+        playlistRecommendations = new ArrayList<>();
         followedPlaylists = new ArrayList<>();
         player = new Player();
         searchBar = new SearchBar(username);
@@ -76,11 +95,13 @@ public final class User extends UserAbstract implements Subscriber {
         homePage = new HomePage(this);
         currentPage = homePage;
         likedContentPage = new LikedContentPage(this);
+        previousPages = new ArrayList<>();
+        nextPages = new ArrayList<>();
         topArtists = new ArrayList<>();
         topGenres = new ArrayList<>();
         topSongs = new ArrayList<>();
         topAlbums = new ArrayList<>();
-        topPodcasts = new ArrayList<>();
+        topEpisodes = new ArrayList<>();
         topSongsPremium = new ArrayList<>();
         topSongsNonPremium = new ArrayList<>();
         notifications = new ArrayList<>();
@@ -100,11 +121,6 @@ public final class User extends UserAbstract implements Subscriber {
      * @return the array list
      */
     public ArrayList<String> search(final Filters filters, final String type) {
-        setLastListenedSong(null);
-        player.setAdBreakActive(false);
-        adPrice = null;
-        adBreakPlayed = false;
-
         searchBar.clearSelection();
         player.stop();
 
@@ -153,7 +169,9 @@ public final class User extends UserAbstract implements Subscriber {
                 return "The selected ID is too high.";
             }
 
+            previousPages.add(currentPage);
             currentPage = selected.getPage();
+            nextPages.clear();
             return "Successfully selected %s's page.".formatted(selected.getUsername());
         } else {
             LibraryEntry selected = searchBar.select(itemNumber);
@@ -172,6 +190,12 @@ public final class User extends UserAbstract implements Subscriber {
      * @return the string
      */
     public String load() {
+        setLastListenedSong(null);
+        setLastListenedEpisode(null);
+        player.setAdBreakActive(false);
+        adPrice = null;
+        adBreakPlayed = false;
+        player.setSource(null, null);
 
         if (!status) {
             return "%s is offline.".formatted(getUsername());
@@ -197,11 +221,6 @@ public final class User extends UserAbstract implements Subscriber {
                 admin.addArtist(artist);
             }
             addData(artist, song);
-        } else if (Objects.equal(player.getType(), "podcast")) {
-            Podcast podcast = (Podcast) player.getCurrentAudioCollection();
-            if (!isStringInArray(topPodcasts, podcast.getName())) {
-                topPodcasts.add(new Pair<>(podcast.getName(), 1));
-            }
         }
 
         searchBar.clearSelection();
@@ -211,6 +230,54 @@ public final class User extends UserAbstract implements Subscriber {
         return "Playback loaded successfully.";
     }
 
+    /**
+     * Load recommendations string.
+     *
+     * @return the string
+     */
+    public String loadRecommendations() {
+        if (!status) {
+            return "%s is offline.".formatted(getUsername());
+        }
+
+        if (lastRecommendationType == null) {
+            return "No recommendations available.";
+        }
+
+        setLastListenedSong(null);
+        setLastListenedEpisode(null);
+        player.setAdBreakActive(false);
+        adPrice = null;
+        adBreakPlayed = false;
+        player.setSource(null, null);
+
+        if (lastRecommendationType.equals("song")) {
+            player.setSource(songRecommendations.get(songRecommendations.size() - 1), "song");
+            Song song = (Song) player.getCurrentAudioFile();
+            Artist artist = (Artist) admin.getAbstractUser(song.getArtist());
+
+            if (artist == null) {
+                artist = new Artist(song.getArtist(), 0, "");
+                admin.addArtist(artist);
+            }
+            addData(artist, song);
+        } else {
+            player.setSource(playlistRecommendations.get(playlistRecommendations.size() - 1),
+                    "playlist");
+        }
+
+        player.pause();
+
+        return "Playback loaded successfully.";
+    }
+
+    /**
+     * Is string in array boolean.
+     *
+     * @param arrayList     the array list
+     * @param searchString the search string
+     * @return the boolean
+     */
     public boolean isStringInArray(final ArrayList<Pair<String, Integer>> arrayList,
                                    final String searchString) {
         for (Pair<String, Integer> pair : arrayList) {
@@ -220,6 +287,70 @@ public final class User extends UserAbstract implements Subscriber {
             }
         }
         return false;
+    }
+
+    /**
+     * Gets the artist's page.
+     *
+     * @return the artist's page
+     */
+    public ArtistPage getArtistPage() {
+        return new ArtistPage(admin.getArtist(((Song) player.getCurrentAudioFile()).getArtist()));
+    }
+
+    /**
+     * Gets the host's page.
+     *
+     * @return the host's page
+     */
+    public HostPage getHostPage() {
+        return new HostPage(admin.getHost(player.getCurrentAudioCollection().getOwner()));
+    }
+
+    /**
+     * Add the selected page to the previous pages' history.
+     */
+    public void addPreviousPage(final Page page) {
+        previousPages.add(page);
+    }
+
+    /**
+     * Remove the last page from the previous pages' history.
+     */
+    public void removePreviousPage() {
+        previousPages.remove(previousPages.size() - 1);
+    }
+
+    /**
+     * Get the last page from the previous pages' history.
+     */
+    public Page popPreviousPage() {
+        Page page = previousPages.get(previousPages.size() - 1);
+        previousPages.remove(previousPages.size() - 1);
+        return page;
+    }
+
+    /**
+     * Add the selected page to the next pages' history.
+     */
+    public void addNextPage(final Page page) {
+        nextPages.add(page);
+    }
+
+    /**
+     * Clear next pages.
+     */
+    public void clearNextPages() {
+        nextPages.clear();
+    }
+
+    /**
+     * Get the last page from the next pages' history.
+     */
+    public Page popNextPage() {
+        Page page = nextPages.get(nextPages.size() - 1);
+        nextPages.remove(nextPages.size() - 1);
+        return page;
     }
 
     /**
@@ -639,10 +770,21 @@ public final class User extends UserAbstract implements Subscriber {
         status = !status;
     }
 
+    /**
+     * Buy merch.
+     *
+     * @param merchName the merch name
+     * @return the string
+     */
     public String buyMerch(final String merchName) {
         return currentPage.buyMerch(this, merchName);
     }
 
+    /**
+     * See merch array list.
+     *
+     * @return the array list
+     */
     public ArrayList<String> seeMerch() {
         ArrayList<String> merchNames = new ArrayList<>();
         for (Merchandise merchItem : merch) {
@@ -650,6 +792,7 @@ public final class User extends UserAbstract implements Subscriber {
         }
         return merchNames;
     }
+
     /**
      * Attempts to upgrade the user to a premium subscription.
      *
@@ -699,6 +842,11 @@ public final class User extends UserAbstract implements Subscriber {
         return "Ad break is only available for free users.";
     }
 
+    /**
+     * Attempts to subscribe to the current pages' artist.
+     *
+     * @return A message indicating the result.
+     */
     public String subscribe() {
         return currentPage.processSubscription(this);
     }
@@ -717,6 +865,151 @@ public final class User extends UserAbstract implements Subscriber {
         notifications.clear();
         return notificationOutputs;
     }
+
+    /**
+     * Attempts to update the user's recommendations.
+     *
+     * @return A message indicating the result.
+     */
+    public String updateRecommendations(final String recommendationType) {
+        if (player.getCurrentAudioFile() == null) {
+            return "No new recommendations were found";
+        }
+
+        Song playerSong = (Song) player.getCurrentAudioFile();
+        switch (recommendationType) {
+            case "random_song" -> {
+                if (playerSong.getDuration() - player.getSource().getRemainedDuration()
+                        < listenLimit) {
+                    return "No new recommendations were found";
+                }
+                ArrayList<Song> songs = new ArrayList<>();
+                admin.getSongs().stream()
+                        .filter(song -> song.getGenre().equals(playerSong.getGenre())
+                                && !songs.contains(song)).forEach(songs::add);
+
+                Random random = new Random(playerSong.getDuration()
+                        - player.getSource().getRemainedDuration());
+
+                songRecommendations.add(songs.get(random.nextInt(songs.size())));
+                lastRecommendationType = "song";
+            }
+            case "random_playlist" -> {
+                Playlist playlist = new Playlist(getUsername() + "'s recommendations",
+                        getUsername());
+                ArrayList<Pair<String, ArrayList<Pair<Song, Integer>>>> genre = new ArrayList<>();
+
+                likedSongs.forEach(song ->
+                    addDataToGenre(genre, song)
+                );
+
+                playlists.forEach(playlist1 ->
+                    playlist1.getSongs().forEach(song ->
+                        addDataToGenre(genre, song)
+                    )
+                );
+
+                followedPlaylists.forEach(playlist1 ->
+                    playlist1.getSongs().forEach(song ->
+                        addDataToGenre(genre, song)
+                    )
+                );
+
+                genre.sort(Comparator.comparingInt(pair -> sumOfIntegers(pair.getSecond())));
+                genre.forEach(pair ->
+                        pair.getSecond().sort(Comparator.comparingInt(Pair::getSecond)));
+
+                if (genre.isEmpty()) {
+                    return "No new recommendations were found";
+                }
+
+                for (int i = 0; i < Math.min(genre.size(), limit2); i++) {
+                    genre.get(i).getSecond().stream()
+                            .limit(i == 2 ? 2 : i == 1 ? limit2 : limit)
+                            .filter(pair -> !playlist.getSongs().contains(pair.getFirst()))
+                            .forEach(pair -> playlist.addSong(pair.getFirst()));
+                }
+
+                playlistRecommendations.add(playlist);
+                lastRecommendationType = "playlist";
+            }
+            case "fans_playlist" -> {
+                Artist artist = (Artist) admin.getAbstractUser(playerSong.getArtist());
+                Playlist playlist = new Playlist(artist.getUsername() + " Fan Club recommendations",
+                        getUsername());
+
+                artist.getListeners().sort(Comparator.comparing(Pair<String, Integer>::getSecond)
+                        .reversed().thenComparing(Pair::getFirst));
+
+                int count = 0;
+                for (Pair<String, Integer> pair : artist.getListeners()) {
+                    User user = (User) admin.getAbstractUser(pair.getFirst());
+                    int i = 0;
+                    if (user != null) {
+                        for (Song song : user.getLikedSongs()) {
+                            if (!playlist.getSongs().contains(song)) {
+                                playlist.addSong(song);
+                                i++;
+                            }
+                            if (i == limit) {
+                                break;
+                            }
+                        }
+                    }
+                    count++;
+                    if (count == limit) {
+                        break;
+                    }
+                }
+                if (playlist.getSongs().isEmpty()) {
+                    return "No new recommendations were found";
+                }
+                playlist.getSongs().sort(Comparator.comparing(Song::getLikes).reversed());
+                playlistRecommendations.add(playlist);
+                lastRecommendationType = "playlist";
+            }
+            default -> {
+                return "Invalid recommendation type.";
+            }
+        }
+
+        return "The recommendations for user %s have been updated successfully."
+                                                        .formatted(getUsername());
+    }
+
+    private int sumOfIntegers(final List<Pair<Song, Integer>> pairList) {
+        return pairList.stream()
+                .mapToInt(Pair::getSecond)
+                .sum();
+    }
+
+    /**
+     * Add data to genre.
+     *
+     * @param genre the genre
+     * @param song  the song
+     */
+    private void addDataToGenre(final ArrayList<Pair<String, ArrayList<Pair<Song, Integer>>>> genre,
+                                final Song song) {
+        if (genre.stream().noneMatch(pair -> pair.getFirst().equals(song.getGenre()))) {
+            ArrayList<Pair<Song, Integer>> songs = new ArrayList<>();
+            songs.add(new Pair<>(song, 1));
+            genre.add(new Pair<>(song.getGenre(), songs));
+        } else {
+            genre.stream().filter(pair -> pair.getFirst().equals(song.getGenre()))
+                    .forEach(pair -> {
+                        if (pair.getSecond().stream().noneMatch(pair1
+                                -> pair1.getFirst().equals(song))) {
+                            pair.getSecond().add(new Pair<>(song, 1));
+                        } else {
+                            pair.getSecond().stream().filter(pair1
+                                            -> pair1.getFirst().equals(song))
+                                    .forEach(pair1 -> pair1.setSecond(pair1.getSecond() + 1));
+                        }
+                    });
+        }
+    }
+
     /**
      * Add data.
      *
@@ -753,11 +1046,15 @@ public final class User extends UserAbstract implements Subscriber {
         }
     }
 
+    /**
+     * Review data for wrapped.
+     */
     public void reviewData() {
-        if (Objects.equal(player.getType(), "album")) {
+        int stop = 0;
+        if (Objects.equal(player.getType(), "album")
+                || Objects.equal(player.getType(), "playlist")) {
             Album album = (Album) player.getCurrentAudioCollection();
             Artist artist = (Artist) admin.getAbstractUser(album.getOwner());
-            int stop = 0;
             if (lastListenedSong == null) {
                 for (Song song : album.getSongs()) {
                     addData(artist, song);
@@ -785,6 +1082,57 @@ public final class User extends UserAbstract implements Subscriber {
                 setLastListenedSong((Song) player.getCurrentAudioFile());
             } else {
                 setLastListenedSong(null);
+            }
+        } else if (Objects.equal(player.getType(), "podcast")) {
+            Podcast podcast = (Podcast) player.getCurrentAudioCollection();
+            Host host = (Host) admin.getAbstractUser(podcast.getOwner());
+            if (host == null) {
+                host = new Host(podcast.getOwner(), 0, "");
+                admin.addHost(host);
+            }
+            if (lastListenedEpisode == null) {
+                for (Episode episode : podcast.getEpisodes()) {
+                    if (!isStringInArray(topEpisodes, episode.getName())) {
+                        topEpisodes.add(new Pair<>(episode.getName(), 1));
+                    }
+                    if (!isStringInArray(host.getTopEpisodes(), episode.getName())) {
+                        host.getTopEpisodes().add(new Pair<>(episode.getName(), 1));
+                    }
+                    if (!isStringInArray(host.getListeners(), getUsername())) {
+                        host.getListeners().add(new Pair<>(getUsername(), 1));
+                    }
+                    if (Objects.equal(player.getCurrentAudioFile().getName(), episode.getName())) {
+                        stop++;
+                        break;
+                    }
+                }
+            } else {
+                int found = 0;
+                for (Episode episode : podcast.getEpisodes()) {
+                    if (found == 1) {
+                        if (!isStringInArray(topEpisodes, episode.getName())) {
+                            topEpisodes.add(new Pair<>(episode.getName(), 1));
+                        }
+                        if (!isStringInArray(host.getTopEpisodes(), episode.getName())) {
+                            host.getTopEpisodes().add(new Pair<>(episode.getName(), 1));
+                        }
+                        if (!isStringInArray(host.getListeners(), getUsername())) {
+                            host.getListeners().add(new Pair<>(getUsername(), 1));
+                        }
+                    }
+                    if (Objects.equal(player.getCurrentAudioFile().getName(), episode.getName())) {
+                        stop++;
+                        break;
+                    }
+                    if (Objects.equal(episode.getName(), lastListenedEpisode.getName())) {
+                        found = 1;
+                    }
+                }
+            }
+            if (stop != 0) {
+                setLastListenedEpisode((Episode) player.getCurrentAudioFile());
+            } else {
+                setLastListenedEpisode(null);
             }
         }
     }
