@@ -77,13 +77,22 @@ public final class Player {
                                             final LibraryEntry entry,
                                             final List<PodcastBookmark> bookmarks) {
         if ("song".equals(type)) {
-            return new PlayerSource(Enums.PlayerSourceType.LIBRARY, (AudioFile) entry);
+            return new PlayerSourceBuilder()
+                    .type(Enums.PlayerSourceType.LIBRARY)
+                    .audioFile((AudioFile) entry)
+                    .build();
         } else if ("playlist".equals(type)) {
-            return new PlayerSource(Enums.PlayerSourceType.PLAYLIST, (AudioCollection) entry);
+            return new PlayerSourceBuilder()
+                    .type(Enums.PlayerSourceType.PLAYLIST)
+                    .audioCollection((AudioCollection) entry)
+                    .build();
         } else if ("podcast".equals(type)) {
             return createPodcastSource((AudioCollection) entry, bookmarks);
         } else if ("album".equals(type)) {
-            return new PlayerSource(Enums.PlayerSourceType.ALBUM, (AudioCollection) entry);
+            return new PlayerSourceBuilder()
+                    .type(Enums.PlayerSourceType.ALBUM)
+                    .audioCollection((AudioCollection) entry)
+                    .build();
         }
 
         return null;
@@ -93,10 +102,17 @@ public final class Player {
                                                     final List<PodcastBookmark> bookmarks) {
         for (PodcastBookmark bookmark : bookmarks) {
             if (bookmark.getName().equals(collection.getName())) {
-                return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection, bookmark);
+                return new PlayerSourceBuilder()
+                        .type(Enums.PlayerSourceType.PODCAST)
+                        .audioCollection(collection)
+                        .bookmark(Enums.PlayerSourceType.PODCAST, collection, bookmark)
+                        .build();
             }
         }
-        return new PlayerSource(Enums.PlayerSourceType.PODCAST, collection);
+        return new PlayerSourceBuilder()
+                .type(Enums.PlayerSourceType.PODCAST)
+                .audioCollection(collection)
+                .build();
     }
 
     /**

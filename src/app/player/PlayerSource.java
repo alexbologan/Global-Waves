@@ -14,6 +14,7 @@ import java.util.Random;
 /**
  * The type Player source.
  */
+
 public class PlayerSource {
     @Getter
     private Enums.PlayerSourceType type;
@@ -35,7 +36,7 @@ public class PlayerSource {
     @Getter
     @Setter
     private int remainedDuration;
-    private final List<Integer> indices = new ArrayList<>();
+    private List<Integer> indices = new ArrayList<>();
 
     /**
      * Instantiates a new Player source.
@@ -43,42 +44,20 @@ public class PlayerSource {
      * @param type      the type
      * @param audioFile the audio file
      */
-    public PlayerSource(final Enums.PlayerSourceType type, final AudioFile audioFile) {
-        this.type = type;
-        this.audioFile = audioFile;
-        this.remainedDuration = audioFile.getDuration();
-    }
-
-    /**
-     * Instantiates a new Player source.
-     *
-     * @param type            the type
-     * @param audioCollection the audio collection
-     */
-    public PlayerSource(final Enums.PlayerSourceType type, final AudioCollection audioCollection) {
-        this.type = type;
-        this.audioCollection = audioCollection;
-        this.audioFile = audioCollection.getTrackByIndex(0);
-        this.index = 0;
-        this.indexShuffled = 0;
-        this.remainedDuration = audioFile.getDuration();
-    }
-
-    /**
-     * Instantiates a new Player source.
-     *
-     * @param type            the type
-     * @param audioCollection the audio collection
-     * @param bookmark        the bookmark
-     */
     public PlayerSource(final Enums.PlayerSourceType type,
-                        final AudioCollection audioCollection,
-                        final PodcastBookmark bookmark) {
+                         final AudioCollection audioCollection,
+                         final AudioFile audioFile,
+                         final int index,
+                         final int indexShuffled,
+                         final int remainedDuration,
+                         final List<Integer> indices) {
         this.type = type;
         this.audioCollection = audioCollection;
-        this.index = bookmark.getId();
-        this.remainedDuration = bookmark.getTimestamp();
-        this.audioFile = audioCollection.getTrackByIndex(index);
+        this.audioFile = audioFile;
+        this.index = index;
+        this.indexShuffled = indexShuffled;
+        this.remainedDuration = remainedDuration;
+        this.indices = indices;
     }
 
     /**
